@@ -1,0 +1,340 @@
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+<!doctype html>
+<html>
+<head>
+	
+
+
+
+
+
+
+ 
+
+
+
+
+
+<meta charset="UTF-8">
+<title>上海市闵行区教育学院</title>
+<link rel="apple-touch-icon-precomposed" sizes="32x32" href="https://jyxyfiles.mhedu.sh.cn/ftpfiles/dcpfiles/mainpicture/ico_jyxy.ico">
+<link rel="shortcut icon" href="https://jyxyfiles.mhedu.sh.cn/ftpfiles/dcpfiles/mainpicture/ico_jyxy.ico">
+<script src="https://jyxy.mhedu.sh.cn/static/vue/jquery-3.6.0.min.js"></script><script type="text/javascript" src="https://jyxy.mhedu.sh.cn/static/vue/jquery-migrate.min.js"></script>
+<script src="https://jyxy.mhedu.sh.cn/static/js/jquery.SuperSlide.js?V1.0"></script>
+<script src="https://jyxy.mhedu.sh.cn/static/js/layer/layer.js"></script>
+<script src="https://jyxy.mhedu.sh.cn/static/js/idealdcp/utils/Utils.js"></script>
+<script type="text/javascript" src="https://jyxy.mhedu.sh.cn/static/js/ueditor/ueditor.parse.js"></script>
+<script type="text/javascript" src="https://jyxy.mhedu.sh.cn/static/js/jquery-qrcode-master/jquery.qrcode.min.js"></script>
+
+
+	<link rel="stylesheet" type="text/css" href="https://jyxy.mhedu.sh.cn/static/extranet/mhedu/index/css/style.css?V=1.0">
+	<style type="text/css">
+		table td p{
+			text-indent: 0em !important;
+		}
+		table td{
+			border: 1px solid;
+		}
+	</style>
+</head>
+<body>
+	
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+<style type="text/css">
+#qrcodediv img{
+    margin: 30px auto;
+}
+</style>   
+
+<div id="header">
+	<div id="topbar">
+		<div class="topbarcon cl" style="">
+			<div class="topsearch"><input id="searchDiv" type="text" placeholder="输入关键字搜索..." class="stxt"><input type="button" value="搜索" class="sbtn"></div>
+			<div class="toprlink">
+				<span class="locat">上海市闵行区紫龙路835号</span>
+				<a href="javascript:;" class="loginlink" id="wxqrcodebtn">移动版</a>
+                <a href="https://jyxy.mhedu.sh.cn/extranet/web/index/index!login.action" target="_blank" class="loginlink">用户登录</a>
+			</div>
+		</div>
+	</div>
+	<div id="top" class="cl">
+        <div id="logo" style="width:235px;"><img src="https://jyxy.mhedu.sh.cn/static/extranet/mhedu/index/images/logo.png" height="66" width="193" alt="">
+        </div>
+		<ul class="menu">
+			<li class="home current"><a target="_blank" href="https://jyxy.mhedu.sh.cn/extranet/web/index/index.action"  >首页</a></li>
+			<li><a target="_blank" class="morelist" code="JYXY_XXGK" href="https://jyxy.mhedu.sh.cn/extranet/web/mhedu/xx.action" >信息公开</a></li>
+			<li><a target="_blank" class="morelist" code="JYXY_DWGK" href="https://jyxy.mhedu.sh.cn/extranet/web/mhedu/dw.action" >党务公开</a></li>
+			<li><a target="_blank" class="morelist" code="JYXY_HXXY" href="https://jyxy.mhedu.sh.cn/extranet/web/mhedu/hx.action" >文明单位</a></li>
+			<li><a target="_blank" class="morelist" code="JYXY_ZHJY" href="https://jyxy.mhedu.sh.cn/extranet/web/mhedu/zh.action" >智慧教育</a></li>
+            
+			<li><a target="_blank" class="morelist" code="JYXY_SY_XYDT" >学院动态</a></li>
+			<li><a target="_blank" class="morelist" code="JYXY_SY_ZHYJ">综合研究</a></li>
+            <li><a target="_blank" class="morelist" code="JYXY_SY_YXDT">教研动态</a></li>
+            <li><a target="_blank" class="morelist" code="JYXY_SY_JSPX">教师培训</a></li>
+            <li><a target="_blank" class="morelist" code="JYXY_SY_GBPX">干部培训</a></li>
+			<li><a target="_blank" class="morelist" code="JYXY_SY_DYYJ">德育研究</a></li>
+			<li><a target="_blank" class="morelist" code="JYXY_XLJK"
+                   href="https://jyxy.mhedu.sh.cn/extranet/web/mhedu/xl.action">心理健康</a></li>
+            <li><a target="_blank" class="morelist" code="JYXY_SY_ZHYJ_JYKY">教育科研</a></li>
+			<li><a target="_blank" class="morelist" code="JYXY_SY_JYJS">教育技术</a></li>
+		</ul>
+	</div>
+</div>
+
+<script>
+	var codes=[];
+	$(".morelist").each(function(){
+		codes.push($(this).attr("code"));
+	});
+	$(".morelist").click(function(){
+        if(!this.href)
+        window.open('/extranet/web/index/index!more.action?catalogCode='+$(this).attr("code"));
+	});
+	$(".sbtn").click(function(){
+        Utils.formBuilder.submitByForm({search:$('#searchDiv').val()}, '/extranet/web/index/index!search.action');
+    });
+
+	$.ajax({
+		url:"/extranet/web/index/index!codes.action",
+		type:'post',
+		data:{codes:codes.join(",")},
+		success:function(data){
+			$(".morelist").each(function(){
+				if(''.indexOf(data.data[$(this).attr("code")])>-1){
+					$("#top .current").removeClass("current");
+					$(this).parent().addClass("current");
+				}
+			});
+
+		},
+		error:function(){
+
+		}
+	});
+</script>
+
+	<div id="combox">
+		<div class="comcon cl">
+			<div class="noticebox">
+				<div class="location">
+                    <a href="https://jyxy.mhedu.sh.cn/extranet/web/index/index!list.action" class="home"></a> <em>&gt;</em> <a href="https://jyxy.mhedu.sh.cn/extranet/web/index/index!edunotice.action">通知</a>
+				</div>
+				<div class="article">
+					<h1>闵行区第四届“数据驱动大规模因材施教(智慧教育项目)”申报通知</h1>
+					<div class="artinfo">
+						发布时间: 2023-09-15
+					</div>
+					<div class="artcon">
+						<p>各中小学、幼儿园、特殊学校、职业学校、直属单位：</p><p>现启动闵行区第四届“数据驱动大规模因材施教(智慧教育)”项目的申报，具体通知如下：</p><p>1.申报时间：<strong>2023年9月15日至9月30日中午12点</strong>（平台开放窗口期）</p><p>2.登录地址：</p><p>https://jiaoshi.mhedu.sh.cn/eias/home.html?moduleCode=007</p><p>3.申报内容：请各校自行下载“数据驱动大规模因材施教”申报书（详见附件1），并依据学校智慧教育发展的需求与教师自身探索的主题，参考“智慧教育项目图谱”（详见附件2），逐一填写、自主申报。</p><p>4.申报过程:申请人（即项目负责人）在线填报、提交申报表后，由各学校单位审核人（一般为校园长或信息化分管校园长）登录平台逐一审核本校（园）申请的所有项目（具体操作办法详见附件3）。</p><p>5.立项结果：闵行区教育局、教育学院将组织专家对项目加以评审，立项分为区级、校级两类项目。</p><p>6.注意事项：</p><p>（1）学校若为首次申报课题，请在申报之前联系技术人员增添学校账号；</p><p>（2）凡有该项目在研的负责人不得申报，采取一年一结、当年度完成的管理办法；</p><p>（3）在申报过程中的技术问题，请联系技术人员（联系电话&nbsp;邓柯 15111149616）；“科研平台系统”微信群）</p><p>（4）在申报过程中如遇专业问题，请与各学段科研员联系。</p><p><br></p><p>闵行区教育学院科研中心</p><p>2023年9月15日</p><p><br></p>
+					</div>
+					
+						<div class="filebox">
+							<h6>附件：（点击下载）</h6>
+							
+								<p><a href="https://jyxyfiles.mhedu.sh.cn/ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/XYTZ/allArea/main/2023/09/ff80808173b255f80174329630ed032b/2b0020112bdf413792931a1765fd7d0b.doc?title=%E9%99%84%E4%BB%B61+%E5%A4%A7%E8%A7%84%E6%A8%A1%E5%9B%A0%E6%9D%90%E6%96%BD%E6%95%99%EF%BC%88%E6%99%BA%E6%85%A7%E6%95%99%E8%82%B2%EF%BC%89%E5%AD%A6%E6%A0%A1%E5%AE%9E%E9%AA%8C%E9%A1%B9%E7%9B%AE%E7%94%B3%E8%AF%B7%E8%A1%A8.doc" download="附件1 大规模因材施教（智慧教育）学校实验项目申请表.doc">1、<span style="color: #359bd7;">附件1 大规模因材施教（智慧教育）学校实验项目申请表.doc</span></a></p>
+							
+								<p><a href="https://jyxyfiles.mhedu.sh.cn/ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/XYTZ/allArea/main/2023/09/ff80808173b255f80174329630ed032b/0f62107a53664fc7bbd397caef07aa66.pdf?title=%E9%99%84%E4%BB%B62%E6%99%BA%E6%85%A7%E6%95%99%E8%82%B2%E9%A1%B9%E7%9B%AE%E5%9B%BE%E8%B0%B1.pdf" download="附件2智慧教育项目图谱.pdf">2、<span style="color: #359bd7;">附件2智慧教育项目图谱.pdf</span></a></p>
+							
+								<p><a href="https://jyxyfiles.mhedu.sh.cn/ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/XYTZ/allArea/main/2023/09/ff80808173b255f80174329630ed032b/cd1dc8cef2f649c49db0710c4f155232.pdf?title=%E9%99%84%E4%BB%B63%E5%A4%A7%E8%A7%84%E6%A8%A1%E5%9B%A0%E6%9D%90%E6%96%BD%E6%95%99%E5%AE%9E%E9%AA%8C%E9%A1%B9%E7%9B%AE%EF%BC%88%E6%99%BA%E6%85%A7%E6%95%99%E8%82%B2%E9%A1%B9%E7%9B%AE%EF%BC%89%E7%94%B3%E6%8A%A5%E6%93%8D%E4%BD%9C%E6%89%8B%E5%86%8C.pdf" download="附件3大规模因材施教实验项目（智慧教育项目）申报操作手册.pdf">3、<span style="color: #359bd7;">附件3大规模因材施教实验项目（智慧教育项目）申报操作手册.pdf</span></a></p>
+							
+							
+						</div>
+					
+					<div class="artpre">
+                        <span class="goback"><a href="https://jyxy.mhedu.sh.cn/extranet/web/index/index!edunotice.action?weekno=3">返回列表</a></span>
+						<p>上一篇： <a href="https://jyxy.mhedu.sh.cn/extranet/web/index/index!edunoticeInfo.action?id=ff8080818deda7ab018e044a2ba9023b&amp;yearId=&amp;weekno=3">关于上海市第二十八届高一物理基础知识竞赛（闵行区个人赛）通知</a> </p>
+						<p>下一篇：无  </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+<div id="footer">
+	<div class="ft cl">
+		<div  class="blogo">
+            <span id="_ideConac" class="" style="margin-top: 5px;">
+            <a href="http://bszs.conac.cn/sitename?method=show&amp;id=2907016072AE5269E053012819ACF339" target="_blank">
+                <img id="imgConac" vspace="0" hspace="0" border="0" src="https://jyxyfiles.mhedu.sh.cn/ftpfiles/dcpfiles/image/blue.png"
+                     data-bd-imgshare-binded="1">
+            </a>
+        </span>
+        </div>
+        <div  class="blogo">
+            <div style="padding: 3px;background-color: white;width: 56px;margin: auto;">
+                <span class="" id="footerwxqrcodebtn" ></span>
+            </div>
+            <span>移动版二维码</span>
+        </div>
+        <div  class="blogo">
+            <div class="" id="qyFrcode" style="margin-right:10px;display: block;">
+                <img src="https://jyxyfiles.mhedu.sh.cn/ftpfiles/dcpfiles/introduction/2205021687154906a1763079ccc40a84.jpg" style="width: 61px;height: 62px;">
+            </div>
+            <span>闵行区教育学院服务号</span>
+        </div>
+
+        <div class="bnav">
+            <a href="https://jyxy.mhedu.sh.cn/extranet/web/mhedu/xx!oriented.action?catalogCode=JYXY_XXGK_LXWM">联系我们</a>
+            |
+            <a href="https://jyxy.mhedu.sh.cn/extranet/web/mhedu/xx!oriented.action?catalogCode=JYXY_XXGK_BQSM">版权声明</a>
+            |
+            <a href="https://jyxy.mhedu.sh.cn/extranet/web/mhedu/xx!LeavingMessare.action">我要留言</a>
+            |
+            <a target="_blank" href="http://10.107.58.146">旧网链接（内网）</a></div>
+		<div class="copyright">
+            <p>版权所有 上海市闵行区教育学院 （工信部备案号:沪ICP备05012047号）
+                <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011202005311"
+                   style="text-decoration:none;height:20px;line-height:20px;">
+                    <img src="https://jyxy.mhedu.sh.cn/static/extranet/mhedu/index/images/pilice.png"/>
+                    <span style="height:20px;line-height:20px;color:#fff;">沪公网安备 31011202005311号</span>
+                </a>
+            </p>
+
+            <p>地址：上海市闵行区紫龙路835号 邮编：200241 电话：021-34728865</p>
+
+            <p>本站推荐使用Chrome访问</p>
+        </div>
+	</div>
+</div>
+
+<script  src="https://jyxy.mhedu.sh.cn/static/js/qrcode.min.js"></script>
+<script src="https://jyxy.mhedu.sh.cn/static/js/layer3/layer/layer.js"></script>
+<script>
+
+	var _qrcodeUrl=location.href.split('/extranet')[0]+'/extranet/web/index/index.action';
+
+	var qrcode = new QRCode("footerwxqrcodebtn", {
+	    text: _qrcodeUrl,
+	    width: 56,
+	    height: 56,
+	    colorDark : "#000000",
+	    colorLight : "#ffffff",
+	    correctLevel : QRCode.CorrectLevel.L
+	});
+
+    $("#wxqrcodebtn").click(function(){
+        layer.open({
+            type: 1,
+            title :'移动版扫码进入',
+            skin: 'layui-layer-demo', //样式类名
+            closeBtn: 1, //不显示关闭按钮
+            anim: 2,
+            area :['500px','500px'],
+            shadeClose: true, //开启遮罩关闭
+            content: '<div id="qrcodediv"></div>',
+            success:function(){
+                var qrcode = new QRCode("qrcodediv", {
+                    text: _qrcodeUrl,
+                    width: 360,
+                    height: 360,
+                    colorDark : "#000000",
+                    colorLight : "#ffffff",
+                    correctLevel : QRCode.CorrectLevel.H
+                });
+
+
+            }
+
+
+        });
+    });
+
+    $("#footerwxqrcodebtn").click(function(){
+        layer.open({
+            type: 1,
+            title :'移动版扫码进入',
+            skin: 'layui-layer-demo', //样式类名
+            closeBtn: 1, //不显示关闭按钮
+            anim: 2,
+            area :['500px','500px'],
+            shadeClose: true, //开启遮罩关闭
+            content: '<div id="qrcodediv"></div>',
+            success:function(){
+                var qrcode = new QRCode("qrcodediv", {
+                    text: _qrcodeUrl,
+                    width: 360,
+                    height: 360,
+                    colorDark : "#000000",
+                    colorLight : "#ffffff",
+                    correctLevel : QRCode.CorrectLevel.H
+                });
+
+
+            }
+
+
+        });
+    });
+
+	$("#qyFrcode").click(function(){
+		layer.open({
+			  type: 1,
+			  title :'服务号扫码关注',
+			  skin: 'layui-layer-demo', //样式类名
+			  closeBtn: 1, //不显示关闭按钮
+			  anim: 2,
+			  area :['500px','500px'],
+			  shadeClose: true, //开启遮罩关闭
+			  content: '<div id="qrcodediv"></div>',
+			  success:function(){
+				  $('#qrcodediv').html('<img src="https://jyxy.mhedu.sh.cn/extranet/web/index/'+$('#qyFrcode img').attr('src')+'" style="display:block;;width:360px;height:360px;" />');
+				  
+			  }
+
+		  
+		});
+	});
+
+</script>
+</body>
+
+<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+  	<script src="https://jyxy.mhedu.sh.cn/static/themes/cameo1.0/js/ideal-wx-share.js?v1.1"></script>
+<script type="text/javascript">
+    function goBack(){
+    	history.back(-1);
+    }
+    uParse('.artcon', {
+        rootPath: '../'
+    });
+    _wxshare({title:'闵行区第四届“数据驱动大规模因材施教(智慧教育项目)”申报通知',link:location.href,imgUrl:'http://'+location.host+'/static/school/images/jyxylogo.png',desc:'',ctx:''});
+</script>
+</html>

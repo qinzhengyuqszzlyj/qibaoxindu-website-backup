@@ -1,0 +1,314 @@
+<!DOCTYPE html><html lang="zh">
+<head>
+  <meta name="keywords" content="闵行区教师专业发展数字化支持系统"/><meta name="description" content="闵行区教师专业发展数字化支持系统"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta http-equiv='Content-Type' content='text/html; charset=utf-8'><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><title>登录</title>
+  <!--    <link rel="stylesheet" th:href="@{#{webjars.fontawesomemin.css}}"/>--><!--    <link type="text/css" rel="stylesheet" th:href="@{#{webjars.latomin.css}}"/>--><link rel="icon" href="https://jiaoshi.mhedu.sh.cn/cas/favicon.ico" type="image/x-icon"/><link href="https://jiaoshi.mhedu.sh.cn/cas/css/antd.min.css" rel="stylesheet"><!--  <script type="text/javascript" th:src="@{#{webjars.jquerymin.js}}"></script>--><script src="https://jiaoshi.mhedu.sh.cn/cas/webjars/vue/2.6.9/dist/vue.min.js"></script>
+  <script src="https://jiaoshi.mhedu.sh.cn/cas/webjars/axios/0.17.1/dist/axios.min.js"></script>
+  <script src="https://jiaoshi.mhedu.sh.cn/cas/js/antd.min.js"></script>
+  <script src="https://jiaoshi.mhedu.sh.cn/cas/js/jquery.js"></script>
+  <script src="https://jiaoshi.mhedu.sh.cn/cas/js/function.js"></script>
+  <script src="https://res.wx.qq.com/connect/zh_CN/htmledition/js/wxLogin.js"></script>
+  <link rel="stylesheet" href="https://jiaoshi.mhedu.sh.cn/cas/themes/login_shmh/css/login4.css"/><!--  <link rel="stylesheet" th:href="@{${#themes.code('cas.standard.static.path')+'/css/login.css'}}"--><!--        href="../../static/themes/login_shmh/css/login.css"/>--><!--  <link rel="stylesheet" th:href="@{${#themes.code('cas.standard.static.path')+'/css/login2.css'}}"--><!--        href="../../static/themes/login_shmh/css/login2.css"/>--><!--  <link rel="stylesheet" th:href="@{${#themes.code('cas.standard.static.path')+'/css/cas.css'}}"--><!--        href="../../static/themes/login_shmh/css/cas.css"/>--></head>
+
+<body>
+<div class="header">
+  <div class="header_box">
+    <img
+      src="https://jiaoshi.mhedu.sh.cn/cas/themes/login_shmh/images/login/logo.png" alt=""
+    ><span>闵行区教师专业发展数字化支持系统</span>
+  </div>
+</div>
+<div class="bg">
+  <div id="app" class="main">
+    <div class="context">
+      <div class="ban_left">
+        <div @click="openPage('../index.jhtml')">
+          <img src="https://jiaoshi.mhedu.sh.cn/cas/themes/login_shmh/images/login/yxw.png"/><p>研修网</p>
+        </div>
+        <div @click="openPage('http://ylb.ct-edu.com.cn')">
+          <img src="https://jiaoshi.mhedu.sh.cn/cas/themes/login_shmh/images/login/ylb.png"/><p>云录播</p>
+        </div>
+        <div @click="openPage('http://10.107.58.34:89/main/login.aspx')">
+          <img src="https://jiaoshi.mhedu.sh.cn/cas/themes/login_shmh/images/login/zlfx.png"/><p>质量分析</p>
+        </div>
+        <div @click="openPage('http://10.107.58.121/login.html')">
+          <img src="https://jiaoshi.mhedu.sh.cn/cas/themes/login_shmh/images/login/dagl.png"/><p>档案管理</p>
+        </div>
+        <div @click="openPage('http://10.107.58.218/vision/portal.jsp')">
+          <img src="https://jiaoshi.mhedu.sh.cn/cas/themes/login_shmh/images/login/dafx.png"/><p>档案分析</p>
+        </div>
+        <div @click="openPage('https://jiaoshi.mhedu.sh.cn/sns/space.jsp?do=home')">
+          <img src="https://jiaoshi.mhedu.sh.cn/cas/themes/login_shmh/images/login/sns.png"/><p>个人空间</p>
+        </div>
+      </div>
+      <div class="log-wrap">
+        <div style="text-align: right;margin-right:15px;margin-top:8px;position: relative;z-index: 0;">
+          <img
+            v-if="tabIndex === '1'"
+            class="login-wxin"
+            style="cursor: pointer;text-align:right;display: inline-block;"
+            src="https://jiaoshi.mhedu.sh.cn/cas/themes/login_shmh/images/login/icon-jiao.png" alt=""
+            @click="() => tabIndex = '2'"
+          ><img
+            v-if="tabIndex === '2'"
+            class="back"
+            style="cursor: pointer;text-align:right;display: inline-block;"
+            src="https://jiaoshi.mhedu.sh.cn/cas/themes/login_shmh/images/login/icon-pwd.png" alt=""
+            @click="() => tabIndex = '1'"
+          ></div>
+        <div v-show="tabIndex === '1'" class="user-login" style="margin-top:-45px;">
+          <div class="log-tit">欢迎使用，请登录</div>
+          <div class="login-submit">
+            <p class="p-row">
+              <img
+                src="https://jiaoshi.mhedu.sh.cn/cas/themes/login_shmh/images/login/user.png" alt=""
+              ><input v-model:value="formState.username" class="input-row" type="text" placeholder="请输入用户名"></p>
+            <p class="p-row">
+              <img
+                src="https://jiaoshi.mhedu.sh.cn/cas/themes/login_shmh/images/login/key.png" alt=""
+              ><input v-model:value="formState.password" class="input-row" placeholder="请输入密码" type="password"></p>
+            <div class="div-checkbox">
+              <div><input type="checkbox"><span style="margin-left:4px">记住密码</span></div>
+              <span>找回密码</span>
+            </div>
+            <div class="login" @click="handleSubmit" style="cursor: pointer">登录</div>
+          </div>
+        </div>
+        <div class="log-wxin" v-show="tabIndex === '2'">
+          <div id="login_container"></div>
+        </div>
+        <form style="display: none" method="post" action="https://jiaoshi.mhedu.sh.cn/cas/login">
+          <!--        <p class="log-tit">欢迎使用，请登录</p>--><!--        <div class="alert alert-danger" th:if="${#fields.hasErrors('*')}">--><!--          <span th:each="err : ${#fields.errors('*')}" th:utext="${err}">Example error</span>--><!--        </div>--><!--        <div class="login-submit png-bg">--><!--          <div class="input-row">--><!--            <p class="row-tit">&nbsp;</p>--><!--            <p>--><!--              <input class="lginput-txt loginname"--><!--                     id="username"--><!--                     name="username"--><!--                     size="25"--><!--                     tabindex="1"--><!--                     type="text"--><!--                     th:disabled="${guaEnabled}"--><!--                     th:field="*{username}"--><!--                     th:accesskey="#{screen.welcome.label.netid.accesskey}"--><!--                     placeholder="请输入用户名"--><!--                     autocomplete="off"--><!--              />--><!--            </p>--><!--          </div>--><!--        <div class="input-row">--><!--          <p class="row-tit">&nbsp;</P>--><!--          <p class="last">--><!--            <input class="lginput-txt last loginpassword"--><!--                   type="password"--><!--                   id="password"--><!--                   name="password"--><!--                   placeholder="请输入密码"--><!--                   size="25"--><!--                   tabindex="2"--><!--                   th:accesskey="#{screen.welcome.label.password.accesskey}"--><!--                   th:field="*{password}"--><!--                   autocomplete="off"/>--><!--          </p>--><!--        </div>--><!--        <div class="login-msg login-error-msg undis">--><!--          <span class="msg-bg png-bg"></SPAN>--><!--          <div class="msg msg-tip">--><!--            <span class="msg-con">账户名和密码不匹配</SPAN>--><!--          </div>--><!--        </div>--><!--        <div class="word-tip clearfix">--><!--          <label id="remember" onclick="javascript:triggerCheck();"--><!--                 class="keep-log keep-log-check label-checkbox png-bg" for="rememberMe">--><!--            <input id="rememberMe" class="keep-log-input" name="rememberMe" checked="checked" type="checkbox"><span--><!--            onclick="javascript:triggerCheck();">记住密码</span>--><!--          </label>--><!--          <span style="margin-left: 150px;cursor: pointer;" onclick="findPsw();">找回密码</span>--><!--        </div>--><input type="hidden" name="refer" value="space.jsp?do=home"/><input type="hidden" name="decode" value="false"/><input type="hidden" name="key" value="<%=key%>"/><input type="hidden" name="formhash" value="ce011a48"/><input type="hidden" name="loginsubmit" value="登录"/><input type="hidden" id="pswlevel" name="pswlevel" value=""/><p class="log-btn">
+            <input type="hidden" name="execution" value="9c4d68d5-f73b-456f-8454-3882a6ddfde3_ZXlKaGJHY2lPaUpJVXpVeE1pSjkucWJZQnVaSUt4c0hicFZ5ZHRRdDlyT1ViSDJjYjMvS3dxbkRIZjZGVjIwemw3WTdnRGdUMnI3aldDVFd0MUQvM2ROeUtsYkEvOUhYZ3FjUGM3R2tUNml3R0hLOWh5UFNXYmYyLzl3ZjZjZFl2ZWkvYkVRaDU0bldwVHl0b3h1SDhna21PaU10NGo5T1I4d1pLcUFCRjFLVVFrTVRoYUUvUEwzWDJQNlFUanVyZDRoMDlYZlB5WVUrWGxSOW1PRkN1RlVWYmg2QmVCMTNzUDV4K2lNUzVVSHNxRWtBL3pMbnNtQ2FDWFptcTR4cTdQanZuVWFBL1RXMTRzWW9LU1ZSN3N1dGhFZEhNR1BaYm1TYkxkS0U1ckJqT05rVldtYWJzYXUrSmJiYnpFZ1dyQzhRc1pCUFdua2FqTndkcnkwU1VOWENwTVdGWDV5TzIvVWwzcmk4NVhweXFTVm9SZDl3YzJjZkpVRGZLLzc3T1IyNU01QUh0N3Awc3NybmNPS1lVazh4VXJSaXZDODlSc3NYbXBYMzMrWkU2NHJ6UWdDT2ErQXY1TkRYWTNUQllQejhwUFJnRWM4dDBjQVpaNEVUTkZYV0ltaDBjWDZZWkZKNzdvbGhReFY1TUhwSjY2WTd6N0VGYmFOTUczdkVWZDNSbDNGa3JwWHZvVy9ORDAxRG16M2ViTVBjdG5BN1JvRGtjMHdvQkZVN2gvNGE5c1BFOFpkVTVrS1VkZk1EYml4WVBaTkdvV2JmNVl3dkcrN3Y1NlFMcUJ2dkhiRFFHb3g0UmZSbzlnUDdKdU5EdFQvYlBWTjBSR2xNTEgyei9hNThMRTRWK0Fyc2NtR3Qwb2RtZzZNanB4Y0JPbGRseHlTMHBuc0pFWDl1bWFWdlBiYVlBcHAybHFEMlU0NkVHM01TZjc5U0xDSWFrOXB4UFc1ZHUvTTBKN0RyejROOG1mNVhwdUtHTXhUUUdndm85QVBsRHRETHp3Z1p2eXBIUU5uU0dyb1pDM3RHQjFlZjZQYzZ5Rkc0bDc3OGVhbEZUYmRzZURZdUMzTHVKVXk0TkZHdWMyK2ZtRTBHZWxqVktUeWhOMkMvSmVLT0Q4REI1Uk5nWXo4Zk1TWkJmVmRlWkU2bG02MjRpVkthTW55UmxqVm1XMUJvMCtrR2pxaTZwMG05M29hWEt0Y25zSFVVQVlUcCswU0g4bUZNeis2RUxNS0NydXBBY29yQVhrOTlnZVRvWW5JUUE0WDBGWGtnazhlNUNHZ2RKRW1Kc012MzFzUkNvNlZKSlN1MXp2aFF5RVFmUkUzYy93UzY2Y0FXQjFpbmZyNFpwbElIYWtPNWpBYXpiSEd2M2pLZVZlZURvUDhsVnVxUVBRNy9STUlHNklDbEwrZEFlVFN3N3lWL21lUjhpOWNZTFVkSVhYYVFVSnVadkVOZU5GUnBLeTlKRGs1VTcybVJkdWpGVnJETG9IRTlTNTlkdkZZQ2JrK0dRbWZWdER4S1hadlppWGw4U0FqRXVIYlZHaHlsbGkvZ2dSZlF5QzhmUkJJSmo5Rk1WQnZOWmszTmQySHFUMitFOWorZ2FTUnZTbmxGWDNQVkF0T29wcVRITzdmNlVDMGJ1NWw5VEhlaTlSV3pMdjJ5RUVMT3hOQ3VneEJDNjBaU2xJL1BVWmtCUWRXbFQ4K1FZWGNzbmE0V1lYU285czZZdEtnQ04rMi9IS0tSdk5iUDc0Uk5pNFFxc0c5Q2tHZCsyRU91dHlZS2JtQ1luTHR6SzRWMGRKUy9qcFlyTVI2RTFEVFBaRVZkZ2FjWnROcmhaU3ZJOXZTRVhoODJYS3BkTWVlclRBeVQwcWtHbFAwNk5Obyt2ZDNRSVNaZWJOSEltQThRcVJROHZQaFdtRVFhejJ5TkdRcFRiVmxSbTFhSHVyVGNYU1ZxcE5WbVpTVHM2T2cwSDJDZmF5SW1KMDBLdkpCdnMrZ0VvOFNMZTRKL2wyN2prNnRPVW1KaXJQVGRaQ2lhSUpGN2xMMVI1VHdUSGFJdjA2bTBBeHc0Q3FySGE5LzNQZlVta2E1VnFXbWs0Q050UzlvUGlSRWxwN01BR0hvQlowaHJEZEl2aWxiaUNGWVJ1Zk1oeElseVhaTkd3dzdhMnBhSFM5ZHJGZjJ3ZVNia3lGblpWRUNEOTRFVFFuUXpaajh3VCsvZHl6OTM0RG1uQ0twU1RaOXZzQzcxSzF1SXZaUzBESEVzTVNORUdnalB5U3Jrb0Z6VEhRa00vMzF4NFZCa0haKzVER0tuRm1pZWhCYzRVVHBVTlRha0tWMTJHTHNPQWhBbFlPTDUxYzlZbWFWNjVqckR1RDNtem8rditmeFZGRlhiYXdOZmhiRktSY2tzbDFGcTRUWVFoOGJweVFFNXlwckxLeWJxaUk5T3c5YU1iZDZJR3ljRW9IR3oreWcraFdLYStTWGxJZ2ZRSktEclNBNVN4eHVSYmtra3ZsS3lOMzRYVXNjQ3BjU252cjNEMmc1YXNxMTVXbkdVTGp6RlIyU3p1L3dSYkRGUTNYYTZGQ2V0cHdVMUVzWkk0dEkrbDNZTzAwMlNYVndjQmVHNDB6WVpSdnRVNTFQVmQ3NXdMTGo5b3lsdjA0VGVpdHlDSks0U21IMVBuZ0xWMjBEdGFHclpyQXplSmh2RDdnUnVFUmFaaG1sQUFRK3JnYWMyTFYxQmpUdjlvSjFLQTgxZnIyaWhZZEt2UWxjSTFwSHdSbWdNUTRsOGIxY0FNTE9EK09ycmF4Q1l2OTcyZldoVklEVDFXejkwcTJYd0lnVXVjY3ZVRGR1cGxEQ0tzNkRQR0h1T1FEMkV0RXZ0MVVpNnc1S2M5aktieC9DUklBZU9zV1c1a3h3ZGZzQkU0VHZBUERteWN3R0w5YlpDQkhZUXlheHFkQTM4ZEFCV0g2djg0Ukw1TU1XVERqNEtqMHlWR3g3Yk9rNHNhYW9WeVZETVJJMCt2TVloeSt4eWJHUVQvNi9CM1VKNkFnbUNtTm5XUzJicGYwTXRWdm1qdks1c2I1by9qbDkzQlcrVGF1Qkk1UkxXWjY4eUUvbjl5VTJVU0NlSFBNazNUTDA1SW1ib2ZHMkZocFRBSmVSaktFVmZkci94UGxZSTB5UlFLWkxockt5TnRRVHgzVitkU3o3K29FMm1nOU9IL2xHTjVGajFsdzByd1crazduclQyTS8xbTl0c0h5clB2MjV5T0VBMThycVloL1JyWERUTU9UN1oydDlNZkE4S2ROWFVvcWdTdmZUd0tFZ1dIMWFZUDc2THEvcjBraFRaSWZVdWtuMmRpd1k2WFAwelgveU51ZEppaG5nTUhBc2JPZ2hVUU5ZbCtDRUhzSEpqRDBtcGE2MWpXdmV1ZStsaE5ZbGd4czdXcnVkMCs4NmxyTVBhSTByNGRLNVZUemREc1hodEx4VVZFVmR1NjAzSXJnbVJObjdiQy9Oa3FKa1ExYUpoWFRLZ2s1ajBVbG83UXNSR2tFM0dickdwdlpmSTRWQkhxSWFmL1RDSm1Fd2xjWktVKzd1RDE4NEVwb09KRjk1ZDYyQkpBS0dqTFJPcGRNYzZTYVBWaU01MVZwQ1pqRnpuZXBaaVJNS2dJNmNjZWxuSmpQZzZlMklzSzYrSHAzemg3YVZwdlA2c0Z3Zm9zcmpBbHBVTzNnWkx2RmUza2l6QWRDbUhKTmh1WnU1Q3NzOTBwMVV2NTZkUjFmV0k5ZjhpME1qeEZCajFwU241SlRneXIvbkYxUzBlMjlOTms3MUUyMnVnaExUUHNaZXVDak12Ym4zdXJ5RzJFTUFrZnRhb0ZVK3VydmpIaHJpdGFkZjBvRXA3WXlpS0ZaZ0hBK0FWekZlcVJvRkZ4UVdFbGZ6L3VsZmNzMDBQTGs5SDJ3bGEycEFXYXAwU0gxbVMxRUt3S2tHTEcvRTNMU2FKTVpEUGUrVk83d0Rjbm1rYkF6aHZNSjQyTVU5OW1XYSs5R05kUkxVVXFCc25EcUVSbld1cGlsTDFaOHpXN1JOMytKYXVkY2dIeXEvMjNaTW5kM2VwbUtveU51Rk9PODBhRFZvRitRN3ZQQVVTb2RTRlAxcWFORE1EeG9SRHExZmlVQWxoZEdUWWsxbEZsWnZwNzZ1a0N6Y2VOQkFSYW9sV1RTd0E4b0c4ZDJaL2FZdWUxQ28yK0tCS0hyN3lQYVZCeGM5b0RPVlNPRG44cklKenVPdEZUOHdvd1AwQ09Xc3dXNUY5M2hoaEFFSXNtRURVV0lGVXFONzR3VXhXSW1NRGN1MU9ERytlZ1R5d0NoSUgyZXpEaExrZWRpc2lLSVRCL3FCTVJBZTMzUHpDT3JmWTNBOS9rLmxsUHRjTXdNXzNTQ0pqR1VnNUk2VkZzTUkzSTVRZzVUeF96TnJSTFhsV1dkalV6c25ZM0tYa0VCTnEwOEpEd2VsQ1pfRFgxVFF6WlhIVDNrNXRsVF9R"/><input type="hidden" name="_eventId" value="submit"/><input type="hidden" name="geolocation"/><button type="submit" id="login-mail" class="login-btn login-btn1" href="javascript:login();">登录
+            </button>
+          </p>
+          <!--        </div>--></form>
+      </div>
+
+    </div>
+    <div style="width:960px;color:#84878A;font-size: 12px;margin:0 auto">
+      友情提醒：为了您更好地使用本系统，请使用IE9及以上、火狐、谷歌、搜狗浏览器
+    </div>
+    <div class="div-footer">
+      <img src="https://jiaoshi.mhedu.sh.cn/cas/themes/login_shmh/images/login/icp.png"/><span>沪ICP备05012047号</span>
+      <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011202005321">
+        <img src="https://jiaoshi.mhedu.sh.cn/cas/themes/login_shmh/images/login/guohui.png"/><span>沪公网安备 31011202005321号</span>
+      </a>
+    </div>
+    <div style="display: none">
+      <form method="post" style="display: none" id="tokenForm" action="https://jiaoshi.mhedu.sh.cn/cas/login">
+        <input type="hidden" name="token" id="token"/><input type="hidden" name="execution" value="9c4d68d5-f73b-456f-8454-3882a6ddfde3_ZXlKaGJHY2lPaUpJVXpVeE1pSjkucWJZQnVaSUt4c0hicFZ5ZHRRdDlyT1ViSDJjYjMvS3dxbkRIZjZGVjIwemw3WTdnRGdUMnI3aldDVFd0MUQvM2ROeUtsYkEvOUhYZ3FjUGM3R2tUNml3R0hLOWh5UFNXYmYyLzl3ZjZjZFl2ZWkvYkVRaDU0bldwVHl0b3h1SDhna21PaU10NGo5T1I4d1pLcUFCRjFLVVFrTVRoYUUvUEwzWDJQNlFUanVyZDRoMDlYZlB5WVUrWGxSOW1PRkN1RlVWYmg2QmVCMTNzUDV4K2lNUzVVSHNxRWtBL3pMbnNtQ2FDWFptcTR4cTdQanZuVWFBL1RXMTRzWW9LU1ZSN3N1dGhFZEhNR1BaYm1TYkxkS0U1ckJqT05rVldtYWJzYXUrSmJiYnpFZ1dyQzhRc1pCUFdua2FqTndkcnkwU1VOWENwTVdGWDV5TzIvVWwzcmk4NVhweXFTVm9SZDl3YzJjZkpVRGZLLzc3T1IyNU01QUh0N3Awc3NybmNPS1lVazh4VXJSaXZDODlSc3NYbXBYMzMrWkU2NHJ6UWdDT2ErQXY1TkRYWTNUQllQejhwUFJnRWM4dDBjQVpaNEVUTkZYV0ltaDBjWDZZWkZKNzdvbGhReFY1TUhwSjY2WTd6N0VGYmFOTUczdkVWZDNSbDNGa3JwWHZvVy9ORDAxRG16M2ViTVBjdG5BN1JvRGtjMHdvQkZVN2gvNGE5c1BFOFpkVTVrS1VkZk1EYml4WVBaTkdvV2JmNVl3dkcrN3Y1NlFMcUJ2dkhiRFFHb3g0UmZSbzlnUDdKdU5EdFQvYlBWTjBSR2xNTEgyei9hNThMRTRWK0Fyc2NtR3Qwb2RtZzZNanB4Y0JPbGRseHlTMHBuc0pFWDl1bWFWdlBiYVlBcHAybHFEMlU0NkVHM01TZjc5U0xDSWFrOXB4UFc1ZHUvTTBKN0RyejROOG1mNVhwdUtHTXhUUUdndm85QVBsRHRETHp3Z1p2eXBIUU5uU0dyb1pDM3RHQjFlZjZQYzZ5Rkc0bDc3OGVhbEZUYmRzZURZdUMzTHVKVXk0TkZHdWMyK2ZtRTBHZWxqVktUeWhOMkMvSmVLT0Q4REI1Uk5nWXo4Zk1TWkJmVmRlWkU2bG02MjRpVkthTW55UmxqVm1XMUJvMCtrR2pxaTZwMG05M29hWEt0Y25zSFVVQVlUcCswU0g4bUZNeis2RUxNS0NydXBBY29yQVhrOTlnZVRvWW5JUUE0WDBGWGtnazhlNUNHZ2RKRW1Kc012MzFzUkNvNlZKSlN1MXp2aFF5RVFmUkUzYy93UzY2Y0FXQjFpbmZyNFpwbElIYWtPNWpBYXpiSEd2M2pLZVZlZURvUDhsVnVxUVBRNy9STUlHNklDbEwrZEFlVFN3N3lWL21lUjhpOWNZTFVkSVhYYVFVSnVadkVOZU5GUnBLeTlKRGs1VTcybVJkdWpGVnJETG9IRTlTNTlkdkZZQ2JrK0dRbWZWdER4S1hadlppWGw4U0FqRXVIYlZHaHlsbGkvZ2dSZlF5QzhmUkJJSmo5Rk1WQnZOWmszTmQySHFUMitFOWorZ2FTUnZTbmxGWDNQVkF0T29wcVRITzdmNlVDMGJ1NWw5VEhlaTlSV3pMdjJ5RUVMT3hOQ3VneEJDNjBaU2xJL1BVWmtCUWRXbFQ4K1FZWGNzbmE0V1lYU285czZZdEtnQ04rMi9IS0tSdk5iUDc0Uk5pNFFxc0c5Q2tHZCsyRU91dHlZS2JtQ1luTHR6SzRWMGRKUy9qcFlyTVI2RTFEVFBaRVZkZ2FjWnROcmhaU3ZJOXZTRVhoODJYS3BkTWVlclRBeVQwcWtHbFAwNk5Obyt2ZDNRSVNaZWJOSEltQThRcVJROHZQaFdtRVFhejJ5TkdRcFRiVmxSbTFhSHVyVGNYU1ZxcE5WbVpTVHM2T2cwSDJDZmF5SW1KMDBLdkpCdnMrZ0VvOFNMZTRKL2wyN2prNnRPVW1KaXJQVGRaQ2lhSUpGN2xMMVI1VHdUSGFJdjA2bTBBeHc0Q3FySGE5LzNQZlVta2E1VnFXbWs0Q050UzlvUGlSRWxwN01BR0hvQlowaHJEZEl2aWxiaUNGWVJ1Zk1oeElseVhaTkd3dzdhMnBhSFM5ZHJGZjJ3ZVNia3lGblpWRUNEOTRFVFFuUXpaajh3VCsvZHl6OTM0RG1uQ0twU1RaOXZzQzcxSzF1SXZaUzBESEVzTVNORUdnalB5U3Jrb0Z6VEhRa00vMzF4NFZCa0haKzVER0tuRm1pZWhCYzRVVHBVTlRha0tWMTJHTHNPQWhBbFlPTDUxYzlZbWFWNjVqckR1RDNtem8rditmeFZGRlhiYXdOZmhiRktSY2tzbDFGcTRUWVFoOGJweVFFNXlwckxLeWJxaUk5T3c5YU1iZDZJR3ljRW9IR3oreWcraFdLYStTWGxJZ2ZRSktEclNBNVN4eHVSYmtra3ZsS3lOMzRYVXNjQ3BjU252cjNEMmc1YXNxMTVXbkdVTGp6RlIyU3p1L3dSYkRGUTNYYTZGQ2V0cHdVMUVzWkk0dEkrbDNZTzAwMlNYVndjQmVHNDB6WVpSdnRVNTFQVmQ3NXdMTGo5b3lsdjA0VGVpdHlDSks0U21IMVBuZ0xWMjBEdGFHclpyQXplSmh2RDdnUnVFUmFaaG1sQUFRK3JnYWMyTFYxQmpUdjlvSjFLQTgxZnIyaWhZZEt2UWxjSTFwSHdSbWdNUTRsOGIxY0FNTE9EK09ycmF4Q1l2OTcyZldoVklEVDFXejkwcTJYd0lnVXVjY3ZVRGR1cGxEQ0tzNkRQR0h1T1FEMkV0RXZ0MVVpNnc1S2M5aktieC9DUklBZU9zV1c1a3h3ZGZzQkU0VHZBUERteWN3R0w5YlpDQkhZUXlheHFkQTM4ZEFCV0g2djg0Ukw1TU1XVERqNEtqMHlWR3g3Yk9rNHNhYW9WeVZETVJJMCt2TVloeSt4eWJHUVQvNi9CM1VKNkFnbUNtTm5XUzJicGYwTXRWdm1qdks1c2I1by9qbDkzQlcrVGF1Qkk1UkxXWjY4eUUvbjl5VTJVU0NlSFBNazNUTDA1SW1ib2ZHMkZocFRBSmVSaktFVmZkci94UGxZSTB5UlFLWkxockt5TnRRVHgzVitkU3o3K29FMm1nOU9IL2xHTjVGajFsdzByd1crazduclQyTS8xbTl0c0h5clB2MjV5T0VBMThycVloL1JyWERUTU9UN1oydDlNZkE4S2ROWFVvcWdTdmZUd0tFZ1dIMWFZUDc2THEvcjBraFRaSWZVdWtuMmRpd1k2WFAwelgveU51ZEppaG5nTUhBc2JPZ2hVUU5ZbCtDRUhzSEpqRDBtcGE2MWpXdmV1ZStsaE5ZbGd4czdXcnVkMCs4NmxyTVBhSTByNGRLNVZUemREc1hodEx4VVZFVmR1NjAzSXJnbVJObjdiQy9Oa3FKa1ExYUpoWFRLZ2s1ajBVbG83UXNSR2tFM0dickdwdlpmSTRWQkhxSWFmL1RDSm1Fd2xjWktVKzd1RDE4NEVwb09KRjk1ZDYyQkpBS0dqTFJPcGRNYzZTYVBWaU01MVZwQ1pqRnpuZXBaaVJNS2dJNmNjZWxuSmpQZzZlMklzSzYrSHAzemg3YVZwdlA2c0Z3Zm9zcmpBbHBVTzNnWkx2RmUza2l6QWRDbUhKTmh1WnU1Q3NzOTBwMVV2NTZkUjFmV0k5ZjhpME1qeEZCajFwU241SlRneXIvbkYxUzBlMjlOTms3MUUyMnVnaExUUHNaZXVDak12Ym4zdXJ5RzJFTUFrZnRhb0ZVK3VydmpIaHJpdGFkZjBvRXA3WXlpS0ZaZ0hBK0FWekZlcVJvRkZ4UVdFbGZ6L3VsZmNzMDBQTGs5SDJ3bGEycEFXYXAwU0gxbVMxRUt3S2tHTEcvRTNMU2FKTVpEUGUrVk83d0Rjbm1rYkF6aHZNSjQyTVU5OW1XYSs5R05kUkxVVXFCc25EcUVSbld1cGlsTDFaOHpXN1JOMytKYXVkY2dIeXEvMjNaTW5kM2VwbUtveU51Rk9PODBhRFZvRitRN3ZQQVVTb2RTRlAxcWFORE1EeG9SRHExZmlVQWxoZEdUWWsxbEZsWnZwNzZ1a0N6Y2VOQkFSYW9sV1RTd0E4b0c4ZDJaL2FZdWUxQ28yK0tCS0hyN3lQYVZCeGM5b0RPVlNPRG44cklKenVPdEZUOHdvd1AwQ09Xc3dXNUY5M2hoaEFFSXNtRURVV0lGVXFONzR3VXhXSW1NRGN1MU9ERytlZ1R5d0NoSUgyZXpEaExrZWRpc2lLSVRCL3FCTVJBZTMzUHpDT3JmWTNBOS9rLmxsUHRjTXdNXzNTQ0pqR1VnNUk2VkZzTUkzSTVRZzVUeF96TnJSTFhsV1dkalV6c25ZM0tYa0VCTnEwOEpEd2VsQ1pfRFgxVFF6WlhIVDNrNXRsVF9R"/><input type="hidden" name="_eventId" value="tokenSubmit"/><input type="hidden" name="geolocation"/><button type="submit" size="large" class="btn-red login-btn">登 录</button>
+      </form>
+      <a-modal
+        title="请绑定mfa"
+        :visible="visible"
+        width="450px"
+        ok-text="已绑定"
+        cancel-text="取消"
+        @cancel="handleCancel"
+        @ok="handleOk"
+      >
+        <div>
+          <img :src="mfaSrc"/></div>
+      </a-modal>
+      <a-modal
+        title="当前微信还未邦定教师系统账号请先绑定教师系统账号"
+        :visible="wechatBindVisible"
+        width="450px"
+        ok-text="确定"
+        cancel-text="取消"
+        @cancel="handleBindCancel"
+        @ok="handleBind"
+      >
+        <div>
+          <a-input
+            name="username"
+            size="large" v-model="modalData.username" placeholder="请输入教师系统账号(师训号或其他用户名)"
+            autocomplete="off"
+          >
+            <template #prefix>
+              <a-icon type="user"/></template>
+          </a-input>
+          <a-input-password
+            name="password"
+            size="large" v-model="modalData.password" placeholder="请输入教师系统密码"
+            autocomplete="off"
+            style="margin-top: 20px;"
+          >
+          </a-input-password>
+        </div>
+      </a-modal>
+    </div>
+  </div>
+</div>
+<script>
+    //<![CDATA[
+    let app = new Vue({
+        el: '#app',
+        data() {
+            return {
+                visible: false,
+                wechatBindVisible: false,
+                formState: {
+                    username: '',
+                    password: '',
+                    code: ''
+                },
+                modalData: {
+                    token: '',
+                    username: '',
+                    password: ''
+                },
+                mfaSrc: '',
+                tabIndex: '1'
+            }
+        },
+        methods: {
+            async checkUsername() {
+                const {username} = this.formState
+                const res = await axios.post("\/cas\/mfa\/check\/"
+                    + username, {})
+                console.log(res)
+                if (res.data.code === '1002') {
+                    this.visible = true
+                    const mfaSrcData = await axios.post("\/cas\/mfa\/qrcode\/"
+                        + username, {})
+
+                    this.mfaSrc = mfaSrcData.data
+                }
+            },
+            handleCancel() {
+                this.visible = false
+            },
+            async handleOk() {
+                const res = await axios.post("\/cas\/mfa\/bind\/"
+                    + this.formState.username, {})
+                const {code, msg} = res.data
+                this.visible = false
+            },
+            async handleBind() {
+                const res = await axios.post("\/cas\/wechat\/bind", this.modalData)
+                const data = res.data
+                if (data.success) {
+                    if (this.service) {
+                        window.location.href ="\/cas\/login"
+                            + `?token=${this.modalData.token}&service=${encodeURIComponent(this.service)}`
+                    } else {
+                        window.location.href ="\/cas\/login"
+                            + `?token=${this.modalData.token}`
+                    }
+                } else {
+                    antd.message.error(data.message)
+                }
+            },
+            handleBindCancel() {
+                this.wechatBindVisible = false
+            },
+            doLogin() {
+
+            },
+            async handleSubmit() {
+                const res = await axios.post("\/cas\/mfa\/login"
+                    , this.formState)
+                // alert(JSON.stringify(res.data))
+                const {code, msg, token} = res.data
+                if (code === '0') {
+                    this.tokenSubmit(token)
+                } else if (code === '1002') {
+                    this.visible = true
+                    const mfaSrcData = await axios.post("\/cas\/mfa\/qrcode\/"
+                        + this.formState.username, {})
+                    this.mfaSrc = mfaSrcData.data
+                } else {
+                    antd.message.error(msg)
+                }
+            },
+            tokenSubmit(token) {
+                if (token) {
+                    $('#token').val(token)
+                    $("#tokenForm").submit();
+                }
+            },
+            wechatInit() {
+                const service = getQueryString("service");
+                const params = service ? {service: encodeURIComponent(service)} : {}
+                axios.post("\/cas\/wechat\/wechat-params", params).then(res => {
+                    const {appid, state, redirect_uri} = res.data
+                    const obj = new WxLogin({
+                        appid,
+                        state,
+                        redirect_uri,
+                        self_redirect: false,
+                        id: "login_container",
+                        scope: "snsapi_login",
+                        style: ""
+                    });
+                })
+            },
+            async wechatCallback() {
+                const code = getQueryString("code");
+                const state = getQueryString("state");
+                const wechat_token = getQueryString("wechat_token");
+
+                if (code && state) {
+                    const {data} = await axios.post("\/cas\/wechat\/auth", {code, state})
+                    const {auth, service, token} = data || {}
+                    if (!token) {
+                        window.location.href ="\/cas\/login"
+                        return
+                    }
+                    if (auth) {
+                        this.tokenSubmit(token)
+                        // window.location.href =/*"\/cas\/login"*/"/cas/login" + `?token=${token}&service=${service}`
+                        return
+                    }
+                    const params = {
+                        type: 'wechat',
+                        wechat_token: token,
+                        service
+                    }
+                    window.location.href = "\/cas\/login"
+                        + '?' + $.param(params)
+                    return
+                }
+                if (wechat_token) {
+                    const {data} = await axios.post("\/cas\/wechat\/check", {token: wechat_token})
+                    const {auth} = data || {}
+                    if (auth) {
+                        this.tokenSubmit(wechat_token)
+                    } else {
+                        this.modalData.token = wechat_token
+                        this.wechatBindVisible = true
+                    }
+                }
+            },
+            findPsw() {
+                window.location.href = "/sns/do.jsp?ac=findpswd";
+            },
+            openPage(url) {
+                window.open(url)
+            },
+            test() {
+                axios.post('http://jzzs.zkdj.com/data/verification/login/login?account=zkdj&password=ZKDJyszh2023',
+                    {},
+                    {headers: {'Content-Type': 'application/json'}})
+            }
+        },
+        mounted() {
+            const token = getQueryString("token");
+            if (token) {
+                this.tokenSubmit(token)
+                return
+            }
+            const type = getQueryString("type");
+            if (type === 'wechat') {
+                this.wechatCallback()
+                return;
+            }
+            this.wechatInit()
+            this.test()
+        }
+    })
+    //]]>
+</script>
+</body>
+</html>

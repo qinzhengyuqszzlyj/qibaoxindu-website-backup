@@ -1,0 +1,136 @@
+body {
+  min-width: auto !important;
+  width: 100% !important;
+  height: 100vh;
+  background: url("/static/img/login/bg-pc.png") no-repeat;
+  background-size: 100% 100%;
+  font-family: PingFang-SC-Regular;
+}
+
+.g-bd {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title {
+  font-size: 6rem;
+  color: #2f67aa;
+  margin-bottom: 8rem;
+  text-align: center;
+  padding: 0 6rem;
+  font-weight: bold;
+}
+
+.login-wrap {
+  max-width: 100rem;
+  width: 100vw;
+}
+
+.form-name {
+  text-align: center;
+  font-size: 3rem;
+  color: #2f67aa;
+}
+.form-name b {
+  display: inline-block;
+  position: relative;
+  height: 5.6rem;
+  margin-bottom: 3rem;
+}
+.form-name b::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 6rem;
+  background: #a0bad4;
+  height: 0.6rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 0.5rem;
+}
+
+.form {
+  padding: 0 4rem;
+  margin: auto;
+}
+
+.code img {
+  width: 10rem;
+}
+
+.login-box {
+  padding: 5rem;
+  width: 60.2rem;
+  height: 49.1rem;
+  margin: auto;
+  background: url("/static/img/login/loginboxbg.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+.input-group-addon img {
+  width: 1.6rem;
+}
+
+.input-group-addon {
+  padding: 0;
+  text-align: center;
+  background: none;
+}
+
+.input-group * {
+  border: 0;
+}
+
+.form-control {
+  font-size: 1.8rem;
+}
+
+.input-group {
+  border-bottom: 2px solid #bbbbbb;
+}
+
+input {
+  outline: none;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.btn {
+  margin-top: 1.4rem;
+  background: #2f6cba;
+  color: #fff;
+  width: 100%;
+  line-height: 4.8rem;
+  font-size: 2.4rem;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 1.33vw;
+  }
+  body {
+    background: url("/static/img/login/bg-sj.png") no-repeat;
+    background-size: 100% 100%;
+  }
+  .title {
+    font-size: 6rem;
+    padding: 0 6rem;
+  }
+  .login-box {
+    height: 93.56vw;
+    height: auto;
+    width: 100vw;
+    padding-top: 8rem;
+    padding-bottom: 10rem;
+  }
+}

@@ -1,0 +1,181 @@
+*{ margin: 0; padding: 0; }
+body { font-family: "Microsoft Yahei"; font-size: 12px; color: #888; }
+a, a:hover { color: #888; text-decoration: none; }
+ul, li { list-style: none; }
+
+.item.cur{
+    background-color: #f0f0f0;
+}
+#arrange_week{position: absolute; width:600px;}
+.ft-table1,.ft-table2{line-height: 160%; font-size: 14px; width: 100%;}
+.ft-table1{border-left: 1px solid #DCDCDC; border-top: 1px solid #DCDCDC;}
+.ft-table1 th{padding: 2px 3px;}
+.ft-table1 th,.ft-table1 td{border-right: 1px solid #DCDCDC; border-bottom: 1px solid #DCDCDC;  text-align: center;}
+.ft-table2{border-left: 0; border-top: 1px solid #DCDCDC; margin-top: -1px; margin-bottom: -1px; }
+.ft-table2 th,.ft-table2 td{border-right: 1px solid #DCDCDC; border-bottom: 1px solid #DCDCDC; text-align: center; padding: 2px 3px;}
+.ft-table2 td:nth-child(1){width: auto; text-align: left;}
+.ft-table2 td:nth-child(2){width: 100px;}
+.ft-table2 td:nth-child(3){width: 100px;}
+.ft-table2 td:nth-child(4){width: 100px; border-right: 0;}
+
+.arrange_info_talbe{border-left:1px solid #DCDCDC;; border-top: 1px solid #DCDCDC;line-height: 160%; font-size: 14px; width: 100%;}
+.arrange_info_talbe th,.arrange_info_talbe td{border-right: 1px solid #DCDCDC; border-bottom: 1px solid #DCDCDC; text-align: center; padding: 2px 3px;}
+.arrange_info_talbe td:nth-child(1){width: auto; text-align: left;}
+
+.calendar {
+  display: none;
+  width: 433px;
+  #padding: 10px;
+  #margin: 30px auto 0;
+  #background-color: #fafafa;
+  border-radius: 6px;
+}
+.calendar-title {
+  position: relative;
+  height: 30px;
+  line-height: 24px;
+  margin: auto auto;
+  #padding: 10px 0;
+}
+.calendar-title a.title {
+  display: inline-block;
+  font-size: 14px;
+  text-indent: 10px;
+  color: #fff;
+}
+
+.calendar-date{border-left: 3px solid #C8D7E4;}
+
+#backToday {
+  position: absolute;
+  left: 70%;
+  top: 8px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+  background-color: rgb(255, 128, 142);
+  font-size: 18px;
+}
+.calendar-title .arrow {
+      /* position: absolute; */
+      top: 4px;
+      /* right: 0; */
+      width: 130px;
+      /* margin-left: 12px; */
+      /* background: #f8f8f8; */
+	  margin: 15px auto 15px auto;;
+}
+
+.mm-calendar{
+    background: #006bbe;
+    text-align: center;
+    color: #fff;
+    font-family: PingFang-SC-Regular;
+	width:187px; height: 294px; 
+	background: url(https://qbxd.mhedu.sh.cn/static/img/rili.png) center bottom no-repeat #006bbe;
+}
+
+.mm-calendar .r {
+    text-align: center;
+    color: #fff;
+}
+
+.mm-calendar .r :nth-child(1) {
+    font-size: 62px;
+}
+
+
+.calendar-title .arrow span {
+  color: #ddd;
+  font-size: 18px;
+  cursor: pointer;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+.calendar-title .arrow span:hover {
+  color: #888;
+}
+.calendar-title .arrow-prev {
+  float: left;
+}
+.calendar-title .arrow-next {
+  float: right;
+}
+.calendar-week,
+.calendar-date {
+  overflow: hidden;
+}
+.calendar-week .item,
+.calendar-date .item {
+  float: left;
+  width: 47px;
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+}
+.calendar-week {
+  #padding-bottom: 6px;
+  #border-bottom: 1px solid rgb(255, 128, 142);
+  font-weight: bold;
+  font-size: 14px;
+  border-left: 3px solid #C8D7E4;
+  margin-bottom: 0;;
+
+}
+.calendar-week .item{background-color: #fff;}
+
+.calendar-date {}
+.calendar-date .item {
+  /* border-radius: 50%; */
+  cursor: pointer;
+  font-size: 12px;
+}
+.calendar-date .item:hover,
+.calendar-date .item-curMonth:hover {
+  background-color: #C8D7E4;
+}
+.calendar-date .item-curMonth {
+  color: #333;
+}
+.calendar-date .week_detail_li {
+  color: #333;
+  background-color: #E7F4FF;
+}
+.calendar-date .item-curDay,
+.calendar-date .item-curDay:hover {
+  color: #fff;
+  background-color: rgb(255, 128, 142);
+}
+.calendar-today {
+  display: none;
+  opacity: 0;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 90px;
+  height: 48px;
+  padding: 6px 10px;
+  background-color: rgb(255, 128, 142);
+  border-radius: 5px;
+}
+.calendar-today .triangle {
+  position: absolute;
+  top: 50%;
+  left: -16px;
+  margin-top: -8px;
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent rgb(255, 128, 142) transparent transparent;
+}
+.calendar-today p {
+  color: #fff;
+  font-size: 14px;
+  line-height: 24px;
+}
