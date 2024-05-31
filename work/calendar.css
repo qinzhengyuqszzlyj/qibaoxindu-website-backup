@@ -75,7 +75,7 @@ ul, li { list-style: none; }
     color: #fff;
     font-family: PingFang-SC-Regular;
 	width:187px; height: 294px; 
-	background: url(https://qbxd.mhedu.sh.cn/static/img/rili.png) center bottom no-repeat #006bbe;
+	background: url(static/img/rili.png) center bottom no-repeat #006bbe;
 }
 
 .mm-calendar .r {
