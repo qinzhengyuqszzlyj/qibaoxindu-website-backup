@@ -1,42 +1,40 @@
-from selenium import webdriver  
-from selenium.webdriver.common.by import By  
-from selenium.webdriver.support.ui import WebDriverWait  
-from selenium.webdriver.support import expected_conditions as EC  
+import os  
   
-# 启动Chrome浏览器  
-driver = webdriver.Chrome()  # 确保ChromeDriver的路径已配置  
+def generate_html_index(folder_path='./', output_file='index.html'):  
+    # 初始化HTML内容  
+    html_content = '''  
+    <!DOCTYPE html>  
+    <html lang="en">  
+    <head>  
+        <meta charset="UTF-8">  
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+        <title>索引</title>  
+    </head>  
+    <body>  
+        <h1>文件索引</h1>  
+        <ul>  
+    '''  
   
-# 打开网页  
-driver.get('https://app.rainyun.com/auth/login')  
+    # 遍历文件夹中的文件和子文件夹  
+    for root, dirs, files in os.walk(folder_path):  
+        for file in files:  
+            # 构建文件的相对路径（从当前文件夹开始）  
+            relative_path = os.path.relpath(os.path.join(root, file), folder_path)  
+            # 添加文件到HTML列表  
+            html_content += f'            <li><a href="{relative_path}">{relative_path}</a></li>\n'  
   
-# 等待元素加载  
-wait = WebDriverWait(driver, 10)  
+    # 结束HTML列表和body、html标签  
+    html_content += '''  
+        </ul>  
+    </body>  
+    </html>  
+    '''  
   
-# 用户名输入框  
-username_input = wait.until(EC.element_to_be_clickable((By.ID, 'field')))  
-username_input.send_keys('qinzhengyu')  
+    # 将HTML内容写入文件  
+    with open(output_file, 'w', encoding='utf-8') as f:  
+        f.write(html_content)  
   
-# 密码输入框  
-password_input = wait.until(EC.element_to_be_clickable((By.ID, '__BVID__51')))  
-password_input.send_keys('Zxx771200')  
+    print(f'HTML索引已生成并保存到：{output_file}')  
   
-# 登录按钮  
-login_button = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, 'button[type="submit"]')))  
-login_button.click()  
-  
-# 等待登录完成（这里可能需要额外的逻辑来检测登录是否成功，例如检查某个元素是否存在）  
-# ...  
-  
-# 前往积分商城页面  
-driver.get('https://app.rainyun.com/account/reward/store')  # 假设登录后可以直接访问  
-  
-# 等待并点击赚取积分按钮  
-earn_button = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, 'a[href="/account/reward/earn"]')))  
-earn_button.click()  
-  
-# 等待并点击领取奖励按钮（这里假设页面加载完成后，按钮即可点击）  
-reward_button = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, 'a[href="/account/reward/earn#"]')))  
-reward_button.click()  
-  
-# 关闭浏览器（如果需要的话）  
-driver.quit()
+# 调用函数生成HTML索引  
+generate_html_index()
