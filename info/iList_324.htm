@@ -4,95 +4,117 @@
 
 <!DOCTYPE html>
 <html lang="zh-cn">
+  <head>
+        <title>综合类</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="renderer" content="webkit" />
 
-<head>
-  <title>校园新闻</title>
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <meta name="renderer" content="webkit" />
-
-  <!-- ---- 2022>>--【common】 -- 标签开始 ---- -->
-   <link rel="icon" href="/images/logox.png" type="image/x-icon"/>   
+   <!-- ---- 2022>>--【common】 -- 标签开始 ---- -->
+ <link rel="icon" href="../images/logox.png" type="image/x-icon"/>   
 <!-- bootstrap -->
-  <link rel="stylesheet" href="/static/common/bootstrap-3.4.1-dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../static/common/bootstrap-3.4.1-dist/css/bootstrap.min.css" />
   <!-- avg-grid -->
-  <link rel="stylesheet" href="/static/common/css/avg-grid.css" />
+  <link rel="stylesheet" href="../static/common/css/avg-grid.css" />
   <!-- swiper -->
-  <link rel="stylesheet" href="/static/common/swiper/swiper.min.css" />
+  <link rel="stylesheet" href="../static/common/swiper/swiper.min.css" />
   <!-- hover -->
-  <link rel="stylesheet" href="/static/common/css/hover.css" />
+  <link rel="stylesheet" href="../static/common/css/hover.css" />
   <!-- iconfont -->
-  <link rel="stylesheet" href="/static/common/font_1107057_clnilxandsi/iconfont.css" />
+  <link rel="stylesheet" href="../static/common/font_1107057_clnilxandsi/iconfont.css" />
 
-  <link rel="stylesheet" href="/static/css/index.css" />
+  <link rel="stylesheet" href="../static/css/index.css" />
 
-  <script src="/wcm.files/js/jqueryN.js"></script>
-  <script src="/static/common/bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
-  <script src="/static/common/swiper/swiper.min.js"></script>
-  <script src="/static/common/js/jquery.SuperSlide.2.1.3.js"></script>
+  <script src="../wcm.files/js/jqueryN.js"></script>
+  <script src="../static/common/bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+  <script src="../static/common/swiper/swiper.min.js"></script>
+  <script src="../static/common/js/jquery.SuperSlide.2.1.3.js"></script>
 
-  <script src="/static/js/index.js"></script>
+  <script src="https://qbxd.mhedu.sh.cn/static/js/index.js"></script>
 
-  <!-- ---- 2022>>--【common】 -- 标签结束 ---- -->
-</head>
+<!-- ---- 2022>>--【common】 -- 标签结束 ---- -->
+<script src="../wcm.files/js/jsonrpc.js"></script>
+<script src="../wcm.files/js/member/memberChecked.js"></script>
 
-<body id="lby">
-  <div id="header">
-    <!-- ---- 2023>>--【head】 -- 标签开始 ---- -->
-    
+  </head>
+
+  <body id="lby">
+    <style>
+  .login {
+    background: #818181;
+    color: #fff;
+    text-align: right;
+    line-height: 30px;
+    font-size: 14px;
+  }
+
+  .login a {
+    color: #fff;
+  }
+</style>
+<div class="login">
+  <div class="container">
+    <span class="pull-left">欢迎<span id="me_nickname"></span></span>
+    <span  id="me_login_btn"></span>
+     <span  id="me_logout_btn"></span>
+  </div>
+</div>
+    <div id="header">
+  <!-- ---- 2022>>--【head】 -- 标签开始 ---- -->
+
 <div class="g-top headerPc">
   <div class="container"> 
-    <a class="m-logo" href="/">
-      <img src="/static/img/logo.png" alt="" />
+    <a class="m-logo" href="../qbxd_mhedu_sh_default.html">
+      <img src="../static/img/logo.png" alt="" />
     </a>
    <ul id="nav" class="m-nav clearfix">
       <li class="nLi">
-        <h3><a href="/">首页</a></h3>
+        <h3><a href="../qbxd_mhedu_sh_default.html">首页</a></h3>
       </li>
                         <li class="nLi">
-                <h3><a href="/info/iIndex.jsp?cat_id=18043">走进鑫中</a></h3>
+                <h3><a href="iIndex.htm">走进鑫中</a></h3>
                 <ul class="sub" style="display: none;">
-                    <li><a href="/info/iList.jsp?cat_id=18043">学校简介</a></li>
-                   <li><a href="/info/iList.jsp?cat_id=18158">师资队伍</a></li>
-                  <li><a href="/info/iList.jsp?cat_id=18347">荣誉园地</a></li>
-                    <li><a href="/info/iList.jsp?cat_id=18045">鑫中人物</a></li>
-                    <li><a href="/info/iList.jsp?cat_id=18101">校园风光</a></li>
+                    <li><a href="iList_3.htm">学校简介</a></li>
+                   <li><a href="iList_2.htm">师资队伍</a></li>
+                  <li><a href="iList.htm">荣誉园地</a></li>
+                    <li><a href="iList_4.htm">鑫中人物</a></li>
+                    <li><a href="iList_5.htm">校园风光</a></li>
                             </ul>
       </li>
       
                   <li class="nLi">
-                <h3><a href="/info/iIndex.jsp?cat_id=18048">党建工会</a></h3>
+                <h3><a href="iIndex_2.htm">党建工会</a></h3>
                 <ul class="sub" style="display: none;">
-                                                  <li><a href="/info/iList.jsp?cat_id=18048">组织概况</a></li>
-                                                  <li><a href="/info/iList.jsp?cat_id=18049">党建动态</a></li>
-                                                  <li><a href="/info/iList.jsp?cat_id=18050">公示公开</a></li>
-                                                  <li><a href="/info/iList.jsp?cat_id=18051">工会之家</a></li>
+                                                  <li><a href="iList_6.htm">组织概况</a></li>
+                                                  <li><a href="iList_7.htm">党建动态</a></li>
+                                                  <li><a href="iList_8.htm">公示公开</a></li>
+                                                  <li><a href="iList_9.htm">工会之家</a></li>
                             </ul>
       </li>
       
                   <li class="nLi">
-                <h3><a href="/info/iIndex.jsp?cat_id=18052">学生发展</a></h3>
+                <h3><a href="iIndex_3.htm">学生发展</a></h3>
                 <ul class="sub" style="display: none;">
                  
-                    <li><a href="/info/iIndex.jsp?cat_id=18054">学生活动</a></li>
-                    <li><a href="/info/iList.jsp?cat_id=18055">团、队动态</a></li>
-                   <li><a href="/info/iList.jsp?cat_id=18056">心理健康</a></li>
-                   <li><a href="/info/iIndex.jsp?cat_id=18057">家校共建</a></li>
-                   <li><a href="/info/iIndex.jsp?cat_id=18349">学生荣誉</a></li>
+                    <li><a href="iIndex_4.htm">学生活动</a></li>
+                    <li><a href="iList_10.htm">团、队动态</a></li>
+                   <li><a href="iList_11.htm">心理健康</a></li>
+                   <li><a href="iIndex_8.htm">家校共建</a></li>
+                   <li><a href="iIndex_5.htm">学生荣誉</a></li>
                             </ul>
       </li>
       
                   <li class="nLi">
-                <h3><a href="/info/iIndex.jsp?cat_id=18058">教育发展</a></h3>
+                <h3><a href="iIndex_6.htm">教育发展</a></h3>
                 <ul class="sub" style="display: none;">
-                 <li><a href="/info/iIndex.jsp?cat_id=18060">课程教学</a></li>
-                 <li><a href="/info/iIndex.jsp?cat_id=18161">教师培训</a></li>
-                 <li><a href="/info/iList.jsp?cat_id=18061">教育科研</a></li>
-                 <li><a href="/info/iList.jsp?cat_id=18348">教师荣誉</a></li>
-                 <li><a href="/info/iList.jsp?cat_id=18063">后勤服务</a></li>
+                 <li><a href="iIndex_7.htm">课程教学</a></li>
+                 <li><a href="iIndex_9.htm">教师培训</a></li>
+                 <li><a href="iList_12.htm">教育科研</a></li>
+                 <li><a href="iList_13.htm">教师荣誉</a></li>
+                 <li><a href="iList_14.htm">后勤服务</a></li>
                             </ul>
       </li>
       
@@ -101,8 +123,8 @@
 </div>
 <div class="g-top headerSj">
   <div class="container">
-    <a class="m-logo" href="/2023">
-      <img src="/static/img/logo.png" alt="" />
+    <a class="m-logo" href="https://qbxd.mhedu.sh.cn/2023">
+      <img src="../static/img/logo.png" alt="" />
     </a>
     <div class="menu-btn">
       <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
@@ -110,25 +132,25 @@
     <div class="g-nav bg-main">
       <ul id="nav" class="nav clearfix">
         <li class="nLi">
-          <h3><a href="/">首页</a></h3>
+          <h3><a href="../qbxd_mhedu_sh_default.html">首页</a></h3>
         </li>
                            <li class="nLi">
-                <h3><a href="/info/iList.jsp?cat_id=18043">走进鑫中</a></h3>
+                <h3><a href="iList_3.htm">走进鑫中</a></h3>
                
       </li>
       
                   <li class="nLi">
-                <h3><a href="/info/iList.jsp?cat_id=18048">党建工会</a></h3>
+                <h3><a href="iList_6.htm">党建工会</a></h3>
                
       </li>
       
                   <li class="nLi">
-                <h3><a href="/info/iList.jsp?cat_id=18054">学生发展</a></h3>
+                <h3><a href="iList_16.htm">学生发展</a></h3>
                
       </li>
       
                   <li class="nLi">
-                <h3><a href="/info/iList.jsp?cat_id=18060">教育发展</a></h3>
+                <h3><a href="iList_15.htm">教育发展</a></h3>
                
       </li>
       
@@ -255,267 +277,149 @@
   }
 </style>
 
-    <!-- ---- 2023>>--【head】 -- 标签结束 ---- -->
-  </div>
-  <div id="body">
-    <div class="lb-banner">
-      <img src="/static/img/lb-banner.png" alt="" />
+<!-- ---- 2022>>--【head】 -- 标签结束 ---- -->
+  
     </div>
-    <div class="lb-top">
-      <div class="container">
-        <div class="name"><span>校园新闻</span></div>
+    <div id="body">
+      <div class="lb-banner">
+        <div class="m-search" style="margin-top: 40px; right: 70px;"><form id="searchform" name="searchform" action="../search/searchResultGJ.htm" method="get" style="position: relative;"><button type="submit" class="search_btn"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button> <input id="q" name="q" placeholder="搜索" type="text" class="search_text inp"> <input type="hidden" value="862" name="t_id"> <input type="hidden" value="" name="site_id" style="width: 0px;"> <input type="hidden" value="18036" name="categoryId"></form></div>
+        <img src="../static/img/lb-banner.png" alt="" />
       </div>
-    </div>
+      <div class="lb-top">
+        <div class="container">
+          <div class="name"><span>
+综合类 
 
-    <div class="g-bd clearfix">
-      <div class="container">
-        <div class="row">
-          <div class="g-mn col-sm-12">
-            <style>
-              .pp {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-              }
+</span></div>
+        </div>
+      </div>
 
-              .pp span {
-                display: inline-block;
-                padding: 5px 10px;
-                margin: 5px;
-                margin-left: -5px;
-              }
+      <div class="g-bd clearfix">
+        <div class="container">
+          <div class="row">
+            <div class="g-sd col-sm-3">
+              <div id="column-nav" class="column-nav">
+                
+                 <div style="font-size: 2.5rem;color: white;padding-top: 34px;margin-bottom:0px !important;">
+                
+<span><a href="iList_316.htm" style="color:white">校内通知</a></span> 
 
-              .pp a {
-                display: inline-block;
-                padding: 5px 10px;
-                background: #ddd;
-                margin: 5px;
-                border-radius: 4px;
-              }
-
-              .pp:after {
-                content: '';
-                flex: auto;
-              }
-
-              .pp a.ac {
-                background: #e16124;
-                color: #fff;
-              }
-
-              .pp a:hover {
-                background: #e16124;
-                color: #fff;
-              }
-            </style>
-            <!--             <div class="pp">
-              <span>为您匹配以下几项:</span>
-              <a class="ac" href="/info/iList.jsp?tm_id=869&spf2=$spf2">全部</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=17516">课程设置</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=17515">教师风采</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=17514">鑫中人物</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=17513">学校简介</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=17931">荣誉墙</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=17929">课程教研</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=17928">学生活动</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=17927">综合动态</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=17930">德育天地</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=17522">研训通知</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=17521">工作安排</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=17520">最新通知</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=17932">师资建设</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=17934">后勤安全</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=17526">法治建校</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=17933">体卫艺科</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=17525">教育收费</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=17561">工会之家</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=17558">支部概况</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=17559">党建动态</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=17575">教师招聘</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=18064">校园新闻</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=18041">办学特色</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=18038">Banner</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=18177">校园新闻检索关键词</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=18101">校园风光</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=18045">鑫中人物</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=18158">师资队伍</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=18043">学校简介</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=18162">2019年</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=18163">2020年</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=18164">2021年</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=18165">2022年</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=18166">2023年</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=18347">2024年</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=18050">公示公开</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=18049">党建动态</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=18048">组织概况</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=18180">宣教文体</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=18055">团、队动态</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=18056">心理健康</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=18072">高中</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=18071">初中</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=18073">初高中</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=18076">初高中</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=18063">后勤服务</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=18061">教育科研</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=18161">教师培训</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=18078">高中</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=18079">初高中</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=18077">初中</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=18172">2019年</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=18173">2020年</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=18174">2021年</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=18175">2022年</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=18176">2023年</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=18348">2024年</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=18070">综合类</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=18069">公示类</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=18067">研训类</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=18068">人事类</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=18091">课后服务</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=18089">课程设置</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=18090">办学特色</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=18085">学校简介</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=18093">核心资源</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=18094">招生信息</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=18092">师资团队</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=18170">2022年</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=18171">2023年</a>
-                            <a href="/info/iList.jsp?tm_id=869&spf2=$spf2&cat_id=18349">2024年</a>
-                          </div> -->
-            <div class="pp">
-              <span>为您匹配以下几项:</span>
-              <!-- <a class="ac" href="/info/iList.jsp?tm_id=869&spf2=$spf2">全部</a> -->
-                           <a  href="https://qbxd.mhedu.sh.cn/search/searchResultGJ.jsp?q=开学典礼&t_id=862&site_id=&categoryId=18036" target="_blank">开学典礼</a>
-                            <a  href="https://qbxd.mhedu.sh.cn/search/searchResultGJ.jsp?q=社会实践&t_id=862&site_id=&categoryId=18036" target="_blank">社会实践</a>
-                            <a  href="https://qbxd.mhedu.sh.cn/search/searchResultGJ.jsp?q=爱国主义教育&t_id=862&site_id=&categoryId=18036" target="_blank">爱国主义教育</a>
-                            <a  href="https://qbxd.mhedu.sh.cn/search/searchResultGJ.jsp?q=劳动教育&t_id=862&site_id=&categoryId=18036" target="_blank">劳动教育</a>
-                            <a  href="https://qbxd.mhedu.sh.cn/search/searchResultGJ.jsp?q=艺术节&t_id=862&site_id=&categoryId=18036" target="_blank">艺术节</a>
-                            <a  href="https://qbxd.mhedu.sh.cn/search/searchResultGJ.jsp?q=体育文化节&t_id=862&site_id=&categoryId=18036" target="_blank">体育文化节</a>
-                            <a  href="https://qbxd.mhedu.sh.cn/search/searchResultGJ.jsp?q=感恩节&t_id=862&site_id=&categoryId=18036" target="_blank">感恩节</a>
-                            <a  href="https://qbxd.mhedu.sh.cn/search/searchResultGJ.jsp?q=英语文化节&t_id=862&site_id=&categoryId=18036" target="_blank">英语文化节</a>
-                            <a  href="https://qbxd.mhedu.sh.cn/search/searchResultGJ.jsp?q=科技文化节&t_id=862&site_id=&categoryId=18036" target="_blank">科技文化节</a>
-                          </div>
-            <div class="list-1">
-
-              <!-- ------------------信息热点列表　开始---------------- -->
-              <ul>
-                                <li>
-                  <span class="time"> 2024-02-08</span>
-                  <a href="https://mp.weixin.qq.com/s/zJBUYt6n-_tlhq6I0NrVKA" target="_blank" title="“龙”字诀打开七宝鑫都娃的多彩寒假" class="text-overflow"><!--<span class="sort">【校园新闻】</span>-->
-                    <span class="title">“龙”字诀打开七宝鑫都娃的多彩寒假
-                    </span></a>
-                </li>
-                                <li>
-                  <span class="time"> 2024-02-06</span>
-                  <a href="https://mp.weixin.qq.com/s/xVnnoXejCxaRR3CzvMvkjQ" target="_blank" title="品文化、进社区……七宝鑫都少先队员这样过寒假！" class="text-overflow"><!--<span class="sort">【校园新闻】</span>-->
-                    <span class="title">品文化、进社区……七宝鑫都少先队员这样过寒假！
-                    </span></a>
-                </li>
-                                <li>
-                  <span class="time"> 2024-02-03</span>
-                  <a href="https://mp.weixin.qq.com/s/zgUADA4-513jxvy7CrwxdA" target="_blank" title="龙腾虎跃迎新春，七宝鑫都高中部学子寒假生活掠影" class="text-overflow"><!--<span class="sort">【校园新闻】</span>-->
-                    <span class="title">龙腾虎跃迎新春，七宝鑫都高中部学子寒假生活掠影
-                    </span></a>
-                </li>
-                                <li>
-                  <span class="time"> 2024-01-22</span>
-                  <a href="https://mp.weixin.qq.com/s/CqQpW63_mknDHc3241VDZg" target="_blank" title="你好，寒假！七宝鑫都学子迎来2023学年第一学期休业式" class="text-overflow"><!--<span class="sort">【校园新闻】</span>-->
-                    <span class="title">你好，寒假！七宝鑫都学子迎来2023学年第一学期休业式
-                    </span></a>
-                </li>
-                                <li>
-                  <span class="time"> 2024-01-21</span>
-                  <a href="https://mp.weixin.qq.com/s/JVmKOxcmQOt4mh1UBy5sxg" target="_blank" title="光影穿梭，初心如磐！七宝鑫都开展师生红色观影活动" class="text-overflow"><!--<span class="sort">【校园新闻】</span>-->
-                    <span class="title">光影穿梭，初心如磐！七宝鑫都开展师生红色观影活动
-                    </span></a>
-                </li>
-                                <li>
-                  <span class="time"> 2024-01-20</span>
-                  <a href="https://mp.weixin.qq.com/s/VZFb62uFnewjGk2eSkehFg" target="_blank" title="问题驱动，对话反思——七宝鑫都见习规培基地开展集中培训" class="text-overflow"><!--<span class="sort">【校园新闻】</span>-->
-                    <span class="title">问题驱动，对话反思——七宝鑫都见习规培基地开展集中培训
-                    </span></a>
-                </li>
-                                <li>
-                  <span class="time"> 2024-01-18</span>
-                  <a href="https://mp.weixin.qq.com/s/pjkF4qq2GowBtVfBr2rCGQ" target="_blank" title="寒假“鑫”贴士，蓄能心力量" class="text-overflow"><!--<span class="sort">【校园新闻】</span>-->
-                    <span class="title">寒假“鑫”贴士，蓄能心力量
-                    </span></a>
-                </li>
-                                <li>
-                  <span class="time"> 2024-01-16</span>
-                  <a href="https://mp.weixin.qq.com/s/TbAW7WmwGpESPM2fLLnVKA" target="_blank" title="续写辉煌！祝贺七宝鑫都喜获见习教师市赛“四连冠”" class="text-overflow"><!--<span class="sort">【校园新闻】</span>-->
-                    <span class="title">续写辉煌！祝贺七宝鑫都喜获见习教师市赛“四连冠”
-                    </span></a>
-                </li>
-                                <li>
-                  <span class="time"> 2024-01-11</span>
-                  <a href="https://mp.weixin.qq.com/s/gXgEn6wx-YfVz9qhxvgEnQ" target="_blank" title="榜样在身边 时代好少年——七宝鑫都2022-2023年度新时代好少年事迹介绍" class="text-overflow"><!--<span class="sort">【校园新闻】</span>-->
-                    <span class="title">榜样在身边 时代好少年——七宝鑫都2022-2023年度新时代好少年事迹介绍
-                    </span></a>
-                </li>
-                                <li>
-                  <span class="time"> 2024-01-10</span>
-                  <a href="https://mp.weixin.qq.com/s/aG5JVU2vPF4ySWmPEE0wjw" target="_blank" title="发掘中华文化之美，七宝鑫都校园艺术节精彩看不够" class="text-overflow"><!--<span class="sort">【校园新闻】</span>-->
-                    <span class="title">发掘中华文化之美，七宝鑫都校园艺术节精彩看不够
-                    </span></a>
-                </li>
-                                <li>
-                  <span class="time"> 2024-01-05</span>
-                  <a href="https://mp.weixin.qq.com/s/SoE87HXZdJz07Yz9g-vowA" target="_blank" title="绽放活力之美，七宝鑫都校园艺术节活动回顾来了" class="text-overflow"><!--<span class="sort">【校园新闻】</span>-->
-                    <span class="title">绽放活力之美，七宝鑫都校园艺术节活动回顾来了
-                    </span></a>
-                </li>
-                                <li>
-                  <span class="time"> 2024-01-01</span>
-                  <a href="https://mp.weixin.qq.com/s/wQQga_00cHLl5HHdG97HxA" target="_blank" title="2024“鑫”年来敲门" class="text-overflow"><!--<span class="sort">【校园新闻】</span>-->
-                    <span class="title">2024“鑫”年来敲门
-                    </span></a>
-                </li>
-                                <li>
-                  <span class="time"> 2023-12-28</span>
-                  <a href="https://mp.weixin.qq.com/s/uzfZllibCZ4R2zd_17SWaA" target="_blank" title="以爱之名，以“场”聚力——七宝鑫都“鑫育场”学期活动回顾" class="text-overflow"><!--<span class="sort">【校园新闻】</span>-->
-                    <span class="title">以爱之名，以“场”聚力——七宝鑫都“鑫育场”学期活动回顾
-                    </span></a>
-                </li>
-                                <li>
-                  <span class="time"> 2023-12-27</span>
-                  <a href="https://mp.weixin.qq.com/s/PaTRWb2XBl7suRbkw5f-lw" target="_blank" title="七宝鑫都2024学年第二批教师招聘于今日正式启动" class="text-overflow"><!--<span class="sort">【校园新闻】</span>-->
-                    <span class="title">七宝鑫都2024学年第二批教师招聘于今日正式启动
-                    </span></a>
-                </li>
-                                <li>
-                  <span class="time"> 2023-12-26</span>
-                  <a href="https://mp.weixin.qq.com/s/5FchLNYzCa30MaT26krcrw" target="_blank" title="主题教育进行时 | 七宝鑫都党员教师进展馆、进社区，知行合一促提升" class="text-overflow"><!--<span class="sort">【校园新闻】</span>-->
-                    <span class="title">主题教育进行时 | 七宝鑫都党员教师进展馆、进社区，知行合一促提升
-                    </span></a>
-                </li>
-                              </ul>
-              <!-- ------------------信息热点列表　结束---------------- -->
-
+                </div>
+                <ul class="column-list" style="margin-top:1.6rem;">
+                                        <li>
+            <a  href="iList_283.htm">研训类</a>
+          </li>           <li>
+            <a  href="iList_317.htm">人事类</a>
+          </li>           <li>
+            <a  href="iList_281.htm">公示类</a>
+          </li>           <li>
+            <a class="ac"  href="iList_282.htm">综合类</a>
+          </li>                  </ul>
+              </div>
             </div>
-            <div class="fy">
-                            <span>共有282条</span>
-              <span>当前第5/19页</span>
-              <br class="hidden-lg hidden-md">
+            <div class="g-mn col-sm-9">
+              <div class="list-1">
+                                 <li>
+                  <span class="time"> 2023-06-13</span>
+                  <a href="../2023/jntz/zgl/284491.htm" target="_blank" class="text-overflow"
+                    ><span class="sort">【综合类】</span>
+                    <span class="title"
+                      >关于举办第十届全国职工摄影展的通知
+                    </span></a
+                  >
+                </li>
+                                 <li>
+                  <span class="time"> 2023-06-06</span>
+                  <a href="../2023/jntz/zgl/284387.htm" target="_blank" class="text-overflow"
+                    ><span class="sort">【综合类】</span>
+                    <span class="title"
+                      >关于【收集荣誉证书等获奖材料】的通知
+                    </span></a
+                  >
+                </li>
+                                 <li>
+                  <span class="time"> 2023-06-06</span>
+                  <a href="../2023/jntz/zgl/284382.htm" target="_blank" class="text-overflow"
+                    ><span class="sort">【综合类】</span>
+                    <span class="title"
+                      >关于【启动2023年上半年困难补助申请】的通知
+                    </span></a
+                  >
+                </li>
+                                 <li>
+                  <span class="time"> 2023-06-06</span>
+                  <a href="../2023/jntz/zgl/284377.htm" target="_blank" class="text-overflow"
+                    ><span class="sort">【综合类】</span>
+                    <span class="title"
+                      >关于【办理公务卡】的通知
+                    </span></a
+                  >
+                </li>
+                                 <li>
+                  <span class="time"> 2023-05-29</span>
+                  <a href="../2023/jntz/zgl/283872.htm" target="_blank" class="text-overflow"
+                    ><span class="sort">【综合类】</span>
+                    <span class="title"
+                      >关于领取《从事教育工作三十年荣誉证书》的通知
+                    </span></a
+                  >
+                </li>
+                                 <li>
+                  <span class="time"> 2023-05-26</span>
+                  <a href="../2023/jntz/zgl/283745.htm" target="_blank" class="text-overflow"
+                    ><span class="sort">【综合类】</span>
+                    <span class="title"
+                      >七宝鑫都学生科学研究院科技辅导员招募公告
+                    </span></a
+                  >
+                </li>
+                                 <li>
+                  <span class="time"> 2023-05-25</span>
+                  <a href="../2023/jntz/zgl/283717.htm" target="_blank" class="text-overflow"
+                    ><span class="sort">【综合类】</span>
+                    <span class="title"
+                      >校园安全提示
+                    </span></a
+                  >
+                </li>
+                                 <li>
+                  <span class="time"> 2023-05-12</span>
+                  <a href="../2023/jntz/zgl/283086.htm" target="_blank" class="text-overflow"
+                    ><span class="sort">【综合类】</span>
+                    <span class="title"
+                      >关于开展2023年闵行区新时代“四有” 好教师风采展示活动的通知
+                    </span></a
+                  >
+                </li>
+                                 <li>
+                  <span class="time"> 2023-04-19</span>
+                  <a href="../2023/jntz/zgl/283066.htm" target="_blank" class="text-overflow"
+                    ><span class="sort">【综合类】</span>
+                    <span class="title"
+                      >关于开展《2023年度闵行区教育系统疗休养工作》的通知
+                    </span></a
+                  >
+                </li>
+                               </div>
+                             <div class="fy">
+                <span>共有19条</span>
+                <span>当前第2/2页</span>
+                <!-- <div class=""></div> -->
+                <br class="hidden-lg hidden-md">
 
-              <span><a href="iList_113.htm">首页</a></span>
-              <span><a href="iList_275.htm">上一页</a></span>
-              <span><a href="iList_360.htm">下一页</a></span>
-              <span><a href="iList_115.htm">末页</a></span>
-
-
-
-
+               <span><a href="iList_323.htm">首页</a></span>
+<span><a href="iList_322.htm">上一页</a></span>
+<span><a href="iList_324.htm">下一页</a></span>
+<span><a href="iList_325.htm">末页</a></span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div id="footer">
-    <!-- ---- 2023>>--【tail】 -- 标签开始 ---- -->
-    <footer class="g-footer">
+    <div id="footer">
+    <!-- ---- 2022>>--【tail】 -- 标签开始 ---- -->
+<footer class="g-footer">
   <div class="container">
     <div class="flex">
       <div class="wenzi">
@@ -551,10 +455,10 @@
   #homePage.homePc .m-bxts .left .tit:nth-child(3) {line-height: 30px;}
 </style>
 
-    <!-- ---- 2023>>--【tail】 -- 标签结束 ---- -->
+<!-- ---- 2022>>--【tail】 -- 标签结束 ---- -->
 
-  </div>
-</body>
-
+    </div>
+  </body>
 </html>
+  
 
