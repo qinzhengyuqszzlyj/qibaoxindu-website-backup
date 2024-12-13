@@ -4,16 +4,17 @@
 
 <!DOCTYPE html>
 <html lang="zh-cn">
-  <head>
-        <title>校内通知</title>
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="renderer" content="webkit" />
 
-   <!-- ---- 2022>>--【common】 -- 标签开始 ---- -->
+<head>
+        <title>荣誉园地</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="renderer" content="webkit" />
+
+<!-- ---- 2022>>--【common】 -- 标签开始 ---- -->
  <link rel="icon" href="../images/logox.png" type="image/x-icon"/>   
 <!-- bootstrap -->
   <link rel="stylesheet" href="../static/common/bootstrap-3.4.1-dist/css/bootstrap.min.css" />
@@ -36,33 +37,11 @@
   <script src="https://qbxd.mhedu.sh.cn/static/js/index.js"></script>
 
 <!-- ---- 2022>>--【common】 -- 标签结束 ---- -->
-<script src="../wcm.files/js/jsonrpc.js"></script>
-<script src="../wcm.files/js/member/memberChecked.js"></script>
 
-  </head>
+</head>
 
-  <body id="lby">
-    <style>
-  .login {
-    background: #818181;
-    color: #fff;
-    text-align: right;
-    line-height: 30px;
-    font-size: 14px;
-  }
-
-  .login a {
-    color: #fff;
-  }
-</style>
-<div class="login">
-  <div class="container">
-    <span class="pull-left">欢迎<span id="me_nickname"></span></span>
-    <span  id="me_login_btn"></span>
-     <span  id="me_logout_btn"></span>
-  </div>
-</div>
-    <div id="header">
+<body id="lby">
+  <div id="header">
   <!-- ---- 2022>>--【head】 -- 标签开始 ---- -->
 
 <div class="g-top headerPc">
@@ -77,9 +56,9 @@
                         <li class="nLi">
                 <h3><a href="iIndex.htm">走进鑫中</a></h3>
                 <ul class="sub" style="display: none;">
-                    <li><a href="iList_3.htm">学校简介</a></li>
+                    <li><a href="iList.htm">学校简介</a></li>
                    <li><a href="iList_2.htm">师资队伍</a></li>
-                  <li><a href="iList.htm">荣誉园地</a></li>
+                  <li><a href="iList_3.htm">荣誉园地</a></li>
                     <li><a href="iList_4.htm">鑫中人物</a></li>
                     <li><a href="iList_5.htm">校园风光</a></li>
                             </ul>
@@ -102,15 +81,15 @@
                     <li><a href="iIndex_4.htm">学生活动</a></li>
                     <li><a href="iList_10.htm">团、队动态</a></li>
                    <li><a href="iList_11.htm">心理健康</a></li>
-                   <li><a href="iIndex_8.htm">家校共建</a></li>
-                   <li><a href="iIndex_5.htm">学生荣誉</a></li>
+                   <li><a href="iIndex_5.htm">家校共建</a></li>
+                   <li><a href="iIndex_6.htm">学生荣誉</a></li>
                             </ul>
       </li>
       
                   <li class="nLi">
-                <h3><a href="iIndex_6.htm">教育发展</a></h3>
+                <h3><a href="iIndex_7.htm">教育发展</a></h3>
                 <ul class="sub" style="display: none;">
-                 <li><a href="iIndex_7.htm">课程教学</a></li>
+                 <li><a href="iIndex_8.htm">课程教学</a></li>
                  <li><a href="iIndex_9.htm">教师培训</a></li>
                  <li><a href="iList_12.htm">教育科研</a></li>
                  <li><a href="iList_13.htm">教师荣誉</a></li>
@@ -135,7 +114,7 @@
           <h3><a href="../qbxd_mhedu_sh_default.html">首页</a></h3>
         </li>
                            <li class="nLi">
-                <h3><a href="iList_3.htm">走进鑫中</a></h3>
+                <h3><a href="iList.htm">走进鑫中</a></h3>
                
       </li>
       
@@ -145,12 +124,12 @@
       </li>
       
                   <li class="nLi">
-                <h3><a href="iList_16.htm">学生发展</a></h3>
+                <h3><a href="iList_15.htm">学生发展</a></h3>
                
       </li>
       
                   <li class="nLi">
-                <h3><a href="iList_15.htm">教育发展</a></h3>
+                <h3><a href="iList_16.htm">教育发展</a></h3>
                
       </li>
       
@@ -278,156 +257,178 @@
 </style>
 
 <!-- ---- 2022>>--【head】 -- 标签结束 ---- -->
-  
-    </div>
-    <div id="body">
-      <div class="lb-banner">
-        <div class="m-search" style="margin-top: 40px; right: 70px;"><form id="searchform" name="searchform" action="../search/searchResultGJ.htm" method="get" style="position: relative;"><button type="submit" class="search_btn"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button> <input id="q" name="q" placeholder="搜索" type="text" class="search_text inp"> <input type="hidden" value="862" name="t_id"> <input type="hidden" value="" name="site_id" style="width: 0px;"> <input type="hidden" value="18036" name="categoryId"></form></div>
-        <img src="../static/img/lb-banner.png" alt="" />
-      </div>
-      <div class="lb-top">
-        <div class="container">
-          <div class="name"><span>
-校内通知 
 
-</span></div>
-        </div>
-      </div>
-
-      <div class="g-bd clearfix">
-        <div class="container">
-          <div class="row">
-            <div class="g-sd col-sm-3">
-              <div id="column-nav" class="column-nav">
-                
-                 <div style="font-size: 2.5rem;color: white;padding-top: 34px;margin-bottom:0px !important;">
-                
-<span><a href="iList_316.htm" style="color:white">校内通知</a></span> 
-
-                </div>
-                <ul class="column-list" style="margin-top:1.6rem;">
-                                  <li>
-            <a  href="iList_283.htm">研训类</a>
-          </li> <li>
-            <a  href="iList_317.htm">人事类</a>
-          </li> <li>
-            <a  href="iList_281.htm">公示类</a>
-          </li> <li>
-            <a  href="iList_282.htm">综合类</a>
-          </li>                  </ul>
-              </div>
+  </div>
+  <div id="body">
+    <div class="lb-banner">
+      
+      <div class="m-search" style="margin-top: 40px; right: 5%;"><form id="searchform" name="searchform" action="../search/searchResultGJ.htm" method="get" style="position: relative;"><button type="submit" class="search_btn"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button> <input id="q" name="q" placeholder="搜索" type="text" class="search_text inp"> <input type="hidden" value="862" name="t_id"> <input type="hidden" value="" name="site_id" style="width: 0px;"> <input type="hidden" value="18036" name="categoryId"></form></div>
+              <img src="../static/img/lb-banner.png" alt="" />
             </div>
-            <div class="g-mn col-sm-9">
-              <div class="list-1">
-                                 <li>
-                  <span class="time"> 2023-12-25</span>
-                  <a href="../2023/jntz/xxl/291821.htm" target="_blank" class="text-overflow"
-                    ><span class="sort">【研训类】</span>
-                    <span class="title"
-                      >2023学年 第一学期 第18周 区教研活动通知
-                    </span></a
-                  >
-                </li>
-                                 <li>
-                  <span class="time"> 2023-12-18</span>
-                  <a href="../2023/jntz/xxl/291625_2.htm" target="_blank" class="text-overflow"
-                    ><span class="sort">【研训类】</span>
-                    <span class="title"
-                      >2023学年 第一学期 第17周 区教研活动通知
-                    </span></a
-                  >
-                </li>
-                                 <li>
-                  <span class="time"> 2023-12-12</span>
-                  <a href="../2023/jntz/zgl/291478.htm" target="_blank" class="text-overflow"
-                    ><span class="sort">【综合类】</span>
-                    <span class="title"
-                      >关于开展“补充医药报销惠工卡”申领的通知
-                    </span></a
-                  >
-                </li>
-                                 <li>
-                  <span class="time"> 2023-12-11</span>
-                  <a href="../2023/jntz/xxl/291424.htm" target="_blank" class="text-overflow"
-                    ><span class="sort">【研训类】</span>
-                    <span class="title"
-                      >2023学年 第一学期 第16周 区教研活动通知
-                    </span></a
-                  >
-                </li>
-                                 <li>
-                  <span class="time"> 2023-12-04</span>
-                  <a href="../2023/jntz/xxl/291197.htm" target="_blank" class="text-overflow"
-                    ><span class="sort">【研训类】</span>
-                    <span class="title"
-                      >2023学年 第一学期 第15周 区教研活动通知
-                    </span></a
-                  >
-                </li>
-                                 <li>
-                  <span class="time"> 2023-11-27</span>
-                  <a href="../2023/jntz/xxl/290986.htm" target="_blank" class="text-overflow"
-                    ><span class="sort">【研训类】</span>
-                    <span class="title"
-                      >关于【闵行新增三类基地招生】的通知(时间节点:11月29日16点前截止)
-                    </span></a
-                  >
-                </li>
-                                 <li>
-                  <span class="time"> 2023-11-27</span>
-                  <a href="../2023/jntz/xxl/290985.htm" target="_blank" class="text-overflow"
-                    ><span class="sort">【研训类】</span>
-                    <span class="title"
-                      >“十四五”区级师德与素养学分课程开课通知
-                    </span></a
-                  >
-                </li>
-                                 <li>
-                  <span class="time"> 2023-11-27</span>
-                  <a href="../2023/jntz/xxl/290984.htm" target="_blank" class="text-overflow"
-                    ><span class="sort">【研训类】</span>
-                    <span class="title"
-                      >2023学年 第一学期 第14周 区教研活动通知
-                    </span></a
-                  >
-                </li>
-                                 <li>
-                  <span class="time"> 2023-11-24</span>
-                  <a href="../2023/jntz/zgl/290922.htm" target="_blank" class="text-overflow"
-                    ><span class="sort">【综合类】</span>
-                    <span class="title"
-                      >“躬耕教坛 强国有我”——七宝鑫都师德师风知识竞赛活动方案
-                    </span></a
-                  >
-                </li>
-                                 <li>
-                  <span class="time"> 2023-11-20</span>
-                  <a href="../2023/jntz/xxl/290621_2.htm" target="_blank" class="text-overflow"
-                    ><span class="sort">【研训类】</span>
-                    <span class="title"
-                      >2023学年 第一学期 第13周 区教研活动通知
-                    </span></a
-                  >
-                </li>
-                               </div>
-                             <div class="fy">
-                <span>共有149条</span>
-                <span>当前第7/15页</span>
+    <div class="lb-top">
+      <div class="container">
+        <div class="name">
+<span>荣誉园地</span> 
+
+</div>
+      </div>
+    </div>
+
+    <div class="g-bd clearfix">
+      <div class="container">
+        <div class="row">
+          <div class="g-sd col-sm-3">
+            <div id="column-nav" class="column-nav">
+               <div class="column-navT" style="font-size: 2.5rem;color: white;padding-top: 34px;margin-bottom: -28px !important;">
+                
+<span>走进鑫中</span> 
+            
+                </div>
+       <ul class="column-list" id="biaoji_1">                                          <li>
+            <a href="iList.htm">学校简介</a>
+          </li>           <li>
+            <a href="iList_2.htm">师资队伍</a>
+          </li>           <li>
+            <a class="ac" href="iList_18.htm">荣誉园地</a>
+          </li>           <li>
+            <a href="iList_4.htm">鑫中人物</a>
+          </li>           <li>
+            <a href="iList_5.htm">校园风光</a>
+          </li>    
+         </ul>
+              <ul class="column-list"  id="biaoji_2">
+                                   <li>
+            <a href="iList_15.htm">学生活动</a>
+          </li> <li>
+            <a href="iList_10.htm">团、队动态</a>
+          </li> <li>
+            <a href="iList_11.htm">心理健康</a>
+          </li> <li>
+            <a href="iList_25.htm">家校共建</a>
+          </li> <li>
+            <a class="ac" href="iList_24.htm">学生荣誉</a>
+          </li>                  </ul>
+              
+              <ul class="column-list"  id="biaoji_3">
+                                        <li>
+            <a  href="iList_16.htm">课程教学</a>
+          </li>           <li>
+            <a href="iList_28.htm">教师培训</a>
+          </li>           <li>
+            <a href="iList_12.htm">教育科研</a>
+          </li>           <li>
+            <a class="ac" href="iList_26.htm">教师荣誉</a>
+          </li>           <li>
+            <a href="iList_14.htm">后勤服务</a>
+          </li>                  </ul>
+            </div>
+          </div>
+          <div class="g-mn col-sm-9">
+            <style>
+            .year{height:auto;min-height:40px;}
+            .year a{color:#337ab7;font-size:20px;padding:10px 20px;}
+               .year a:hover{color: #2098d1;text-shadow: 1px 1px 1px #000;}
+             .year a.ac{color: #2098d1;text-shadow: 1px 1px 1px #000;}
+            </style>
+            
+            <div class="year">
+                                           <a  href="iList_3.htm">2024年</a>
+                       <a  href="iList_29.htm">2023年</a>
+                       <a  href="iList_27.htm">2022年</a>
+                       <a  href="iList_30.htm">2021年</a>
+                       <a  href="iList_31.htm">2020年</a>
+                       <a  href="iList_32.htm">2019年</a>
+                        
+            </div>
+            
+            <div class="list-tp">
+              <div class="row">
+                                  <div class="col-sm-4">
+                  <a class="item" href="../2023/zjxz/rywd/2021n/272418.htm" target="_blank" title="2021闵行区中小学生古诗词综合艺术展演三等奖" target="_blank">
+                    <div class="pic">
+                                            <img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202303/202303200830032.jpg" alt="">
+                                          </div>
+                    <div class="time">2021/06/08</div>
+                    <div class="title ">
+                      2021闵行区中小学生古诗词综合艺术展演三等奖
+                    </div>
+                  </a>
+                </div>
+                              <div class="col-sm-4">
+                  <a class="item" href="../2023/zjxz/rywd/2021n/272419.htm" target="_blank" title="友好学校：七宝鑫都和岳阳县一中集英" target="_blank">
+                    <div class="pic">
+                                            <img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202303/202303200831002.jpg" alt="">
+                                          </div>
+                    <div class="time">2021/05/28</div>
+                    <div class="title ">
+                      友好学校：七宝鑫都和岳阳县一中集英
+                    </div>
+                  </a>
+                </div>
+                              <div class="col-sm-4">
+                  <a class="item" href="../2023/zjxz/rywd/2021n/272420.htm" target="_blank" title="2021年莘庄工业区首届企业运动会-欢乐三打一优胜奖" target="_blank">
+                    <div class="pic">
+                                            <img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202303/202303200831013.jpg" alt="">
+                                          </div>
+                    <div class="time">2021/05/24</div>
+                    <div class="title ">
+                      2021年莘庄工业区首届企业运动会-欢乐三打一优胜奖
+                    </div>
+                  </a>
+                </div>
+                              <div class="col-sm-4">
+                  <a class="item" href="../2023/zjxz/rywd/2021n/272421_2.htm" target="_blank" title="2021年闵行区中小学“劳动教育宣传周”主题活动（2019届9班）(班主任于海波)" target="_blank">
+                    <div class="pic">
+                                            <img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202303/202303200832038.jpg" alt="">
+                                          </div>
+                    <div class="time">2021/05/17</div>
+                    <div class="title ">
+                      2021年闵行区中小学“劳动教育宣传周”主题活动（2019届9班）(班主任于海波)
+                    </div>
+                  </a>
+                </div>
+                              <div class="col-sm-4">
+                  <a class="item" href="../2023/zjxz/rywd/2021n/272381.htm" target="_blank" title="2021年莘庄工业区首届企业运动会广播操比赛一等奖" target="_blank">
+                    <div class="pic">
+                                            <img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202303/202303200836019.jpg" alt="">
+                                          </div>
+                    <div class="time">2021/04/27</div>
+                    <div class="title ">
+                      2021年莘庄工业区首届企业运动会广播操比赛一等奖
+                    </div>
+                  </a>
+                </div>
+                              <div class="col-sm-4">
+                  <a class="item" href="../2023/zjxz/rywd/2021n/272383.htm" target="_blank" title="2020-2021学年闵行区中等学校（高中、中等职业学校）优秀个人和先进班级评选-先进班级（2020届高一1班）" target="_blank">
+                    <div class="pic">
+                                            <img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202303/202303200837011.jpg" alt="">
+                                          </div>
+                    <div class="time">2021/03/22</div>
+                    <div class="title ">
+                      2020-2021学年闵行区中等学校（高中、中等职业学校）优秀个人和先进班级评选-先进班级（2020届高一1班）
+                    </div>
+                  </a>
+                </div>
+                            </div>
+            </div>
+                        <div class="fy">
+                <span>共有264条</span>
+                <span>当前第38/44页</span>
                 <!-- <div class=""></div> -->
                 <br class="hidden-lg hidden-md">
 
-               <span><a href="iIndex_87.htm">首页</a></span>
-<span><a href="iIndex_128.htm">上一页</a></span>
-<span><a href="iIndex_145.htm">下一页</a></span>
-<span><a href="iIndex_86.htm">末页</a></span>
-              </div>
+               <span><a href="iIndex_55.htm">首页</a></span>
+<span><a href="iIndex_146.htm">上一页</a></span>
+<span><a href="iIndex_126.htm">下一页</a></span>
+<span><a href="iIndex_57.htm">末页</a></span>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div id="footer">
-    <!-- ---- 2022>>--【tail】 -- 标签开始 ---- -->
+  </div>
+  <div id="footer">
+  <!-- ---- 2022>>--【tail】 -- 标签开始 ---- -->
 <footer class="g-footer">
   <div class="container">
     <div class="flex">
@@ -466,8 +467,24 @@
 
 <!-- ---- 2022>>--【tail】 -- 标签结束 ---- -->
 
-    </div>
-  </body>
+  </div>
+</body>
+<script>
+$(function(){
+  var text= $(".column-navT span").text();
+  if(text == "走进鑫中"){
+  $("#biaoji_2,#biaoji_3").hide();
+  }else if(text == "学生发展"){
+  $("#biaoji_1,#biaoji_3").hide();
+   }else if(text == "教育发展"){
+  $("#biaoji_1,#biaoji_2").hide();
+  }
+  var text1=$("#lby .lb-top .name span").text();
+  if(text1 == "校园风光"){
+     $(".year").hide();
+    $("#biaoji_1 li").eq(2).find("a").removeClass("ac");
+     $("#biaoji_1 li").eq(4).find("a").addClass("ac");
+     }
+})
+</script>
 </html>
-  
-

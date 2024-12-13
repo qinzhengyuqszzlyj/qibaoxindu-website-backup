@@ -4,16 +4,17 @@
 
 <!DOCTYPE html>
 <html lang="zh-cn">
-  <head>
-        <title>校内通知</title>
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="renderer" content="webkit" />
 
-   <!-- ---- 2022>>--【common】 -- 标签开始 ---- -->
+<head>
+        <title>教师荣誉</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="renderer" content="webkit" />
+
+<!-- ---- 2022>>--【common】 -- 标签开始 ---- -->
  <link rel="icon" href="../images/logox.png" type="image/x-icon"/>   
 <!-- bootstrap -->
   <link rel="stylesheet" href="../static/common/bootstrap-3.4.1-dist/css/bootstrap.min.css" />
@@ -36,33 +37,11 @@
   <script src="https://qbxd.mhedu.sh.cn/static/js/index.js"></script>
 
 <!-- ---- 2022>>--【common】 -- 标签结束 ---- -->
-<script src="../wcm.files/js/jsonrpc.js"></script>
-<script src="../wcm.files/js/member/memberChecked.js"></script>
 
-  </head>
+</head>
 
-  <body id="lby">
-    <style>
-  .login {
-    background: #818181;
-    color: #fff;
-    text-align: right;
-    line-height: 30px;
-    font-size: 14px;
-  }
-
-  .login a {
-    color: #fff;
-  }
-</style>
-<div class="login">
-  <div class="container">
-    <span class="pull-left">欢迎<span id="me_nickname"></span></span>
-    <span  id="me_login_btn"></span>
-     <span  id="me_logout_btn"></span>
-  </div>
-</div>
-    <div id="header">
+<body id="lby">
+  <div id="header">
   <!-- ---- 2022>>--【head】 -- 标签开始 ---- -->
 
 <div class="g-top headerPc">
@@ -77,9 +56,9 @@
                         <li class="nLi">
                 <h3><a href="iIndex.htm">走进鑫中</a></h3>
                 <ul class="sub" style="display: none;">
-                    <li><a href="iList_3.htm">学校简介</a></li>
+                    <li><a href="iList.htm">学校简介</a></li>
                    <li><a href="iList_2.htm">师资队伍</a></li>
-                  <li><a href="iList.htm">荣誉园地</a></li>
+                  <li><a href="iList_3.htm">荣誉园地</a></li>
                     <li><a href="iList_4.htm">鑫中人物</a></li>
                     <li><a href="iList_5.htm">校园风光</a></li>
                             </ul>
@@ -102,15 +81,15 @@
                     <li><a href="iIndex_4.htm">学生活动</a></li>
                     <li><a href="iList_10.htm">团、队动态</a></li>
                    <li><a href="iList_11.htm">心理健康</a></li>
-                   <li><a href="iIndex_8.htm">家校共建</a></li>
-                   <li><a href="iIndex_5.htm">学生荣誉</a></li>
+                   <li><a href="iIndex_5.htm">家校共建</a></li>
+                   <li><a href="iIndex_6.htm">学生荣誉</a></li>
                             </ul>
       </li>
       
                   <li class="nLi">
-                <h3><a href="iIndex_6.htm">教育发展</a></h3>
+                <h3><a href="iIndex_7.htm">教育发展</a></h3>
                 <ul class="sub" style="display: none;">
-                 <li><a href="iIndex_7.htm">课程教学</a></li>
+                 <li><a href="iIndex_8.htm">课程教学</a></li>
                  <li><a href="iIndex_9.htm">教师培训</a></li>
                  <li><a href="iList_12.htm">教育科研</a></li>
                  <li><a href="iList_13.htm">教师荣誉</a></li>
@@ -135,7 +114,7 @@
           <h3><a href="../qbxd_mhedu_sh_default.html">首页</a></h3>
         </li>
                            <li class="nLi">
-                <h3><a href="iList_3.htm">走进鑫中</a></h3>
+                <h3><a href="iList.htm">走进鑫中</a></h3>
                
       </li>
       
@@ -145,12 +124,12 @@
       </li>
       
                   <li class="nLi">
-                <h3><a href="iList_16.htm">学生发展</a></h3>
+                <h3><a href="iList_15.htm">学生发展</a></h3>
                
       </li>
       
                   <li class="nLi">
-                <h3><a href="iList_15.htm">教育发展</a></h3>
+                <h3><a href="iList_16.htm">教育发展</a></h3>
                
       </li>
       
@@ -278,156 +257,178 @@
 </style>
 
 <!-- ---- 2022>>--【head】 -- 标签结束 ---- -->
-  
-    </div>
-    <div id="body">
-      <div class="lb-banner">
-        <div class="m-search" style="margin-top: 40px; right: 70px;"><form id="searchform" name="searchform" action="../search/searchResultGJ.htm" method="get" style="position: relative;"><button type="submit" class="search_btn"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button> <input id="q" name="q" placeholder="搜索" type="text" class="search_text inp"> <input type="hidden" value="862" name="t_id"> <input type="hidden" value="" name="site_id" style="width: 0px;"> <input type="hidden" value="18036" name="categoryId"></form></div>
-        <img src="../static/img/lb-banner.png" alt="" />
-      </div>
-      <div class="lb-top">
-        <div class="container">
-          <div class="name"><span>
-校内通知 
 
-</span></div>
-        </div>
-      </div>
-
-      <div class="g-bd clearfix">
-        <div class="container">
-          <div class="row">
-            <div class="g-sd col-sm-3">
-              <div id="column-nav" class="column-nav">
-                
-                 <div style="font-size: 2.5rem;color: white;padding-top: 34px;margin-bottom:0px !important;">
-                
-<span><a href="iList_316.htm" style="color:white">校内通知</a></span> 
-
-                </div>
-                <ul class="column-list" style="margin-top:1.6rem;">
-                                  <li>
-            <a  href="iList_283.htm">研训类</a>
-          </li> <li>
-            <a  href="iList_317.htm">人事类</a>
-          </li> <li>
-            <a  href="iList_281.htm">公示类</a>
-          </li> <li>
-            <a  href="iList_282.htm">综合类</a>
-          </li>                  </ul>
-              </div>
+  </div>
+  <div id="body">
+    <div class="lb-banner">
+      
+      <div class="m-search" style="margin-top: 40px; right: 5%;"><form id="searchform" name="searchform" action="../search/searchResultGJ.htm" method="get" style="position: relative;"><button type="submit" class="search_btn"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button> <input id="q" name="q" placeholder="搜索" type="text" class="search_text inp"> <input type="hidden" value="862" name="t_id"> <input type="hidden" value="" name="site_id" style="width: 0px;"> <input type="hidden" value="18036" name="categoryId"></form></div>
+               <img src="../images/jyfz-banner.jpg" alt="" />
             </div>
-            <div class="g-mn col-sm-9">
-              <div class="list-1">
-                                 <li>
-                  <span class="time"> 2023-06-05</span>
-                  <a href="../2023/jntz/xxl/284159.htm" target="_blank" class="text-overflow"
-                    ><span class="sort">【研训类】</span>
-                    <span class="title"
-                      >关于【争做“四有好教师”案例征集活动】的通知
-                    </span></a
-                  >
-                </li>
-                                 <li>
-                  <span class="time"> 2023-06-01</span>
-                  <a href="../2023/jntz/rsl/284039.htm" target="_blank" class="text-overflow"
-                    ><span class="sort">【人事类】</span>
-                    <span class="title"
-                      >关于钉钉平台填写【2023学年岗位意向征询表】的通知
-                    </span></a
-                  >
-                </li>
-                                 <li>
-                  <span class="time"> 2023-06-01</span>
-                  <a href="../2023/jntz/xxl/284031.htm" target="_blank" class="text-overflow"
-                    ><span class="sort">【研训类】</span>
-                    <span class="title"
-                      >关于【上海市教师教育管理平台】密码重置相关功能的通知
-                    </span></a
-                  >
-                </li>
-                                 <li>
-                  <span class="time"> 2023-05-29</span>
-                  <a href="../2023/jntz/xxl/283873.htm" target="_blank" class="text-overflow"
-                    ><span class="sort">【研训类】</span>
-                    <span class="title"
-                      >2022学年 第二学期 第16周 区教研活动通知
-                    </span></a
-                  >
-                </li>
-                                 <li>
-                  <span class="time"> 2023-05-29</span>
-                  <a href="../2023/jntz/zgl/283872.htm" target="_blank" class="text-overflow"
-                    ><span class="sort">【综合类】</span>
-                    <span class="title"
-                      >关于领取《从事教育工作三十年荣誉证书》的通知
-                    </span></a
-                  >
-                </li>
-                                 <li>
-                  <span class="time"> 2023-05-26</span>
-                  <a href="../2023/jntz/xxl/283760.htm" target="_blank" class="text-overflow"
-                    ><span class="sort">【研训类】</span>
-                    <span class="title"
-                      >关于【智慧教育优秀案例征集】的通知
-                    </span></a
-                  >
-                </li>
-                                 <li>
-                  <span class="time"> 2023-05-26</span>
-                  <a href="../2023/jntz/zgl/283745.htm" target="_blank" class="text-overflow"
-                    ><span class="sort">【综合类】</span>
-                    <span class="title"
-                      >七宝鑫都学生科学研究院科技辅导员招募公告
-                    </span></a
-                  >
-                </li>
-                                 <li>
-                  <span class="time"> 2023-05-25</span>
-                  <a href="../2023/jntz/zgl/283717.htm" target="_blank" class="text-overflow"
-                    ><span class="sort">【综合类】</span>
-                    <span class="title"
-                      >校园安全提示
-                    </span></a
-                  >
-                </li>
-                                 <li>
-                  <span class="time"> 2023-05-25</span>
-                  <a href="../2023/jntz/xxl/283714.htm" target="_blank" class="text-overflow"
-                    ><span class="sort">【研训类】</span>
-                    <span class="title"
-                      >关于”十四五“校本研修课程学分申请通知（5月30日区接收截至，请在5月29日前联系教务处高明老师）
-                    </span></a
-                  >
-                </li>
-                                 <li>
-                  <span class="time"> 2023-05-22</span>
-                  <a href="../2023/jntz/xxl/283515.htm" target="_blank" class="text-overflow"
-                    ><span class="sort">【研训类】</span>
-                    <span class="title"
-                      >2022学年 第二学期 第15周 区教研活动通知
-                    </span></a
-                  >
-                </li>
-                               </div>
-                             <div class="fy">
-                <span>共有149条</span>
-                <span>当前第13/15页</span>
+    <div class="lb-top">
+      <div class="container">
+        <div class="name">
+<span>教师荣誉</span> 
+
+</div>
+      </div>
+    </div>
+
+    <div class="g-bd clearfix">
+      <div class="container">
+        <div class="row">
+          <div class="g-sd col-sm-3">
+            <div id="column-nav" class="column-nav">
+               <div class="column-navT" style="font-size: 2.5rem;color: white;padding-top: 34px;margin-bottom: -28px !important;">
+                
+<span>教育发展</span> 
+            
+                </div>
+       <ul class="column-list" id="biaoji_1">                                          <li>
+            <a href="iList.htm">学校简介</a>
+          </li>           <li>
+            <a href="iList_2.htm">师资队伍</a>
+          </li>           <li>
+            <a class="ac" href="iList_18.htm">荣誉园地</a>
+          </li>           <li>
+            <a href="iList_4.htm">鑫中人物</a>
+          </li>           <li>
+            <a href="iList_5.htm">校园风光</a>
+          </li>    
+         </ul>
+              <ul class="column-list"  id="biaoji_2">
+                                   <li>
+            <a href="iList_15.htm">学生活动</a>
+          </li> <li>
+            <a href="iList_10.htm">团、队动态</a>
+          </li> <li>
+            <a href="iList_11.htm">心理健康</a>
+          </li> <li>
+            <a href="iList_25.htm">家校共建</a>
+          </li> <li>
+            <a class="ac" href="iList_24.htm">学生荣誉</a>
+          </li>                  </ul>
+              
+              <ul class="column-list"  id="biaoji_3">
+                                        <li>
+            <a  href="iList_16.htm">课程教学</a>
+          </li>           <li>
+            <a href="iList_28.htm">教师培训</a>
+          </li>           <li>
+            <a href="iList_12.htm">教育科研</a>
+          </li>           <li>
+            <a class="ac" href="iList_26.htm">教师荣誉</a>
+          </li>           <li>
+            <a href="iList_14.htm">后勤服务</a>
+          </li>                  </ul>
+            </div>
+          </div>
+          <div class="g-mn col-sm-9">
+            <style>
+            .year{height:auto;min-height:40px;}
+            .year a{color:#337ab7;font-size:20px;padding:10px 20px;}
+               .year a:hover{color: #2098d1;text-shadow: 1px 1px 1px #000;}
+             .year a.ac{color: #2098d1;text-shadow: 1px 1px 1px #000;}
+            </style>
+            
+            <div class="year">
+                                           <a  href="iList_13.htm">2024年</a>
+                       <a  href="iList_76.htm">2023年</a>
+                       <a  href="iList_75.htm">2022年</a>
+                       <a  href="iList_77.htm">2021年</a>
+                       <a  href="iList_78.htm">2020年</a>
+                       <a  href="iList_79.htm">2019年</a>
+                        
+            </div>
+            
+            <div class="list-tp">
+              <div class="row">
+                                  <div class="col-sm-4">
+                  <a class="item" href="../2023/jyfz/jsry/2024n/302902.htm" target="_blank" title="闵行区电小幼中青年教师教学评选活动 三等奖（胡志禹）" target="_blank">
+                    <div class="pic">
+                                            <img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202411/202411010602027.jpg" alt="">
+                                          </div>
+                    <div class="time">2024/02/26</div>
+                    <div class="title ">
+                      闵行区电小幼中青年教师教学评选活动 三等奖（胡志禹）
+                    </div>
+                  </a>
+                </div>
+                              <div class="col-sm-4">
+                  <a class="item" href="../2023/jyfz/jsry/2023n/302623.htm" target="_blank" title=" “青春放歌 唱享未来”2023年上海市学生合唱节活动 优秀展演奖" target="_blank">
+                    <div class="pic">
+                                            <img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202410/202410240759009.jpg" alt="">
+                                          </div>
+                    <div class="time">2023/12/31</div>
+                    <div class="title ">
+                       “青春放歌 唱享未来”2023年上海市学生合唱节活动 优秀展演奖
+                    </div>
+                  </a>
+                </div>
+                              <div class="col-sm-4">
+                  <a class="item" href="../2023/jyfz/jsry/2023n/302622.htm" target="_blank" title="2023年上海市中小学(幼儿园)见习教师基本功大赛 一等奖（黄嘉悦）" target="_blank">
+                    <div class="pic">
+                                            <img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202410/202410240756038.jpg" alt="">
+                                          </div>
+                    <div class="time">2023/12/31</div>
+                    <div class="title ">
+                      2023年上海市中小学(幼儿园)见习教师基本功大赛 一等奖（黄嘉悦）
+                    </div>
+                  </a>
+                </div>
+                              <div class="col-sm-4">
+                  <a class="item" href="../2023/jyfz/jsry/2023n/302621.htm" target="_blank" title="2023年上海市中小学信息化教学交流展示活动 一等奖（沈爱花）" target="_blank">
+                    <div class="pic">
+                                            <img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202410/202410240755057.jpg" alt="">
+                                          </div>
+                    <div class="time">2023/12/31</div>
+                    <div class="title ">
+                      2023年上海市中小学信息化教学交流展示活动 一等奖（沈爱花）
+                    </div>
+                  </a>
+                </div>
+                              <div class="col-sm-4">
+                  <a class="item" href="../2023/jyfz/jsry/2023n/302620.htm" target="_blank" title=" “青春放歌 唱享未来”2023年上海市学生合唱节活动 优秀视听作品奖-最美瞬间奖（朱冰洁）" target="_blank">
+                    <div class="pic">
+                                            <img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202410/202410240755009.jpg" alt="">
+                                          </div>
+                    <div class="time">2023/12/31</div>
+                    <div class="title ">
+                       “青春放歌 唱享未来”2023年上海市学生合唱节活动 优秀视听作品奖-最美瞬间奖（朱冰洁）
+                    </div>
+                  </a>
+                </div>
+                              <div class="col-sm-4">
+                  <a class="item" href="../2023/jyfz/jsry/2023n/302619.htm" target="_blank" title=" “青春放歌 唱享未来”2023年上海市学生合唱节活动 优秀案例奖（朱冰洁、叶淑君）" target="_blank">
+                    <div class="pic">
+                                            <img src="http://qbxd.mhedu.sh.cn/wcm.files/upload/CMSxdsyzx/202410/202410240753059.jpg" alt="">
+                                          </div>
+                    <div class="time">2023/12/31</div>
+                    <div class="title ">
+                       “青春放歌 唱享未来”2023年上海市学生合唱节活动 优秀案例奖（朱冰洁、叶淑君）
+                    </div>
+                  </a>
+                </div>
+                            </div>
+            </div>
+                        <div class="fy">
+                <span>共有249条</span>
+                <span>当前第5/42页</span>
                 <!-- <div class=""></div> -->
                 <br class="hidden-lg hidden-md">
 
-               <span><a href="iIndex_87.htm">首页</a></span>
-<span><a href="iIndex_120.htm">上一页</a></span>
-<span><a href="iIndex_100.htm">下一页</a></span>
-<span><a href="iIndex_86.htm">末页</a></span>
-              </div>
+               <span><a href="iIndex_66.htm">首页</a></span>
+<span><a href="iIndex_99.htm">上一页</a></span>
+<span><a href="iIndex_121.htm">下一页</a></span>
+<span><a href="iIndex_69.htm">末页</a></span>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div id="footer">
-    <!-- ---- 2022>>--【tail】 -- 标签开始 ---- -->
+  </div>
+  <div id="footer">
+  <!-- ---- 2022>>--【tail】 -- 标签开始 ---- -->
 <footer class="g-footer">
   <div class="container">
     <div class="flex">
@@ -466,8 +467,24 @@
 
 <!-- ---- 2022>>--【tail】 -- 标签结束 ---- -->
 
-    </div>
-  </body>
+  </div>
+</body>
+<script>
+$(function(){
+  var text= $(".column-navT span").text();
+  if(text == "走进鑫中"){
+  $("#biaoji_2,#biaoji_3").hide();
+  }else if(text == "学生发展"){
+  $("#biaoji_1,#biaoji_3").hide();
+   }else if(text == "教育发展"){
+  $("#biaoji_1,#biaoji_2").hide();
+  }
+  var text1=$("#lby .lb-top .name span").text();
+  if(text1 == "校园风光"){
+     $(".year").hide();
+    $("#biaoji_1 li").eq(2).find("a").removeClass("ac");
+     $("#biaoji_1 li").eq(4).find("a").addClass("ac");
+     }
+})
+</script>
 </html>
-  
-
