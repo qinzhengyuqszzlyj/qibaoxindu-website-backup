@@ -1,6 +1,5 @@
 import os
 
-
 def replace_text_in_files(url_to_replace, new_url, extensions):
     for root, dirs, files in os.walk('.'):  # '.' 表示当前目录，可替换为具体路径
         for file in files:
@@ -24,7 +23,6 @@ def replace_text_in_files(url_to_replace, new_url, extensions):
                         print(f"处理文件 {file_path} 时出现错误: {e}")
                 except Exception as e:
                     print(f"处理文件 {file_path} 时出现错误: {e}")
-
 
 if __name__ == "__main__":
     old_url_https = "https://qbxd.mhedu.sh.cn/"
