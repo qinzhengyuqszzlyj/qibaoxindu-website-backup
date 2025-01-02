@@ -1,0 +1,320 @@
+<!DOCTYPE html><html lang="zh">
+<head>
+  <meta name="keywords" content="闵行区教师专业发展数字化支持系统"/><meta name="description" content="闵行区教师专业发展数字化支持系统"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta http-equiv='Content-Type' content='text/html; charset=utf-8'><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><title>登录</title>
+  <!--    <link rel="stylesheet" th:href="@{#{webjars.fontawesomemin.css}}"/>--><!--    <link type="text/css" rel="stylesheet" th:href="@{#{webjars.latomin.css}}"/>--><link rel="icon" href="favicon.ico" type="image/x-icon"/><link href="css/antd.min.css" rel="stylesheet"><!--  <script type="text/javascript" th:src="@{#{webjars.jquerymin.js}}"></script>--><script src="webjars/vue/2.6.9/dist/vue.min.js"></script>
+  <script src="webjars/axios/0.17.1/dist/axios.min.js"></script>
+  <script src="js/antd.min.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/function.js"></script>
+  <script src="https://res.wx.qq.com/connect/zh_CN/htmledition/js/wxLogin.js"></script>
+  <link rel="stylesheet" href="themes/login_shmh/css/login4.css"/><script src="js/btoa.min.js"></script>
+
+  
+  <!--  <link rel="stylesheet" th:href="@{${#themes.code('cas.standard.static.path')+'/css/login.css'}}"--><!--        href="../../static/themes/login_shmh/css/login.css"/>--><!--  <link rel="stylesheet" th:href="@{${#themes.code('cas.standard.static.path')+'/css/login2.css'}}"--><!--        href="../../static/themes/login_shmh/css/login2.css"/>--><!--  <link rel="stylesheet" th:href="@{${#themes.code('cas.standard.static.path')+'/css/cas.css'}}"--><!--        href="../../static/themes/login_shmh/css/cas.css"/>--></head>
+
+<body>
+<div class="header">
+  <div class="header_box">
+    <img
+      src="themes/login_shmh/images/login/logo.png" alt=""
+    ><span>闵行区教师专业发展数字化支持系统</span>
+  </div>
+</div>
+<div class="bg">
+  <div id="app" class="main">
+    <div class="context">
+      <div class="ban_left">
+        <div @click="openPage('../index.jhtml')">
+          <img src="themes/login_shmh/images/login/yxw.png"/><p>研修网</p>
+        </div>
+        <div @click="openPage('http://ylb.ct-edu.com.cn')">
+          <img src="themes/login_shmh/images/login/ylb.png"/><p>云录播</p>
+        </div>
+        <div @click="openPage('http://10.107.58.34:89/main/login.aspx')">
+          <img src="themes/login_shmh/images/login/zlfx.png"/><p>质量分析</p>
+        </div>
+        <div @click="openPage('http://10.107.58.121/login.html')">
+          <img src="themes/login_shmh/images/login/dagl.png"/><p>档案管理</p>
+        </div>
+        <div @click="openPage('http://10.107.58.218/vision/portal.jsp')">
+          <img src="themes/login_shmh/images/login/dafx.png"/><p>档案分析</p>
+        </div>
+        <div @click="openPage('space.jsp?do=home')">
+          <img src="themes/login_shmh/images/login/sns.png"/><p>个人空间</p>
+        </div>
+      </div>
+      <div class="log-wrap">
+        <div style="text-align: right;margin-right:15px;margin-top:8px;position: relative;z-index: 0;">
+          <img
+            v-if="tabIndex === '1'"
+            class="login-wxin"
+            style="cursor: pointer;text-align:right;display: inline-block;"
+            src="themes/login_shmh/images/login/icon-jiao.png" alt=""
+            @click="() => tabIndex = '2'"
+          ><img
+            v-if="tabIndex === '2'"
+            class="back"
+            style="cursor: pointer;text-align:right;display: inline-block;"
+            src="themes/login_shmh/images/login/icon-pwd.png" alt=""
+            @click="() => tabIndex = '1'"
+          ></div>
+        <div v-show="tabIndex === '1'" class="user-login" style="margin-top:-45px;">
+          <div class="log-tit">欢迎使用，请登录</div>
+          <form class="login-submit" method="post" action="login.htm">
+            <p class="p-row">
+              <img
+                src="themes/login_shmh/images/login/user.png" alt=""
+              ><input name="username" v-model:value="formState.username" class="input-row" type="text"
+                     placeholder="请输入用户名"></p>
+            <p class="p-row">
+              <img
+                src="themes/login_shmh/images/login/key.png" alt=""
+              ><input v-model:value="formState.password" class="input-row" placeholder="请输入密码" type="password"></p>
+            <div class="div-checkbox">
+              <div><input type="checkbox"><span style="margin-left:4px">记住密码</span></div>
+              <span>找回密码</span>
+            </div>
+            <input type="hidden" name="execution" value="c67a6eff-93e9-4bb0-ab39-c863fae99982_ZXlKaGJHY2lPaUpJVXpVeE1pSjkuZVl4Wm42UlI1S3ZZODJnMWRHKzhWaGRVaVFIMGtUWGQ2MGRnUGg4ZytjdkQvVmtGYk0zVWk3bTFSZG1DZHNZRGRWdURKZytzYUttaFZEMGpxSTdGcGFDYVNtbnQ1QVJNWjJDVi9Nc1NYNnBBNEJvSTlyeDFtZFlscVlIZ1RBVEZDNjJKUFg5Rk5iYkN1UmxwdmpqWncxWGM3bGxEQzgvTEtJNmYyNDlHRkd2WTgyUVhwOGpuVSs2SGp4TndST2RkVE5oS0VLbTdlUGZ0SC9wZ0w3U2VRWDBOeis5Y2V4K0ZtTHBsN1Q4dTZNNk5HdTA2OFpHNDQ1L3lrbi9tQnAxZjNLbksycmppT1U4RFcxMERlbVRPWlhCOXhmeFR0bS9IMlRDYWdta0hVV0lVa2V6b2djYWQ0aW92ZTRXMDZuTjhwRzNDeDc4alowTHdsdjQxQnZLMjZTNFJJNERvb1ptN2Mwa0dDY1pwMkxSWVdkREhJRU5Qejgzc0tRMHFDczZuY2Q3b0JDSmNIajRGRGZPb0l1YXhNM1ErY3IwSDdqbXAwWlhldHZkalJRekFCSUNObEIxSXUzUWNHQTNGQ0NFMXMxL1U4MmZhbXArVGdRZ2xVS3BkaWQvUWVQUENJZFNKQi9lTzliaGFXb2ViUk55emhUNk5LY3NnM0hIaCtQWnRMOXYvbXpZSzlCT0krSGlOVFVucVZTUmhtYVE0alpTQ091eG1oeUFYRjJXaWxlQjdzUnVBcjlXamlKSUZvR05GRm04cnM3SXZvQ1NvSmljSmhpc0I2bjRMWlU4ZnpHVzY3S1MvdWxTZDR6RktWYUlvYkxNWFVuKzQveC9xLzJLdzM3QmNaNzFpeDJxSzhoRU01RHhhcWp0U01DaUdpV2VTelBDRTJqaEMzdnlvMkw1RzNKdHo4TTE3UHpEa1NHZ0RhbHAyeTc4NzFBQzVyaTZOZzFrZldtbWRlMDhzUnhodGNUNG1MRUsrZDBqakwrTmFaQjhPMi93enoybXhmWGVJUEFObm0weWgzbkpoZXR0LzFRY2I3OHhiOGNkNGw4dTh0dVR3SnpCZ0J3VVkxVTFEV0JBSUZsMHpKbWFSRk1ueVltcnVVaWNnNnR0WFFFWWxDZ1YvUjB0Q000REhydFB0RktGeTM1OHZCeENSMG5TT016NDlXd0ovLzlRWU5XUnhwa0VYZkE2L1VnbU10eFg2YUJ2SitRMlpreTdOUEVHN0hYTEM4WUdYZ0VJazFVbEprRzBZc1FkUmpSakpjaU5DZUZrU0lKSlgyQ2NuY0NlclU5MU5MYTVFekNFUnhGN2Jxb0l3LzZzYmFmZnppcVlJbTNMT3JCcC9IRnFyYVdPWGxTbVArR3FlUEREakczT041VjRIK2wvU2FBeDErNEV0QStncjRlemUyYVJQTzZVZEdtU0ZBQnVjYmtiaER6SVorZnY0bEI4cXozVVJ1ckg2K24rNGFIaUdNb2VCMnpXdk1zZzBaMFVwcENUNVVzT0t0Y1pZWXhrM2tJeVJEcEp0UzN3VVR0MjVYcnF4VU94L2NONnBjb05KYjhmRnlVUi8za0pPOFNSUFJ0c2VMSlhkRTJueEUrcklIcEs2WEFKSjYvUng1bEpsM2ZYczc2RXRPemUrL0pVeXdEd3ZDUm00TFlYdnVaSm4vVWc9Ll9zdktBZXltMU5VcUpSSkxrQUJ5Q1oxMHBlSzQ1bDNwNzN0eU1DMDZ6LVdhdXktVTdRQU43cWtYTFNDWmJ0dGN3cE15ellIUnFxX1dHMEFpYXJkdEln"/><input type="hidden" name="_eventId" value="submit"/><input type="hidden" name="geolocation"/><input name="password" :value="password" type="hidden"><button class="login" type="submit" style="width: 100%">登录</button>
+            </form>
+        </div>
+        <div class="log-wxin" v-show="tabIndex === '2'">
+          <div id="login_container"></div>
+        </div>
+        <form style="display: none">
+          <p class="log-btn">
+            <button type="submit" id="login-mail" class="login-btn login-btn1" href="javascript:login();">登录
+            </button>
+          </p>
+          <!--        </div>--></form>
+      </div>
+
+    </div>
+    <div style="width:960px;color:#84878A;font-size: 12px;margin:0 auto">
+      友情提醒：为了您更好地使用本系统，请使用IE9及以上、火狐、谷歌、搜狗浏览器
+    </div>
+    <div class="div-footer">
+      <img src="themes/login_shmh/images/login/icp.png"/><span>沪ICP备05012047号</span>
+      <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011202005321">
+        <img src="themes/login_shmh/images/login/guohui.png"/><span>沪公网安备 31011202005321号</span>
+      </a>
+    </div>
+    <div style="display: none">
+      <form method="post" style="display: none" id="tokenForm" action="login.htm">
+        <input type="hidden" name="token" id="token"/><input type="hidden" name="execution" value="c67a6eff-93e9-4bb0-ab39-c863fae99982_ZXlKaGJHY2lPaUpJVXpVeE1pSjkuZVl4Wm42UlI1S3ZZODJnMWRHKzhWaGRVaVFIMGtUWGQ2MGRnUGg4ZytjdkQvVmtGYk0zVWk3bTFSZG1DZHNZRGRWdURKZytzYUttaFZEMGpxSTdGcGFDYVNtbnQ1QVJNWjJDVi9Nc1NYNnBBNEJvSTlyeDFtZFlscVlIZ1RBVEZDNjJKUFg5Rk5iYkN1UmxwdmpqWncxWGM3bGxEQzgvTEtJNmYyNDlHRkd2WTgyUVhwOGpuVSs2SGp4TndST2RkVE5oS0VLbTdlUGZ0SC9wZ0w3U2VRWDBOeis5Y2V4K0ZtTHBsN1Q4dTZNNk5HdTA2OFpHNDQ1L3lrbi9tQnAxZjNLbksycmppT1U4RFcxMERlbVRPWlhCOXhmeFR0bS9IMlRDYWdta0hVV0lVa2V6b2djYWQ0aW92ZTRXMDZuTjhwRzNDeDc4alowTHdsdjQxQnZLMjZTNFJJNERvb1ptN2Mwa0dDY1pwMkxSWVdkREhJRU5Qejgzc0tRMHFDczZuY2Q3b0JDSmNIajRGRGZPb0l1YXhNM1ErY3IwSDdqbXAwWlhldHZkalJRekFCSUNObEIxSXUzUWNHQTNGQ0NFMXMxL1U4MmZhbXArVGdRZ2xVS3BkaWQvUWVQUENJZFNKQi9lTzliaGFXb2ViUk55emhUNk5LY3NnM0hIaCtQWnRMOXYvbXpZSzlCT0krSGlOVFVucVZTUmhtYVE0alpTQ091eG1oeUFYRjJXaWxlQjdzUnVBcjlXamlKSUZvR05GRm04cnM3SXZvQ1NvSmljSmhpc0I2bjRMWlU4ZnpHVzY3S1MvdWxTZDR6RktWYUlvYkxNWFVuKzQveC9xLzJLdzM3QmNaNzFpeDJxSzhoRU01RHhhcWp0U01DaUdpV2VTelBDRTJqaEMzdnlvMkw1RzNKdHo4TTE3UHpEa1NHZ0RhbHAyeTc4NzFBQzVyaTZOZzFrZldtbWRlMDhzUnhodGNUNG1MRUsrZDBqakwrTmFaQjhPMi93enoybXhmWGVJUEFObm0weWgzbkpoZXR0LzFRY2I3OHhiOGNkNGw4dTh0dVR3SnpCZ0J3VVkxVTFEV0JBSUZsMHpKbWFSRk1ueVltcnVVaWNnNnR0WFFFWWxDZ1YvUjB0Q000REhydFB0RktGeTM1OHZCeENSMG5TT016NDlXd0ovLzlRWU5XUnhwa0VYZkE2L1VnbU10eFg2YUJ2SitRMlpreTdOUEVHN0hYTEM4WUdYZ0VJazFVbEprRzBZc1FkUmpSakpjaU5DZUZrU0lKSlgyQ2NuY0NlclU5MU5MYTVFekNFUnhGN2Jxb0l3LzZzYmFmZnppcVlJbTNMT3JCcC9IRnFyYVdPWGxTbVArR3FlUEREakczT041VjRIK2wvU2FBeDErNEV0QStncjRlemUyYVJQTzZVZEdtU0ZBQnVjYmtiaER6SVorZnY0bEI4cXozVVJ1ckg2K24rNGFIaUdNb2VCMnpXdk1zZzBaMFVwcENUNVVzT0t0Y1pZWXhrM2tJeVJEcEp0UzN3VVR0MjVYcnF4VU94L2NONnBjb05KYjhmRnlVUi8za0pPOFNSUFJ0c2VMSlhkRTJueEUrcklIcEs2WEFKSjYvUng1bEpsM2ZYczc2RXRPemUrL0pVeXdEd3ZDUm00TFlYdnVaSm4vVWc9Ll9zdktBZXltMU5VcUpSSkxrQUJ5Q1oxMHBlSzQ1bDNwNzN0eU1DMDZ6LVdhdXktVTdRQU43cWtYTFNDWmJ0dGN3cE15ellIUnFxX1dHMEFpYXJkdEln"/><input type="hidden" name="_eventId" value="tokenSubmit"/><input type="hidden" name="geolocation"/><button type="submit" size="large" class="btn-red login-btn">登 录</button>
+      </form>
+      <a-modal
+        title="请绑定mfa"
+        :visible="visible"
+        width="400px"
+        ok-text="已绑定"
+        cancel-text="取消"
+        @cancel="handleCancel"
+        @ok="handleOk"
+      >
+        <div>
+          <img :src="mfaSrc"/></div>
+      </a-modal>
+      <a-modal
+        title="请绑定账号"
+        :visible="wechatBindVisible"
+        width="400px"
+        ok-text="确定"
+        cancel-text="取消"
+        @cancel="handleBindCancel"
+        @ok="handleBind"
+      >
+        <div>
+          <a-input
+            name="username"
+            size="large" v-model="modalData.username" placeholder="请输入用户名"
+            autocomplete="off"
+          >
+            <template #prefix>
+              <a-icon type="user"/></template>
+          </a-input>
+          <a-input-password
+            name="password"
+            size="large" v-model="modalData.password" placeholder="请输入密码"
+            autocomplete="off"
+            style="margin-top: 20px;"
+          >
+          </a-input-password>
+        </div>
+      </a-modal>
+    </div>
+  </div>
+</div>
+<script>
+    //<![CDATA[
+    let app = new Vue({
+        el: '#app',
+        data() {
+            return {
+                visible: false,
+                wechatBindVisible: false,
+                formState: {
+                    username: '',
+                    password: '',
+                    code: ''
+                },
+                modalData: {
+                    token: '',
+                    username: '',
+                    password: ''
+                },
+                mfaSrc: '',
+                tabIndex: '1'
+            }
+        },
+        computed: {
+            password() {
+                if (!this.formState.password) {
+                    return ''
+                }
+                return $.base64.btoatimes(this.formState.password, 3)
+            }
+        },
+        methods: {
+            async checkUsername() {
+                const {username} = this.formState
+                const res = await axios.post("\/cas\/mfa\/check\/"
+                    + username, {})
+                console.log(res)
+                if (res.data.code === '1002') {
+                    this.visible = true
+                    const mfaSrcData = await axios.post("\/cas\/mfa\/qrcode\/"
+                        + username, {})
+
+                    this.mfaSrc = mfaSrcData.data
+                }
+            },
+            handleCancel() {
+                this.visible = false
+            },
+            async handleOk() {
+                const res = await axios.post("\/cas\/mfa\/bind\/"
+                    + this.formState.username, {})
+                const {code, msg} = res.data
+                this.visible = false
+            },
+            async handleBind() {
+                const res = await axios.post("\/cas\/wechat\/bind", this.modalData)
+                const data = res.data
+                if (data.success) {
+                    if (this.service) {
+                        window.location.href ="\/cas\/login"
+                            + `?token=${this.modalData.token}&service=${encodeURIComponent(this.service)}`
+                    } else {
+                        window.location.href ="\/cas\/login"
+                            + `?token=${this.modalData.token}`
+                    }
+                } else {
+                    antd.message.error(data.message)
+                }
+            },
+            handleBindCancel() {
+                this.wechatBindVisible = false
+            },
+            doLogin() {
+
+            },
+            async handleSubmit() {
+                const res = await axios.post("\/cas\/mfa\/login"
+                    , this.formState)
+                // alert(JSON.stringify(res.data))
+                const {code, msg, token} = res.data
+                if (code === '0') {
+                    this.tokenSubmit(token)
+                } else if (code === '1002') {
+                    this.visible = true
+                    const mfaSrcData = await axios.post("\/cas\/mfa\/qrcode\/"
+                        + this.formState.username, {})
+                    this.mfaSrc = mfaSrcData.data
+                } else {
+                    antd.message.error(msg)
+                }
+            },
+            tokenSubmit(token) {
+                if (token) {
+                    $('#token').val(token)
+                    $("#tokenForm").submit();
+                }
+            },
+            wechatInit() {
+                const service = getQueryString("service");
+                const params = service ? {service: encodeURIComponent(service)} : {}
+                axios.post("\/cas\/wechat\/wechat-params", params).then(res => {
+                    const {appid, state, redirect_uri} = res.data
+                    const obj = new WxLogin({
+                        appid,
+                        state,
+                        redirect_uri,
+                        self_redirect: false,
+                        id: "login_container",
+                        scope: "snsapi_login",
+                        style: ""
+                    });
+                })
+            },
+            async wechatCallback() {
+                const code = getQueryString("code");
+                const state = getQueryString("state");
+                const wechat_token = getQueryString("wechat_token");
+
+                if (code && state) {
+                    const {data} = await axios.post("\/cas\/wechat\/auth", {code, state})
+                    const {auth, service, token} = data || {}
+                    if (!token) {
+                        window.location.href ="\/cas\/login"
+                        return
+                    }
+                    if (auth) {
+                        this.tokenSubmit(token)
+                        // window.location.href =/*"\/cas\/login"*/"/cas/login" + `?token=${token}&service=${service}`
+                        return
+                    }
+                    const params = {
+                        type: 'wechat',
+                        wechat_token: token,
+                        service
+                    }
+                    window.location.href = "\/cas\/login"
+                        + '?' + $.param(params)
+                    return
+                }
+                if (wechat_token) {
+                    const {data} = await axios.post("\/cas\/wechat\/check", {token: wechat_token})
+                    const {auth} = data || {}
+                    if (auth) {
+                        this.tokenSubmit(wechat_token)
+                    } else {
+                        this.modalData.token = wechat_token
+                        this.wechatBindVisible = true
+                    }
+                }
+            },
+            findPsw() {
+                window.location.href = "/sns/do.jsp?ac=findpswd";
+            },
+            openPage(url) {
+                window.open(url)
+            },
+        },
+        mounted() {
+            const token = getQueryString("token");
+            if (token) {
+                this.tokenSubmit(token)
+                return
+            }
+            const type = getQueryString("type");
+            if (type === 'wechat') {
+                this.wechatCallback()
+                return;
+            }
+            this.wechatInit()
+        }
+    })
+    //]]>
+</script>
+</body>
+</html>

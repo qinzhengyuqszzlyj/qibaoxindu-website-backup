@@ -1,0 +1,340 @@
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+<!doctype html>
+<html>
+<head>
+	
+
+
+
+
+
+
+ 
+
+
+
+
+
+<meta charset="UTF-8">
+<title>上海市闵行区教育学院</title>
+<link rel="apple-touch-icon-precomposed" sizes="32x32" href="../../../ftpfiles/dcpfiles/mainpicture/ico_jyxy.ico">
+<link rel="shortcut icon" href="../../../ftpfiles/dcpfiles/mainpicture/ico_jyxy.ico">
+<script src="../../../static/vue/jquery-3.6.0.min.js"></script><script type="text/javascript" src="../../../static/vue/jquery-migrate.min.js"></script>
+<script src="../../../static/js/V1.0"></script>
+<script src="../../../static/js/layer/layer.js"></script>
+<script src="../../../static/js/idealdcp/utils/Utils.js"></script>
+<script type="text/javascript" src="../../../static/js/ueditor/ueditor.parse.js"></script>
+<script type="text/javascript" src="../../../static/js/jquery-qrcode-master/jquery.qrcode.min.js"></script>
+
+
+	<link rel="stylesheet" type="text/css" href="../../../static/extranet/mhedu/index/css/style_2.css">
+	<style type="text/css">
+		table td p{
+			text-indent: 0em !important;
+		}
+		table td{
+			border: 1px solid;
+		}
+	</style>
+</head>
+<body>
+	
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+<style type="text/css">
+#qrcodediv img{
+    margin: 30px auto;
+}
+</style>   
+
+<div id="header">
+	<div id="topbar">
+		<div class="topbarcon cl" style="">
+			<div class="topsearch"><input id="searchDiv" type="text" placeholder="输入关键字搜索..." class="stxt"><input type="button" value="搜索" class="sbtn"></div>
+			<div class="toprlink">
+				<span class="locat">上海市闵行区紫龙路835号</span>
+				<a href="javascript:;" class="loginlink" id="wxqrcodebtn">移动版</a>
+                <a href="index!login.action" target="_blank" class="loginlink">用户登录</a>
+			</div>
+		</div>
+	</div>
+	<div id="top" class="cl">
+        <div id="logo" style="width:235px;"><img src="../../../static/extranet/mhedu/index/images/logo.png" height="66" width="193" alt="">
+        </div>
+		<ul class="menu">
+			<li class="home current"><a target="_blank" href="../../../index.action"  >首页</a></li>
+			<li><a target="_blank" class="morelist" code="JYXY_XXGK" href="../mhedu/xx.action" >信息公开</a></li>
+			<li><a target="_blank" class="morelist" code="JYXY_DWGK" href="../mhedu/dw.action" >党务公开</a></li>
+			<li><a target="_blank" class="morelist" code="JYXY_HXXY" href="../mhedu/hx.action" >文明单位</a></li>
+			<li><a target="_blank" class="morelist" code="JYXY_ZHJY" href="../mhedu/zh.action" >智慧教育</a></li>
+            
+			<li><a target="_blank" class="morelist" code="JYXY_SY_XYDT" >学院动态</a></li>
+			<li><a target="_blank" class="morelist" code="JYXY_SY_ZHYJ">综合研究</a></li>
+            <li><a target="_blank" class="morelist" code="JYXY_SY_YXDT">教研动态</a></li>
+            <li><a target="_blank" class="morelist" code="JYXY_SY_JSPX">教师培训</a></li>
+            <li><a target="_blank" class="morelist" code="JYXY_SY_GBPX">干部培训</a></li>
+			<li><a target="_blank" class="morelist" code="JYXY_SY_DYYJ">德育研究</a></li>
+			<li><a target="_blank" class="morelist" code="JYXY_XLJK"
+                   href="../mhedu/xl.action">心理健康</a></li>
+            <li><a target="_blank" class="morelist" code="JYXY_SY_ZHYJ_JYKY">教育科研</a></li>
+			<li><a target="_blank" class="morelist" code="JYXY_SY_JYJS">教育技术</a></li>
+		</ul>
+	</div>
+</div>
+
+<script>
+	var codes=[];
+	$(".morelist").each(function(){
+		codes.push($(this).attr("code"));
+	});
+	$(".morelist").click(function(){
+        if(!this.href)
+        window.open('/extranet/web/index/index!more.action?catalogCode='+$(this).attr("code"));
+	});
+	$(".sbtn").click(function(){
+        Utils.formBuilder.submitByForm({search:$('#searchDiv').val()}, '/extranet/web/index/index!search.action');
+    });
+
+	$.ajax({
+		url:"/extranet/web/index/index!codes.action",
+		type:'post',
+		data:{codes:codes.join(",")},
+		success:function(data){
+			$(".morelist").each(function(){
+				if(''.indexOf(data.data[$(this).attr("code")])>-1){
+					$("#top .current").removeClass("current");
+					$(this).parent().addClass("current");
+				}
+			});
+
+		},
+		error:function(){
+
+		}
+	});
+</script>
+
+	<div id="combox">
+		<div class="comcon cl">
+			<div class="noticebox">
+				<div class="location">
+                    <a href="index!list.action" class="home"></a> <em>&gt;</em> <a href="index!edunotice.action">通知</a>
+				</div>
+				<div class="article">
+					<h1>闵行区中小学第十一届班主任基本功大赛颁奖典礼暨闵行区第二十期骨干班主任培训班开班典礼</h1>
+					<div class="artinfo">
+						发布时间: 2024-09-18
+					</div>
+					<div class="artcon">
+						<p style="margin-top:0;text-autospace:none;vertical-align:baseline;line-height:150%"><strong><span style="font-family: 仿宋;line-height: 150%;font-size: 19px">各中小学、中职校：</span></strong></p><p style="text-indent: 37px; line-height: normal;"><span style="font-family: 仿宋;letter-spacing: -0;font-size: 19px">为</span><span style="font-family: 仿宋;letter-spacing: -0;font-size: 19px">深入学习贯彻习近平总书记在全国教育大会上的</span><span style="font-family: 仿宋;letter-spacing: -0;font-size: 19px">重</span><span style="font-family: 仿宋;letter-spacing: -0;font-size: 19px">要讲话精神，大力弘扬和践行教育家精神，</span><span style="font-family: 仿宋;letter-spacing: -0;font-size: 19px">持续推进闵行区班主任队伍专业化建设，提升班主任建班育人的能力和水平，</span><span style="font-family: 仿宋;letter-spacing: -0;font-size: 19px">打造</span><span style="font-family: 仿宋;letter-spacing: -0;font-size: 19px">一支</span><span style="font-family: 仿宋;letter-spacing: -0;font-size: 19px">高素质专业化</span><span style="font-family: 仿宋;letter-spacing: -0;font-size: 19px">班主任</span><span style="font-family: 仿宋;letter-spacing: -0;font-size: 19px">队伍</span><span style="font-family: 仿宋;letter-spacing: -0;font-size: 19px"><span style="font-family:仿宋">。经研究决定，将于</span><span style="font-family:仿宋">9月24日举行</span></span><span style="font-family: 仿宋;letter-spacing: -0;font-size: 19px">闵行区中小学第十一届班主任基本功大赛</span><span style="font-family: 仿宋;letter-spacing: -0;font-size: 19px">颁奖典礼暨闵行区第二十期骨干班主任培训班开班典礼活动，现将有关事宜通知如下：</span></p><p style="margin-top: 6px; margin-left: 2px; line-height: normal;"><strong><span style="font-family: 仿宋;letter-spacing: -0;font-size: 19px">一、时间地点</span></strong></p><p style="margin-top: 11px; margin-left: 40px; line-height: normal;"><span style="font-family: 仿宋;letter-spacing: -0;font-size: 19px">1.</span><span style="font-family: 仿宋;letter-spacing: 2px;font-size: 19px">&nbsp;</span><span style="font-family: 仿宋;letter-spacing: -0;font-size: 19px"><span style="font-family:仿宋">时间：</span> 2023</span><span style="font-family: 仿宋;letter-spacing: -3px;font-size: 19px">&nbsp;</span><span style="font-family: 仿宋;letter-spacing: -0;font-size: 19px">年</span><span style="font-family: 仿宋;letter-spacing: -4px;font-size: 19px">&nbsp;</span><span style="font-family: 仿宋;letter-spacing: -0;font-size: 19px">9</span><span style="font-family: 仿宋;letter-spacing: -3px;font-size: 19px">&nbsp;</span><span style="font-family: 仿宋;letter-spacing: -0;font-size: 19px">月</span><span style="font-family: 仿宋;letter-spacing: -4px;font-size: 19px">&nbsp;</span><span style="font-family: 仿宋;letter-spacing: -0;font-size: 19px">24 日（周二）下午</span><span style="font-family: 仿宋;letter-spacing: -3px;font-size: 19px">&nbsp;</span><span style="font-family: 仿宋;letter-spacing: -0;font-size: 19px">13：30—1</span><span style="font-family: 仿宋;letter-spacing: -0;font-size: 19px">6</span><span style="font-family: 仿宋;letter-spacing: -1px;font-size: 19px">:00</span></p><p style="margin-top: 11px; margin-left: 40px; line-height: normal;"><span style="font-family: 仿宋; line-height: 114%; letter-spacing: 0px; font-size: 19px;">2. 地点： 上海市闵行区实验小学畹町校区豌豆剧场</span><span style="font-family: 仿宋; line-height: 114%; letter-spacing: 1px; font-size: 19px;">&nbsp;</span><span style="font-family: 仿宋; line-height: 114%; letter-spacing: 0px; font-size: 19px;">（闵行区高兴路</span><span style="font-family: 仿宋; line-height: 114%; letter-spacing: -4px; font-size: 19px;">&nbsp;</span><span style="font-family: 仿宋; line-height: 114%; letter-spacing: 0px; font-size: 19px;">389</span><span style="font-family: 仿宋; line-height: 114%; letter-spacing: -3px; font-size: 19px;">&nbsp;</span><span style="font-family: 仿宋; line-height: 114%; letter-spacing: 0px; font-size: 19px;">号）</span></p><p style="margin-top: 6px; margin-left: 3px; line-height: normal;"><strong><span style="font-family: 仿宋;letter-spacing: -0;font-size: 19px">二、活动安排</span></strong></p><p style="margin-top: 11px; margin-left: 39px; line-height: normal;"><strong><span style="font-family: 仿宋;letter-spacing: -0;font-size: 19px">（一）躬耕求是</span></strong></p><p style="margin-top: 11px; margin-left: 64px; line-height: normal;"><span style="font-family: 楷体;letter-spacing: -0;font-size: 19px">·</span><span style="font-family: 楷体;letter-spacing: -7px;font-size: 19px">&nbsp;</span><span style="font-family: 楷体;letter-spacing: -0;font-size: 19px">闵行区中小学第十一届班主任基本功大赛总结</span></p><p style="margin-top: 11px; margin-left: 64px; line-height: normal;"><span style="font-family: 楷体;letter-spacing: -0;font-size: 19px">·</span><span style="font-family: 楷体;letter-spacing: -7px;font-size: 19px">&nbsp;</span><span style="font-family: 楷体;letter-spacing: -0;font-size: 19px"><span style="font-family:楷体">情景讲述：以赛促研、以赛促建</span> &nbsp;&nbsp;&nbsp;&nbsp;</span></p><p style="margin-top: 11px; margin-left: 39px; line-height: normal;"><strong><span style="font-family: 仿宋;letter-spacing: -0;font-size: 19px">（二）启智润心</span></strong></p><p style="margin-top: 11px; margin-left: 64px; line-height: normal;"><span style="font-family: 楷体;letter-spacing: -1px;font-size: 19px">·班主任基本功比赛项目展示</span></p><p style="margin-top: 11px; margin-left: 77px; line-height: normal;"><span style="font-family: 楷体;letter-spacing: -0;font-size: 19px">1、育人故事《穿越星星峡的守护》</span></p><p style="margin-top: 11px; margin-right: 12px; text-indent: 74px; line-height: normal;"><span style="font-family: 楷体;letter-spacing: -0;font-size: 19px">2、带班育人方略《启蒙养正 润育先“蜂</span><span style="font-family: 楷体;letter-spacing: -6px;font-size: 19px">&nbsp;</span><span style="font-family: 楷体;letter-spacing: -0;font-size: 19px">”》</span></p><p style="margin-top: 4px; margin-right: 12px; text-indent: 74px; line-height: normal;"><span style="font-family: 楷体;letter-spacing: -0;font-size: 19px">3、代入式情境模拟《当日记被偷看后……》</span></p><p style="margin-top: 11px; margin-left: 39px; line-height: normal;"><strong><span style="font-family: 仿宋;letter-spacing: -0;font-size: 19px">（三）踔厉奋发</span></strong></p><p style="margin-top: 11px; margin-left: 64px; line-height: normal;"><span style="font-family: 楷体;letter-spacing: -2px;font-size: 19px">·</span><span style="font-family: 楷体;letter-spacing: 0;font-size: 19px">&nbsp;</span><span style="font-family: 楷体;letter-spacing: -2px;font-size: 19px">颁奖仪式</span></p><p style="margin-top: 10px; margin-left: 77px; line-height: normal;"><span style="font-family: 楷体;letter-spacing: -0;font-size: 19px">1、闵行区中小学第十一届班主任基本功大</span><span style="font-family: 楷体;letter-spacing: -0;font-size: 19px">赛一等奖</span></p><p style="margin-top: 11px; margin-left: 76px; line-height: normal;"><span style="font-family: 楷体;letter-spacing: -0;font-size: 19px">2、闵行区中小学第十一届班主任基本功大赛优秀组织奖</span></p><p style="margin-top: 11px; text-indent: 70px; text-align: justify; line-height: normal;"><span style="font-family: 楷体;letter-spacing: -1px;font-size: 19px">·</span><span style="font-family: 楷体;letter-spacing: -4px;font-size: 19px">&nbsp;</span><span style="font-family: 楷体;letter-spacing: -1px;font-size: 19px">优秀组织奖交流</span><span style="font-family: 楷体;letter-spacing: 2px;font-size: 19px">&nbsp;&nbsp;</span></p><p style="margin-top: 11px; margin-left: 39px; line-height: normal;"><strong><span style="font-family: 仿宋;letter-spacing: -0;font-size: 19px">（四）勤学笃行</span></strong></p><p style="margin-top: 11px; margin-left: 64px; line-height: normal;"><span style="font-family: 楷体;letter-spacing: -1px;font-size: 19px">·</span><span style="font-family: 楷体;letter-spacing: 2px;font-size: 19px">&nbsp;</span><span style="font-family: 楷体;letter-spacing: -1px;font-size: 19px">闵行区中小学骨干班主任培训班</span><span style="font-family: 楷体;letter-spacing: -4px;font-size: 19px">&nbsp;</span><span style="font-family: 楷体;letter-spacing: -1px;font-size: 19px">20</span><span style="font-family: 楷体;letter-spacing: -4px;font-size: 19px">&nbsp;</span><span style="font-family: 楷体;letter-spacing: -1px;font-size: 19px">年回顾</span></p><p style="margin-top: 10px; margin-right: 97px; margin-left: 64px; line-height: normal;"><span style="font-family: 楷体;letter-spacing: -0;font-size: 19px">· 颁发闵行区中小学骨干班主任培训班导师聘书</span><span style="font-family: 楷体;letter-spacing: 0;font-size: 19px">&nbsp;</span></p><p style="margin-top: 3px; margin-left: 39px; line-height: normal;"><strong><span style="font-family: 仿宋;letter-spacing: -0;font-size: 19px">（五）牢铸信念</span></strong></p><p style="margin-top: 11px; margin-left: 64px; line-height: normal;"><span style="font-family: 楷体;letter-spacing: -0;font-size: 19px">· 领导讲话 &nbsp;&nbsp;&nbsp;&nbsp;</span></p><p style="margin-top: 6px; margin-left: 3px; line-height: normal;"><strong><span style="font-family: 仿宋;letter-spacing: -0;font-size: 19px">三、参加人员</span></strong></p><p style="margin-top: 11px; margin-left: 39px; line-height: normal;"><span style="font-family: 仿宋;letter-spacing: -0;font-size: 19px"></span></p><p style="margin-top: 11px; margin-left: 40px; line-height: normal;"><span style="font-family: 仿宋;letter-spacing: -0;font-size: 19px">1.</span><span style="font-family: 仿宋;letter-spacing: 3px;font-size: 19px">&nbsp;</span><span style="font-family: 仿宋;letter-spacing: -0;font-size: 19px">闵行区第十一届班主任基本功大赛获奖者</span></p><p style="margin-top: 11px; margin-left: 39px; line-height: normal;"><span style="font-family: 仿宋;letter-spacing: -0;font-size: 19px">2. 闵行区中小学分管德育领导</span><span style="font-family: 仿宋;letter-spacing: -0;font-size: 19px">或</span><span style="font-family: 仿宋;letter-spacing: -0;font-size: 19px">德育主任</span></p><p style="margin-top: 11px; margin-left: 39px; line-height: normal;"><span style="font-family: 仿宋;letter-spacing: -0;font-size: 19px">3. 闵行区第二十期骨干班主任培训班导师团</span></p><p style="margin-top: 11px; margin-left: 39px; line-height: normal;"><span style="font-family: 仿宋;letter-spacing: -0;font-size: 19px">4. 闵行区第二十期中小学骨干班主任培训班学员</span></p><p style="margin-top: 11px; margin-left: 39px; line-height: normal;"><span style="font-family: 仿宋;letter-spacing: -0;font-size: 19px">5.</span><span style="font-family: 仿宋;letter-spacing: 3px;font-size: 19px">&nbsp;</span><span style="font-family: 仿宋; font-size: 19px;">闵行区班主任中心组</span></p><p style="margin-top: 11px; margin-left: 39px; line-height: normal;"><span style="font-family: 仿宋;letter-spacing: -0;font-size: 19px">6.</span><span style="font-family: 仿宋;letter-spacing: 3px;font-size: 19px">&nbsp;</span><span style="font-family: 仿宋; font-size: 19px;">闵行区顾彩娟班主任种子基地</span></p><p style="margin-top: 11px; margin-left: 39px; line-height: normal;"><span style="font-family: 仿宋;letter-spacing: -0;font-size: 19px">7.&nbsp;</span><span style="font-family: 仿宋; font-size: 19px;">浦锦名师工作室学员</span></p><p style="margin-top: 11px; margin-left: 39px; line-height: normal;"><span style="font-family: 仿宋;letter-spacing: -0;font-size: 19px">8.&nbsp;</span><span style="font-family: 仿宋; font-size: 19px;">闵行区第六届中小学（晶城中学）德育实践研究基地学员</span></p><p style="margin-top: 6px; margin-left: 3px; line-height: normal;"><span style="font-family: 仿宋;letter-spacing: -0;font-weight: bold;font-size: 19px">四、</span><strong><span style="font-family: 仿宋;letter-spacing: -0;font-size: 19px">备注</span></strong></p><p style="margin-top: 6px; line-height: normal;"><strong><span style="font-family: 仿宋;letter-spacing: -0;font-size: 19px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></strong><span style="font-family: 仿宋;letter-spacing: -0;font-size: 19px">由于车位有限，请绿色出行</span></p><p style="margin-top:6px;text-align:right"><span style="font-family: 仿宋;letter-spacing: -0;font-size: 19px">&nbsp;</span></p><p style="margin-top:6px;text-align:right"><span style="font-family: 仿宋;letter-spacing: -0;font-size: 19px">闵行区教育学院德育研究中心</span></p><p style="margin-top:6px;text-align:right"><span style="font-family: 仿宋;letter-spacing: -0;font-size: 19px">2024.9.18</span></p><p><br></p>
+					</div>
+					
+						<div class="filebox">
+							<h6>附件：（点击下载）</h6>
+							
+								<p><a href="../../../ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/XYTZ/allArea/main/2024/09/ff8080817ba41fa2017ba4cd708300f8/��������ʮһ������λ���������������.doc" download="闵行区第十一届班主任基本功大赛获奖名单.doc">1、<span style="color: #359bd7;">闵行区第十一届班主任基本功大赛获奖名单.doc</span></a></p>
+							
+								<p><a href="../../../ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/XYTZ/allArea/main/2024/09/ff8080817ba41fa2017ba4cd708300f8/�ڶ�ʮ�ڹǸɰ�������ѵ��СѧѧԱ����.doc" download="第二十期骨干班主任培训班小学学员名单.doc">2、<span style="color: #359bd7;">第二十期骨干班主任培训班小学学员名单.doc</span></a></p>
+							
+								<p><a href="../../../ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/XYTZ/allArea/main/2024/09/ff8080817ba41fa2017ba4cd708300f8/�ڶ�ʮ�ڹǸɰ�������ѵ����ѧѧԱ����.doc" download="第二十期骨干班主任培训班中学学员名单.doc">3、<span style="color: #359bd7;">第二十期骨干班主任培训班中学学员名单.doc</span></a></p>
+							
+							
+						</div>
+					
+					<div class="artpre">
+                        <span class="goback"><a href="index!edunotice.htm">返回列表</a></span>
+						<p>上一篇： <a href="index!edunoticeInfo_7.htm">关于举办初中地理优质单元教学设计评比的通知</a> </p>
+						<p>下一篇： <a href="index!edunoticeInfo_5.htm">关于2024学年义务教育新课程新教材实施 初中《体育与健康》优质单元教学设计评比的通知</a> </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+<div id="footer">
+	<div class="ft cl">
+		<div  class="blogo">
+            <span id="_ideConac" class="" style="margin-top: 5px;">
+            <a href="http://bszs.conac.cn/sitename?method=show&amp;id=2907016072AE5269E053012819ACF339" target="_blank">
+                <img id="imgConac" vspace="0" hspace="0" border="0" src="../../../ftpfiles/dcpfiles/image/blue.png"
+                     data-bd-imgshare-binded="1">
+            </a>
+        </span>
+        </div>
+        <div  class="blogo">
+            <div style="padding: 3px;background-color: white;width: 56px;margin: auto;">
+                <span class="" id="footerwxqrcodebtn" ></span>
+            </div>
+            <span>移动版二维码</span>
+        </div>
+        <div  class="blogo">
+            <div class="" id="qyFrcode" style="margin-right:10px;display: block;">
+                <img src="../../../ftpfiles/dcpfiles/introduction/2205021687154906a1763079ccc40a84.jpg" style="width: 61px;height: 62px;">
+            </div>
+            <span>闵行区教育学院服务号</span>
+        </div>
+
+        <div class="bnav">
+            <a href="../mhedu/xx!oriented_2.htm">联系我们</a>
+            |
+            <a href="../mhedu/xx!oriented.htm">版权声明</a>
+            |
+            <a href="../mhedu/xx!LeavingMessare.action">我要留言</a>
+            |
+            <a target="_blank" href="http://10.107.58.146">旧网链接（内网）</a></div>
+		<div class="copyright">
+            <p>版权所有 上海市闵行区教育学院 （工信部备案号:沪ICP备05012047号）
+                <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011202005311"
+                   style="text-decoration:none;height:20px;line-height:20px;">
+                    <img src="../../../static/extranet/mhedu/index/images/pilice.png"/>
+                    <span style="height:20px;line-height:20px;color:#fff;">沪公网安备 31011202005311号</span>
+                </a>
+            </p>
+
+            <p>地址：上海市闵行区紫龙路835号 邮编：200241 电话：021-34728865</p>
+
+            <p>本站推荐使用Chrome访问</p>
+        </div>
+	</div>
+</div>
+
+<script  src="../../../static/js/qrcode.min.js"></script>
+<script src="../../../static/js/layer3/layer/layer.js"></script>
+<script>
+
+	var _qrcodeUrl=location.href.split('/extranet')[0]+'/extranet/web/index/index.action';
+
+	var qrcode = new QRCode("footerwxqrcodebtn", {
+	    text: _qrcodeUrl,
+	    width: 56,
+	    height: 56,
+	    colorDark : "#000000",
+	    colorLight : "#ffffff",
+	    correctLevel : QRCode.CorrectLevel.L
+	});
+
+    $("#wxqrcodebtn").click(function(){
+        layer.open({
+            type: 1,
+            title :'移动版扫码进入',
+            skin: 'layui-layer-demo', //样式类名
+            closeBtn: 1, //不显示关闭按钮
+            anim: 2,
+            area :['500px','500px'],
+            shadeClose: true, //开启遮罩关闭
+            content: '<div id="qrcodediv"></div>',
+            success:function(){
+                var qrcode = new QRCode("qrcodediv", {
+                    text: _qrcodeUrl,
+                    width: 360,
+                    height: 360,
+                    colorDark : "#000000",
+                    colorLight : "#ffffff",
+                    correctLevel : QRCode.CorrectLevel.H
+                });
+
+
+            }
+
+
+        });
+    });
+
+    $("#footerwxqrcodebtn").click(function(){
+        layer.open({
+            type: 1,
+            title :'移动版扫码进入',
+            skin: 'layui-layer-demo', //样式类名
+            closeBtn: 1, //不显示关闭按钮
+            anim: 2,
+            area :['500px','500px'],
+            shadeClose: true, //开启遮罩关闭
+            content: '<div id="qrcodediv"></div>',
+            success:function(){
+                var qrcode = new QRCode("qrcodediv", {
+                    text: _qrcodeUrl,
+                    width: 360,
+                    height: 360,
+                    colorDark : "#000000",
+                    colorLight : "#ffffff",
+                    correctLevel : QRCode.CorrectLevel.H
+                });
+
+
+            }
+
+
+        });
+    });
+
+	$("#qyFrcode").click(function(){
+		layer.open({
+			  type: 1,
+			  title :'服务号扫码关注',
+			  skin: 'layui-layer-demo', //样式类名
+			  closeBtn: 1, //不显示关闭按钮
+			  anim: 2,
+			  area :['500px','500px'],
+			  shadeClose: true, //开启遮罩关闭
+			  content: '<div id="qrcodediv"></div>',
+			  success:function(){
+				  $('#qrcodediv').html('<img src="https://jyxy.mhedu.sh.cn/extranet/web/index/'+$('#qyFrcode img').attr('src')+'" style="display:block;;width:360px;height:360px;" />');
+				  
+			  }
+
+		  
+		});
+	});
+
+</script>
+</body>
+
+<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+  	<script src="../../../static/themes/cameo1.0/js/v1.1"></script>
+<script type="text/javascript">
+    function goBack(){
+    	history.back(-1);
+    }
+    uParse('.artcon', {
+        rootPath: '../'
+    });
+    _wxshare({title:'闵行区中小学第十一届班主任基本功大赛颁奖典礼暨闵行区第二十期骨干班主任培训班开班典礼',link:location.href,imgUrl:'http://'+location.host+'/static/school/images/jyxylogo.png',desc:'',ctx:''});
+</script>
+</html>

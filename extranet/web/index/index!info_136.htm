@@ -1,0 +1,1264 @@
+
+
+
+
+
+
+ 
+
+
+
+
+
+<!doctype html>
+<html>
+<head>
+    
+
+
+
+
+
+
+ 
+
+
+
+
+
+<meta charset="UTF-8">
+<title>上海市闵行区教育学院</title>
+<link rel="apple-touch-icon-precomposed" sizes="32x32" href="../../../ftpfiles/dcpfiles/mainpicture/ico_jyxy.ico">
+<link rel="shortcut icon" href="../../../ftpfiles/dcpfiles/mainpicture/ico_jyxy.ico">
+<script src="../../../static/vue/jquery-3.6.0.min.js"></script><script type="text/javascript" src="../../../static/vue/jquery-migrate.min.js"></script>
+<script src="../../../static/js/V1.0"></script>
+<script src="../../../static/js/layer/layer.js"></script>
+<script src="../../../static/js/idealdcp/utils/Utils.js"></script>
+<script type="text/javascript" src="../../../static/js/ueditor/ueditor.parse.js"></script>
+<script type="text/javascript" src="../../../static/js/jquery-qrcode-master/jquery.qrcode.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../../../static/extranet/mhedu/index/css/style.css">
+    <style>
+        p{
+            text-indent: 2em;
+        }
+    </style>
+</head>
+<body>
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+<style type="text/css">
+#qrcodediv img{
+    margin: 30px auto;
+}
+</style>   
+
+<div id="header">
+	<div id="topbar">
+		<div class="topbarcon cl" style="">
+			<div class="topsearch"><input id="searchDiv" type="text" placeholder="输入关键字搜索..." class="stxt"><input type="button" value="搜索" class="sbtn"></div>
+			<div class="toprlink">
+				<span class="locat">上海市闵行区紫龙路835号</span>
+				<a href="javascript:;" class="loginlink" id="wxqrcodebtn">移动版</a>
+                <a href="index!login.action" target="_blank" class="loginlink">用户登录</a>
+			</div>
+		</div>
+	</div>
+	<div id="top" class="cl">
+        <div id="logo" style="width:235px;"><img src="../../../static/extranet/mhedu/index/images/logo.png" height="66" width="193" alt="">
+        </div>
+		<ul class="menu">
+			<li class="home current"><a target="_blank" href="../../../index.action"  >首页</a></li>
+			<li><a target="_blank" class="morelist" code="JYXY_XXGK" href="../mhedu/xx.action" >信息公开</a></li>
+			<li><a target="_blank" class="morelist" code="JYXY_DWGK" href="../mhedu/dw.action" >党务公开</a></li>
+			<li><a target="_blank" class="morelist" code="JYXY_HXXY" href="../mhedu/hx.action" >文明单位</a></li>
+			<li><a target="_blank" class="morelist" code="JYXY_ZHJY" href="../mhedu/zh.action" >智慧教育</a></li>
+            
+			<li><a target="_blank" class="morelist" code="JYXY_SY_XYDT" >学院动态</a></li>
+			<li><a target="_blank" class="morelist" code="JYXY_SY_ZHYJ">综合研究</a></li>
+            <li><a target="_blank" class="morelist" code="JYXY_SY_YXDT">教研动态</a></li>
+            <li><a target="_blank" class="morelist" code="JYXY_SY_JSPX">教师培训</a></li>
+            <li><a target="_blank" class="morelist" code="JYXY_SY_GBPX">干部培训</a></li>
+			<li><a target="_blank" class="morelist" code="JYXY_SY_DYYJ">德育研究</a></li>
+			<li><a target="_blank" class="morelist" code="JYXY_XLJK"
+                   href="../mhedu/xl.action">心理健康</a></li>
+            <li><a target="_blank" class="morelist" code="JYXY_SY_ZHYJ_JYKY">教育科研</a></li>
+			<li><a target="_blank" class="morelist" code="JYXY_SY_JYJS">教育技术</a></li>
+		</ul>
+	</div>
+</div>
+
+<script>
+	var codes=[];
+	$(".morelist").each(function(){
+		codes.push($(this).attr("code"));
+	});
+	$(".morelist").click(function(){
+        if(!this.href)
+        window.open('/extranet/web/index/index!more.action?catalogCode='+$(this).attr("code"));
+	});
+	$(".sbtn").click(function(){
+        Utils.formBuilder.submitByForm({search:$('#searchDiv').val()}, '/extranet/web/index/index!search.action');
+    });
+
+	$.ajax({
+		url:"/extranet/web/index/index!codes.action",
+		type:'post',
+		data:{codes:codes.join(",")},
+		success:function(data){
+			$(".morelist").each(function(){
+				if('EDXW.005.004'.indexOf(data.data[$(this).attr("code")])>-1){
+					$("#top .current").removeClass("current");
+					$(this).parent().addClass("current");
+				}
+			});
+
+		},
+		error:function(){
+
+		}
+	});
+</script>
+
+<div id="main">
+    <div class="comcon cl">
+        
+
+
+
+
+
+ 
+
+
+
+
+
+<div class="pleft" >
+    <div class="plbox">
+        <h2>学院主站</h2>
+        <div class="pmenu" >
+            
+            
+                <h5 class=" hasdl  "
+                    ><span class="left-menu " data-code="EDXW.005.008">学院动态</span></h5>
+                
+                    <dl style=" ">
+                            
+                        
+                            <dt class="    "
+                                ><span class="left-menu " data-code="EDXW.005.008.001">综合要闻</span</dt>
+                            
+                        
+                            <dt class="    "
+                                ><span class="left-menu " data-code="EDXW.005.008.002">闵行教育研究</span</dt>
+                            
+                        
+                            <dt class="    "
+                                ><span class="left-menu " data-code="EDXW.005.008.003">学院简讯</span</dt>
+                            
+                        
+                            <dt class="    "
+                                ><span class="left-menu " data-code="EDXW.005.008.004">考察交流</span</dt>
+                            
+                        
+
+                    </dl>
+                
+            
+                <h5 class=" hasdl  "
+                    ><span class="left-menu " data-code="EDXW.005.001">综合研究</span></h5>
+                
+                    <dl style=" ">
+                            
+                        
+                            <dt class="   hasdd   "
+                                ><span class="left-menu " data-code="EDXW.005.001.001">小学教学研究</span</dt>
+                            
+                                <dd style=" ">
+                                    <ul>
+                                            
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.001.001">小学语文</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.001.002">小学数学</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.001.003">小学英语</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.001.004">小学信息</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.001.005">小学劳技</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.001.006">小学体育</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.001.007">小学品社</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.001.008">小学音乐</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.001.009">小学美术</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.001.010">小学自然</a></li>
+                                        
+                                    </ul>
+                                </dd>
+                            
+                        
+                            <dt class="   hasdd   "
+                                ><span class="left-menu " data-code="EDXW.005.001.002">初中教学研究</span</dt>
+                            
+                                <dd style=" ">
+                                    <ul>
+                                            
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.002.001">初中语文</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.002.002">初中数学</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.002.003">初中英语</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.002.004">初中政治</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.002.005">初中物理</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.002.006">初中化学</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.002.007">初中历史</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.002.008">初中地理</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.002.009">初中信息</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.002.010">初中劳技</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.002.011">初中体育</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.002.012">初中音乐</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.002.013">初中美术</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.002.014">初中科学</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.002.015">初中社会</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.002.016">初中生命科学</a></li>
+                                        
+                                    </ul>
+                                </dd>
+                            
+                        
+                            <dt class="   hasdd   "
+                                ><span class="left-menu " data-code="EDXW.005.001.003">高中教学研究</span</dt>
+                            
+                                <dd style=" ">
+                                    <ul>
+                                            
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.003.001">高中语文</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.003.002">高中数学</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.003.003">高中英语</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.003.004">高中物理</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.003.005">高中化学</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.003.006">高中政治</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.003.008">高中历史</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.003.007">高中地理</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.003.010">高中生命科学</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.003.011">高中信息</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.003.012">高中劳技</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.003.013">高中体育</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.003.014">高中音乐</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.003.015">高中美术</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.003.016">高中科学</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.003.017">高中生物</a></li>
+                                        
+                                    </ul>
+                                </dd>
+                            
+                        
+                            <dt class="   hasdd   "
+                                ><span class="left-menu " data-code="EDXW.005.001.004">综合教学研究</span</dt>
+                            
+                                <dd style=" ">
+                                    <ul>
+                                            
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.004.002">图书馆</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.004.003">特殊教育</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.004.004">拓展课程</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.004.005">探究课程</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.004.006">语言文字</a></li>
+                                        
+                                    </ul>
+                                </dd>
+                            
+                        
+                            <dt class="   hasdd   "
+                                ><span class="left-menu " data-code="EDXW.005.001.005">试题精选</span</dt>
+                            
+                                <dd style=" ">
+                                    <ul>
+                                            
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.005.001">高中语文试题</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.005.002">高中数学试题</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.005.003">高中英语试题</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.005.004">高中物理试题</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.005.005">高中化学试题</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.005.006">初中语文试题</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.005.007">初中数学试题</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.005.008">初中英语试题</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.005.009">初中物理试题</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.005.010">初中化学试题</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.005.011">中学历史试题</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.005.012">中学地理试题</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.005.013">中学政治试题</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.005.014">生命科学试题</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.005.015">信息科技试题</a></li>
+                                        
+                                    </ul>
+                                </dd>
+                            
+                        
+                            <dt class="   hasdd   "
+                                ><span class="left-menu " data-code="EDXW.005.001.006">教学案例</span</dt>
+                            
+                                <dd style=" ">
+                                    <ul>
+                                            
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.006.001">语文教学案例</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.006.002">数学教学案例</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.006.003">英语教学案例</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.006.004">综合教学案例</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.006.005">学前教学案例</a></li>
+                                        
+                                    </ul>
+                                </dd>
+                            
+                        
+                            <dt class="   hasdd   "
+                                ><span class="left-menu " data-code="EDXW.005.001.007">学前教学研究</span</dt>
+                            
+                                <dd style=" ">
+                                    <ul>
+                                            
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.007.001">托幼教育</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.007.002">教学指导</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.007.003">活动信息</a></li>
+                                        
+                                    </ul>
+                                </dd>
+                            
+                        
+                            <dt class="   hasdd   "
+                                ><span class="left-menu " data-code="EDXW.005.001.009">教学进度</span</dt>
+                            
+                                <dd style=" ">
+                                    <ul>
+                                            
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.009.001">高中</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.009.002">初中</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.001.009.003">小学</a></li>
+                                        
+                                    </ul>
+                                </dd>
+                            
+                        
+                            <dt class="    "
+                                ><span class="left-menu " data-code="EDXW.005.001.010">普教信息</span</dt>
+                            
+                        
+                            <dt class="    "
+                                ><span class="left-menu " data-code="EDXW.005.001.011">教育科研</span</dt>
+                            
+                        
+
+                    </dl>
+                
+            
+                <h5 class=" hasdl  "
+                    ><span class="left-menu " data-code="EDXW.005.002">教研动态</span></h5>
+                
+                    <dl style=" ">
+                            
+                        
+                            <dt class="    "
+                                ><span class="left-menu " data-code="EDXW.005.002.001">学前研训活动</span</dt>
+                            
+                        
+                            <dt class="    "
+                                ><span class="left-menu " data-code="EDXW.005.002.002">小学研训活动</span</dt>
+                            
+                        
+                            <dt class="    "
+                                ><span class="left-menu " data-code="EDXW.005.002.003">初中研训活动</span</dt>
+                            
+                        
+                            <dt class="    "
+                                ><span class="left-menu " data-code="EDXW.005.002.004">高中研训活动</span</dt>
+                            
+                        
+                            <dt class="    "
+                                ><span class="left-menu " data-code="EDXW.005.002.005">综合研训</span</dt>
+                            
+                        
+                            <dt class="    "
+                                ><span class="left-menu " data-code="EDXW.005.002.006">特殊教育</span</dt>
+                            
+                        
+
+                    </dl>
+                
+            
+                <h5 class=" hasdl  "
+                    ><span class="left-menu " data-code="EDXW.005.006">教师培训</span></h5>
+                
+                    <dl style=" ">
+                            
+                        
+                            <dt class="    "
+                                ><span class="left-menu " data-code="EDXW.005.006.001">培训信息</span</dt>
+                            
+                        
+                            <dt class="    "
+                                ><span class="left-menu " data-code="EDXW.005.006.002">骨干培养</span</dt>
+                            
+                        
+                            <dt class="    "
+                                ><span class="left-menu " data-code="EDXW.005.006.003">国际教育</span</dt>
+                            
+                        
+                            <dt class="    "
+                                ><span class="left-menu " data-code="EDXW.005.006.004">相关文件与资料</span</dt>
+                            
+                        
+
+                    </dl>
+                
+            
+                <h5 class=" hasdl   active "
+                    ><span class="left-menu " data-code="EDXW.005.004">干部培训</span></h5>
+                
+                    <dl style="  display:block ">
+                            
+                        
+                            <dt class="    "
+                                ><span class="left-menu " data-code="EDXW.005.004.001">干训动态</span</dt>
+                            
+                        
+                            <dt class="    "
+                                ><span class="left-menu " data-code="EDXW.005.004.002">学员交流</span</dt>
+                            
+                        
+
+                    </dl>
+                
+            
+                <h5 class=" hasdl  "
+                    ><span class="left-menu " data-code="EDXW.005.003">德育研究</span></h5>
+                
+                    <dl style=" ">
+                            
+                        
+                            <dt class="    "
+                                ><span class="left-menu " data-code="EDXW.005.003.001">德育信息</span</dt>
+                            
+                        
+                            <dt class="    "
+                                ><span class="left-menu " data-code="EDXW.005.003.002">心理辅导</span</dt>
+                            
+                        
+                            <dt class="    "
+                                ><span class="left-menu " data-code="EDXW.005.003.003">家庭教育</span</dt>
+                            
+                        
+                            <dt class="    "
+                                ><span class="left-menu " data-code="EDXW.005.003.004">班主任工作</span</dt>
+                            
+                        
+                            <dt class="    "
+                                ><span class="left-menu " data-code="EDXW.005.003.005">青春期教育</span</dt>
+                            
+                        
+                            <dt class="    "
+                                ><span class="left-menu " data-code="EDXW.005.003.006">卫生与健康</span</dt>
+                            
+                        
+
+                    </dl>
+                
+            
+                <h5 class=" hasdl  "
+                    ><span class="left-menu " data-code="EDXW.005.009">教育科研</span></h5>
+                
+                    <dl style=" ">
+                            
+                        
+                            <dt class="   hasdd   "
+                                ><span class="left-menu " data-code="EDXW.005.009.001">课题管理</span</dt>
+                            
+                                <dd style=" ">
+                                    <ul>
+                                            
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.009.001.001">重点项目</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.009.001.002">区级课题</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.009.001.003">课题调研</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.009.001.004">课题评审</a></li>
+                                        
+                                    </ul>
+                                </dd>
+                            
+                        
+                            <dt class="   hasdd   "
+                                ><span class="left-menu " data-code="EDXW.005.009.002">学术活动</span</dt>
+                            
+                                <dd style=" ">
+                                    <ul>
+                                            
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.009.002.001">合作研究</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.009.002.002">学术沙龙</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.009.002.003">高端论坛</a></li>
+                                        
+                                    </ul>
+                                </dd>
+                            
+                        
+                            <dt class="   hasdd   "
+                                ><span class="left-menu " data-code="EDXW.005.009.003">成果推广</span</dt>
+                            
+                                <dd style=" ">
+                                    <ul>
+                                            
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.009.003.001">文章案例</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.009.003.002">学术著作</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.009.003.003">课题成果</a></li>
+                                        
+                                    </ul>
+                                </dd>
+                            
+                        
+                            <dt class="   hasdd   "
+                                ><span class="left-menu " data-code="EDXW.005.009.004">科研培训</span</dt>
+                            
+                                <dd style=" ">
+                                    <ul>
+                                            
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.009.004.001">专题培训</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.009.004.002">主任研修</a></li>
+                                        
+                                    </ul>
+                                </dd>
+                            
+                        
+                            <dt class="   hasdd   "
+                                ><span class="left-menu " data-code="EDXW.005.009.005">重点项目</span</dt>
+                            
+                                <dd style=" ">
+                                    <ul>
+                                            
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.009.005.001">咨询-方向</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.009.005.002">数据-方法</a></li>
+                                        
+                                    </ul>
+                                </dd>
+                            
+                        
+                            <dt class="   hasdd   "
+                                ><span class="left-menu " data-code="EDXW.005.009.006">闵行教育研究</span</dt>
+                            
+                                <dd style=" ">
+                                    <ul>
+                                            
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.009.006.001">重点推荐</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.009.006.003">各期一览</a></li>
+                                        
+                                    </ul>
+                                </dd>
+                            
+                        
+                            <dt class="   hasdd   "
+                                ><span class="left-menu " data-code="EDXW.005.009.007">链接</span</dt>
+                            
+                                <dd style=" ">
+                                    <ul>
+                                            
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.009.007.001">课题管理平台</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.009.007.002">学术前沿推介</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.009.007.003">学校科研链接</a></li>
+                                        
+                                    </ul>
+                                </dd>
+                            
+                        
+                            <dt class="   hasdd   "
+                                ><span class="left-menu " data-code="EDXW.005.009.008">资源</span</dt>
+                            
+                                <dd style=" ">
+                                    <ul>
+                                            
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.009.008.001">管理条例</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.009.008.002">课题表格</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.005.009.008.003">研究方法</a></li>
+                                        
+                                    </ul>
+                                </dd>
+                            
+                        
+
+                    </dl>
+                
+            
+                <h5 class=" hasdl  "
+                    ><span class="left-menu " data-code="EDXW.005.005">教育技术</span></h5>
+                
+                    <dl style=" ">
+                            
+                        
+                            <dt class="    "
+                                ><span class="left-menu " data-code="EDXW.005.005.001">学校调研</span</dt>
+                            
+                        
+                            <dt class="    "
+                                ><span class="left-menu " data-code="EDXW.005.005.002">课题研究</span</dt>
+                            
+                        
+                            <dt class="    "
+                                ><span class="left-menu " data-code="EDXW.005.005.003">教育培训</span</dt>
+                            
+                        
+                            <dt class="    "
+                                ><span class="left-menu " data-code="EDXW.005.005.004">网络管理</span</dt>
+                            
+                        
+                            <dt class="    "
+                                ><span class="left-menu " data-code="EDXW.005.005.005">影像技术</span</dt>
+                            
+                        
+                            <dt class="    "
+                                ><span class="left-menu " data-code="EDXW.005.005.006">应用软件</span</dt>
+                            
+                        
+
+                    </dl>
+                
+            
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(function(){
+
+        $('.pmenu h5').click(function() {
+            $(this).toggleClass('active');
+            $(this).next('dl').slideToggle();
+        });
+        $('.pmenu dt').click(function() {
+            $(this).toggleClass('active');
+            $(this).next('dd').slideToggle();
+        });
+    })
+</script>
+		<div class="pright">
+			<div class="prbox">
+				<div class="location">
+                    <a href="list.action" class="home"></a>
+                    
+                        <em>&gt;</em> <a href="index!more.htm">干部培训</a>
+                    
+				</div>
+				<div class="article">
+                    
+                    
+                        <h1>敢担当 善作为 能成事——2022年闵行区教育系统副校（园）长、后备干部培训班 举行第二轮集中培训</h1>
+                        <div class="artinfo">
+                            发布时间 : 2022-10-31 &nbsp;&nbsp;作者（来源）: 朱凤 &nbsp;&nbsp;阅读
+                            : 1193
+                        </div>
+
+                        
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+    <link rel="stylesheet" href="../../../static/extranet/mhedu/common/css/info-image.css"/>
+    
+
+    
+        <div class="newspic">
+            <ul class="bigImg">
+                
+                    <li>
+                        <a><img src="../../../ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/EDXW/allArea/edunews/2022/10/1.jpg"></a>
+                        <h4></h4>
+                    </li>
+                
+                    <li>
+                        <a><img src="../../../ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/EDXW/allArea/edunews/2022/10/2.jpg"></a>
+                        <h4></h4>
+                    </li>
+                
+                    <li>
+                        <a><img src="../../../ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/EDXW/allArea/edunews/2022/10/3.jpg"></a>
+                        <h4></h4>
+                    </li>
+                
+                    <li>
+                        <a><img src="../../../ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/EDXW/allArea/edunews/2022/10/4.jpg"></a>
+                        <h4></h4>
+                    </li>
+                
+                    <li>
+                        <a><img src="../../../ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/EDXW/allArea/edunews/2022/10/5.jpg"></a>
+                        <h4></h4>
+                    </li>
+                
+                    <li>
+                        <a><img src="../../../ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/EDXW/allArea/edunews/2022/10/6.jpg"></a>
+                        <h4></h4>
+                    </li>
+                
+                    <li>
+                        <a><img src="../../../ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/EDXW/allArea/edunews/2022/10/7.jpg"></a>
+                        <h4></h4>
+                    </li>
+                
+                    <li>
+                        <a><img src="../../../ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/EDXW/allArea/edunews/2022/10/8.jpg"></a>
+                        <h4></h4>
+                    </li>
+                
+                    <li>
+                        <a><img src="../../../ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/EDXW/allArea/edunews/2022/10/9.jpg"></a>
+                        <h4></h4>
+                    </li>
+                
+                    <li>
+                        <a><img src="../../../ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/EDXW/allArea/edunews/2022/10/10.jpg"></a>
+                        <h4></h4>
+                    </li>
+                
+                    <li>
+                        <a><img src="../../../ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/EDXW/allArea/edunews/2022/10/11.jpg"></a>
+                        <h4></h4>
+                    </li>
+                
+                    <li>
+                        <a><img src="../../../ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/EDXW/allArea/edunews/2022/10/12.jpg"></a>
+                        <h4></h4>
+                    </li>
+                
+                    <li>
+                        <a><img src="../../../ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/EDXW/allArea/edunews/2022/10/13.jpg"></a>
+                        <h4></h4>
+                    </li>
+                
+                    <li>
+                        <a><img src="../../../ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/EDXW/allArea/edunews/2022/10/14.jpg"></a>
+                        <h4></h4>
+                    </li>
+                
+                    <li>
+                        <a><img src="../../../ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/EDXW/allArea/edunews/2022/10/15.jpg"></a>
+                        <h4></h4>
+                    </li>
+                
+                    <li>
+                        <a><img src="../../../ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/EDXW/allArea/edunews/2022/10/16.jpg"></a>
+                        <h4></h4>
+                    </li>
+                
+                    <li>
+                        <a><img src="../../../ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/EDXW/allArea/edunews/2022/10/17.jpg"></a>
+                        <h4></h4>
+                    </li>
+                
+                    <li>
+                        <a><img src="../../../ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/EDXW/allArea/edunews/2022/10/18.jpg"></a>
+                        <h4></h4>
+                    </li>
+                
+            </ul>
+            <div class="pageState"><span>3</span>/8</div>
+            <div class="smallScroll">
+                <a class="sPrev prevStop" href="javascript:void(0)">←</a>
+
+                <div class="smallImg">
+                    <div class="tempWrap">
+                        <ul>
+                            
+                                <li class=""><a><img class="slide-view" src="../../../ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/EDXW/allArea/edunews/2022/10/1.jpg"></a></li>
+                            
+                                <li class=""><a><img class="slide-view" src="../../../ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/EDXW/allArea/edunews/2022/10/2.jpg"></a></li>
+                            
+                                <li class=""><a><img class="slide-view" src="../../../ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/EDXW/allArea/edunews/2022/10/3.jpg"></a></li>
+                            
+                                <li class=""><a><img class="slide-view" src="../../../ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/EDXW/allArea/edunews/2022/10/4.jpg"></a></li>
+                            
+                                <li class=""><a><img class="slide-view" src="../../../ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/EDXW/allArea/edunews/2022/10/5.jpg"></a></li>
+                            
+                                <li class=""><a><img class="slide-view" src="../../../ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/EDXW/allArea/edunews/2022/10/6.jpg"></a></li>
+                            
+                                <li class=""><a><img class="slide-view" src="../../../ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/EDXW/allArea/edunews/2022/10/7.jpg"></a></li>
+                            
+                                <li class=""><a><img class="slide-view" src="../../../ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/EDXW/allArea/edunews/2022/10/8.jpg"></a></li>
+                            
+                                <li class=""><a><img class="slide-view" src="../../../ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/EDXW/allArea/edunews/2022/10/9.jpg"></a></li>
+                            
+                                <li class=""><a><img class="slide-view" src="../../../ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/EDXW/allArea/edunews/2022/10/10.jpg"></a></li>
+                            
+                                <li class=""><a><img class="slide-view" src="../../../ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/EDXW/allArea/edunews/2022/10/11.jpg"></a></li>
+                            
+                                <li class=""><a><img class="slide-view" src="../../../ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/EDXW/allArea/edunews/2022/10/12.jpg"></a></li>
+                            
+                                <li class=""><a><img class="slide-view" src="../../../ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/EDXW/allArea/edunews/2022/10/13.jpg"></a></li>
+                            
+                                <li class=""><a><img class="slide-view" src="../../../ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/EDXW/allArea/edunews/2022/10/14.jpg"></a></li>
+                            
+                                <li class=""><a><img class="slide-view" src="../../../ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/EDXW/allArea/edunews/2022/10/15.jpg"></a></li>
+                            
+                                <li class=""><a><img class="slide-view" src="../../../ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/EDXW/allArea/edunews/2022/10/16.jpg"></a></li>
+                            
+                                <li class=""><a><img class="slide-view" src="../../../ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/EDXW/allArea/edunews/2022/10/17.jpg"></a></li>
+                            
+                                <li class=""><a><img class="slide-view" src="../../../ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/EDXW/allArea/edunews/2022/10/18.jpg"></a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <a class="sNext" href="javascript:void(0)">→</a>
+            </div>
+        </div>
+
+        <script>
+            var _slideIndex = 5;
+            if (document.body.clientWidth <= 640) {
+                _slideIndex = 3;
+            }
+            $(".newspic").slide({
+                titCell: ".smallImg li",
+                mainCell: ".bigImg",
+                effect: "fold",
+                autoPlay: true,
+                delayTime: 200
+            });
+            //小图左滚动切换
+            $(".newspic .smallScroll").slide({
+                mainCell: "ul",
+                delayTime: 200,
+                vis: _slideIndex,
+                effect: "left",
+                autoPage: true,
+                prevCell: ".sPrev",
+                nextCell: ".sNext",
+                pnLoop: false
+            });
+        </script>
+    
+
+
+
+
+                        
+                        <div class="artcon">
+                                    
+                                        <p><p style="text-indent:32px;line-height:150%"><span style=";font-family:宋体;line-height:150%;font-size:16px">区域教育高质量发展，需要</span><span style=";font-family:宋体;line-height:150%;font-size:16px">一支政治过硬、品德高尚、业务精湛的青年干部队伍</span><span style=";font-family:宋体;line-height:150%;font-size:16px">。</span><span style=";font-family:宋体;line-height:150%;font-size:16px">2</span><span style=";font-family:宋体;line-height:150%;font-size:16px">022</span><span style=";font-family:宋体;line-height:150%;font-size:16px"><span style="font-family:宋体">年</span><span style="font-family:宋体">1</span></span><span style=";font-family:宋体;line-height:150%;font-size:16px">0</span><span style=";font-family:宋体;line-height:150%;font-size:16px"><span style="font-family:宋体">月</span><span style="font-family:宋体">2</span></span><span style=";font-family:宋体;line-height:150%;font-size:16px">6</span><span style=";font-family:宋体;line-height:150%;font-size:16px"><span style="font-family:宋体">日至</span><span style="font-family:宋体">2</span></span><span style=";font-family:宋体;line-height:150%;font-size:16px">7</span><span style=";font-family:宋体;line-height:150%;font-size:16px">日，</span><span style=";font-family:宋体;line-height:150%;font-size:16px">闵行区教育系统副校（</span><span style=";font-family:宋体;line-height:150%;font-size:16px">园）</span><span style=";font-family:宋体;line-height:150%;font-size:16px">长、后备干部培训</span><span style=";font-family:宋体;line-height:150%;font-size:16px">班</span><span style=";font-family:宋体;line-height:150%;font-size:16px">全体学员</span><span style=";font-family:宋体;line-height:150%;font-size:16px">在闵行区教育学院举行第二轮集中培训</span><span style=";font-family:宋体;line-height:150%;font-size:16px">。</span></p><p style="text-indent:32px;text-align:center;line-height:150%"><strong><span style="font-family: 宋体;line-height: 150%;font-size: 16px">&nbsp;</span></strong></p><p style="text-indent:32px;text-align:center;line-height:150%"><strong><span style="font-family: 宋体;line-height: 150%;font-size: 16px">领导讲话：</span></strong><strong><span style="font-family: 宋体;line-height: 150%;font-size: 16px">高瞻远瞩</span></strong><strong><span style="font-family: 宋体;line-height: 150%;font-size: 16px">，坚定信念走向未来</span></strong></p><p style="text-indent:32px;line-height:150%"><span style=";font-family:宋体;line-height:150%;font-size:16px">闵行区</span><span style=";font-family:宋体;line-height:150%;font-size:16px">教育党工委书记</span><span style=";font-family:宋体;line-height:150%;font-size:16px">恽敏霞</span><span style=";font-family:宋体;line-height:150%;font-size:16px">亲临现场并作讲话，</span><span style=";font-family:宋体;line-height:150%;font-size:16px"><span style="font-family:宋体">她认为作为一名优秀干部需要具备以下三点：一用</span><span style="font-family:宋体">“同理心”管理，急群众之所急、想群众之所想，用心</span></span><span style=";font-family:宋体;line-height:150%;font-size:16px">用情用</span><span style=";font-family:宋体;line-height:150%;font-size:16px"><span style="font-family:宋体">力实去做好管理工作；二要</span><span style="font-family:宋体">“多元化”学习，希望学员们以培训为契机，向专家学习、向同伴学习、向实践学习，做到学有所思、学有所获、学有所成；三应“多渠道”读书，希望学员们精读泛读各类书籍，向书本世界学习，适应教育教学的变革，补足短板，完善自身管理体系。</span></span></p><p style="text-indent:32px;text-align:center;line-height:150%"><strong><span style="font-family: 宋体;line-height: 150%;font-size: 16px">&nbsp;</span></strong></p><p style="text-indent:32px;text-align:center;line-height:150%"><strong><span style="font-family: 宋体;line-height: 150%;font-size: 16px">专题报告：智慧赋能</span></strong><strong><span style="font-family: 宋体;line-height: 150%;font-size: 16px">，夯实管理知识结构</span></strong></p><p style="text-indent:32px;line-height:150%"><span style=";font-family:宋体;line-height:150%;font-size:16px">交通大学余明阳教授</span><span style=";font-family:宋体;line-height:150%;font-size:16px">、</span><span style=";font-family:宋体;line-height:150%;font-size:16px">浦东新区进才实验小学赵国弟校长</span><span style=";font-family:宋体;line-height:150%;font-size:16px">、</span><span style=";font-family:宋体;line-height:150%;font-size:16px">市西中学董君武校长</span><span style=";font-family:宋体;line-height:150%;font-size:16px">分别做了</span><span style=";font-family:宋体;line-height:150%;font-size:16px">《品牌的成长与建设》</span><span style=";font-family:宋体;line-height:150%;font-size:16px">、</span><span style=";font-family:宋体;line-height:150%;font-size:16px">《学校发展，最应关注的几个要素》</span><span style=";font-family:宋体;line-height:150%;font-size:16px">、</span><span style=";font-family:宋体;line-height:150%;font-size:16px">《建构新型教学范式的实践研究》</span><span style=";font-family:宋体;line-height:150%;font-size:16px">专题报告。</span><span style=";font-family:宋体;line-height:150%;font-size:16px">余教授就品牌话题进行了梳理和分享</span><span style=";font-family:宋体;line-height:150%;font-size:16px">，</span><span style=";font-family:宋体;line-height:150%;font-size:16px">从城市定位到学校定位，从品质提升到品牌创设</span><span style=";font-family:宋体;line-height:150%;font-size:16px">，在传承与创新中打造属于自己的学校品牌。</span><span style=";font-family:宋体;line-height:150%;font-size:16px">赵校长立足于</span><span style=";font-family:宋体;line-height:150%;font-size:16px">凸显学生</span><span style=";font-family:宋体;line-height:150%;font-size:16px">的理念、</span><span style=";font-family:宋体;line-height:150%;font-size:16px">符合实际</span><span style=";font-family:宋体;line-height:150%;font-size:16px">的目标、</span><span style=";font-family:宋体;line-height:150%;font-size:16px">全面发展</span><span style=";font-family:宋体;line-height:150%;font-size:16px">的课程、</span><span style=";font-family:宋体;line-height:150%;font-size:16px">理顺人心</span><span style=";font-family:宋体;line-height:150%;font-size:16px">的管理、</span><span style=";font-family:宋体;line-height:150%;font-size:16px">幸福工作</span><span style=";font-family:宋体;line-height:150%;font-size:16px">的教师五个要素，以理论与案例相结合的方式，深入浅出</span><span style=";font-family:宋体;line-height:150%;font-size:16px">的</span><span style=";font-family:宋体;line-height:150%;font-size:16px"><span style="font-family:宋体">分析了这些关键要素对学校发展的重要性。董校长从</span><span style="font-family:宋体">“优势学习，促进学生发展”、“思维广场，撬动教学变革”、“网学课堂，再造教学流程”，“面向未来，整体因材施教”四个方面分享了他的管理实践与探索。</span></span><span style=";font-family:宋体;line-height:150%;font-size:16px">学员们深刻认识到：要</span><span style=";font-family:宋体;line-height:150%;font-size:16px">明确新时代学校管理者和引领者的使命和担当</span><span style=";font-family:宋体;line-height:150%;font-size:16px">，深入思考</span><span style=";font-family:宋体;line-height:150%;font-size:16px">教育的本源</span><span style=";font-family:宋体;line-height:150%;font-size:16px">，树立</span><span style=";font-family:宋体;line-height:150%;font-size:16px">“只要找到路，就不怕路有多远”的决心</span><span style=";font-family:宋体;line-height:150%;font-size:16px">，</span><span style=";font-family:宋体;line-height:150%;font-size:16px">不谋全局者，不足谋一域</span><span style=";font-family:宋体;line-height:150%;font-size:16px">。</span></p><p style="text-indent:32px;text-align:center;line-height:150%"><strong><span style="font-family: 宋体;line-height: 150%;font-size: 16px">&nbsp;</span></strong></p><p style="text-indent:32px;text-align:center;line-height:150%"><strong><span style="font-family: 宋体;line-height: 150%;font-size: 16px"><span style="font-family:宋体">学员讲堂：</span><span style="font-family:宋体">学思践悟，锤炼管理思维品质</span></span></strong></p><p style="text-indent:32px;line-height:150%"><span style=";font-family:宋体;line-height:150%;font-size:16px">聚焦</span><span style=";font-family:宋体;line-height:150%;font-size:16px">《现代学校管理机制与制度建设》</span><span style=";font-family:宋体;line-height:150%;font-size:16px">，</span><span style=";font-family:宋体;line-height:150%;font-size:16px"><span style="font-family:宋体">副校（园）长培训班和后备干部培训班分别开展</span><span style="font-family:宋体">“学员讲堂”</span></span><span style=";font-family:宋体;line-height:150%;font-size:16px">，</span><span style=";font-family:宋体;line-height:150%;font-size:16px">日新实小徐为和晶城中学张静分别担任两</span><span style=";font-family:宋体;line-height:150%;font-size:16px">场</span><span style=";font-family:宋体;line-height:150%;font-size:16px">讲堂的主持人。</span></p><p style="text-indent:32px;line-height:150%"><span style=";font-family:宋体;font-size:16px">副校长班</span><span style=";font-family:宋体;font-size:16px">日新实验学校徐为、交大实小黄萍、世博小学张玲、康城学校谌海兰</span><span style=";font-family:宋体;font-size:16px">、</span><span style=";font-family:宋体;font-size:16px"><span style="font-family:宋体">颛桥幼儿园唐春丽结合各自学校实际，分别做了《正向激励触摸学校管理的</span><span style="font-family:宋体">“温情”》、《创新校本教研机制 &nbsp;护航教师专业成长》、《以ATM管理模式推动学校机制改革》、《现代九年一贯制学校教学管理机制与制度建设的思考与探索》、《“颛”注均衡 &nbsp;“幼”见成长》智慧分享。</span></span><span style=";font-family:宋体;font-size:16px">后备干部班浦江三小秦燕琼、莘松小学杨婷婷、闵行四幼顾慧闵、文来初中徐枢清</span><span style=";font-family:宋体;font-size:16px">分别做了《在变革中立序</span><span style=";font-family:宋体;font-size:16px">&nbsp;<span style="font-family:宋体">与融合中共长</span></span><span style=";font-family:宋体;font-size:16px">》、《管而有理</span><span style=";font-family:宋体;font-size:16px">&nbsp;<span style="font-family:宋体">张驰有度</span></span><span style=";font-family:宋体;font-size:16px">》、《创新学校管理机制</span><span style=";font-family:宋体;font-size:16px">&nbsp;&nbsp;<span style="font-family:宋体">丰富学校发展内涵</span></span><span style=";font-family:宋体;font-size:16px">》、《有序运作</span><span style=";font-family:宋体;font-size:16px">&nbsp;&nbsp;<span style="font-family:宋体">有效保障</span></span><span style=";font-family:宋体;font-size:16px">》交流。</span><span style=";font-family:宋体;font-size:16px">在政策引领、理论探析的基础上，聚焦各具特色的学校管理机制及制度，阐述现代学校管理要以人为本促动学生主动发展，做到有深度、有精度、有力度更要有温度</span><span style=";font-family:宋体;font-size:16px">；</span><span style=";font-family:宋体;font-size:16px">创新学校管理机制，凸显人本性、民主性、开放性、科学性、发展性，从而实现学校</span><span style=";font-family:宋体;font-size:16px">高质量发展</span><span style=";font-family:宋体;font-size:16px">。</span></p><p style="text-indent:28px;line-height:150%"><span style=";font-family:宋体;line-height:150%;font-size:14px">&nbsp;</span></p><p style="text-indent:32px;text-align:center;line-height:150%"><strong><span style="font-family: 宋体;line-height: 150%;font-size: 16px">专家点评：高屋建瓴，精细指导助力成长</span></strong></p><p style="text-indent:32px;line-height:150%"><span style=";font-family:宋体;line-height:150%;font-size:16px">上闵外</span><span style=";font-family:宋体;line-height:150%;font-size:16px">校长吴金瑜</span><span style=";font-family:宋体;line-height:150%;font-size:16px">、</span><span style=";font-family:宋体;line-height:150%;font-size:16px">上师</span><span style=";font-family:宋体;line-height:150%;font-size:16px">三附小校长沈珺分别对副校长班和后备干部班学员做点评。两位专家</span><span style=";font-family:宋体;line-height:150%;font-size:16px">肯定了</span><span style=";font-family:宋体;line-height:150%;font-size:16px">学员们</span><span style=";font-family:宋体;line-height:150%;font-size:16px">从不同的侧面，基于自己的思考、结合学校特色，呈现《学校管理机制与制度建设》的主题</span><span style=";font-family:宋体;line-height:150%;font-size:16px">。吴校长</span><span style=";font-family:宋体;line-height:150%;font-size:16px">对成为优秀的管理者提出三</span><span style=";font-family:宋体;line-height:150%;font-size:16px">个</span><span style=";font-family:宋体;line-height:150%;font-size:16px">要求：一要有一段扎实的教育管理经历</span><span style=";font-family:宋体;line-height:150%;font-size:16px">，</span><span style=";font-family:宋体;line-height:150%;font-size:16px">二要有厚实的教育管理理论知识</span><span style=";font-family:宋体;line-height:150%;font-size:16px">，</span><span style=";font-family:宋体;line-height:150%;font-size:16px">三以前两点为基础，再针对学校特点、师生特点、管理者个人特点形成非常有针对性、有效的以学生发展为本管理机制</span><span style=";font-family:宋体;line-height:150%;font-size:16px">。沈校长</span><span style=";font-family:宋体;line-height:150%;font-size:16px"><span style="font-family:宋体">希望学员关注以下几点：关注制度价值的重要性，努力做到</span><span style="font-family:宋体">“有迹无痕，若有若无”，体现人本关怀的学校制度。关注校园文化的重要性，用文化引领员工的行为，营造以生为本、以师为本的学校文化，助推校园前行成长</span></span><span style=";font-family:宋体;line-height:150%;font-size:16px">。</span></p><p style="text-indent:32px;line-height:150%"><span style=";font-family:宋体;line-height:150%;font-size:16px">闵行区教育学院院长朱靖</span><span style=";font-family:宋体;line-height:150%;font-size:16px">作指导</span><span style=";font-family:宋体;line-height:150%;font-size:16px">，通过四个问题：制度的本质、目的是什么？制度的内在逻辑是什么？制度的类别是什么？所有制度的制定中最难的是什么制度？引发全体学员的思考</span><span style=";font-family:宋体;line-height:150%;font-size:16px">。</span><span style=";font-family:宋体;line-height:150%;font-size:16px">强调制度制定要重视人的尊严，遵循人的发展规律，实现人的价值，并希望作为管理者一定要不断学习先进的管理理念，以大教育背景为支撑，同校园管理实践紧密结合，在实践中创新，在创新中发展。</span></p><p style="text-indent:32px;line-height:150%"><span style=";font-family:宋体;line-height:150%;font-size:16px">闵行区教育局调研员刘兆利希望后备干部不辜负组织重托，珍惜现有平台，积累管理经验。增强大局观念</span><span style=";font-family:宋体;line-height:150%;font-size:16px">、</span><span style=";font-family:宋体;line-height:150%;font-size:16px">增强法治思维</span><span style=";font-family:宋体;line-height:150%;font-size:16px">、增</span><span style=";font-family:宋体;line-height:150%;font-size:16px">强危机处理的能力</span><span style=";font-family:宋体;line-height:150%;font-size:16px">，办人民满意的教育。</span></p><p><br></p></p>
+                                    
+                                    
+                            </br>
+                            <div class="editor" style="float: right">
+                                
+                                    <div >撰稿 : &nbsp;后备干部班小学一组</div>
+                                
+                                
+                                    <div >摄影 : &nbsp;顾政平、沈益中、薛子豪</div>
+                                
+                                
+                                    <div >编辑 : &nbsp;朱凤</div>
+                                
+                                
+                            </div>
+                        </div>
+                        </br>
+                        
+                        </br>
+                        </br>
+                        </br>
+                        
+
+                        <div id="qrcode" style="text-align: center;"></div>
+                        <div class="artpre">
+                            <span class="goback"><a href="index!more.htm">返回列表</a></span>
+                            <p>上一篇： <a href="index!info_139.htm">脚踏实地 砥砺前行，成长为新时代好干部 ——2021年闵行区教育系统优秀年轻干部挂职锻炼培训班顺利结业</a> </p>
+                            <p>下一篇： <a href="index!info_133.htm">2022年云南省保山市校（园）长、教师 闵行跟岗研修开班、专题培训</a> </p>
+                        </div>
+                    
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+<div id="footer">
+	<div class="ft cl">
+		<div  class="blogo">
+            <span id="_ideConac" class="" style="margin-top: 5px;">
+            <a href="http://bszs.conac.cn/sitename?method=show&amp;id=2907016072AE5269E053012819ACF339" target="_blank">
+                <img id="imgConac" vspace="0" hspace="0" border="0" src="../../../ftpfiles/dcpfiles/image/blue.png"
+                     data-bd-imgshare-binded="1">
+            </a>
+        </span>
+        </div>
+        <div  class="blogo">
+            <div style="padding: 3px;background-color: white;width: 56px;margin: auto;">
+                <span class="" id="footerwxqrcodebtn" ></span>
+            </div>
+            <span>移动版二维码</span>
+        </div>
+        <div  class="blogo">
+            <div class="" id="qyFrcode" style="margin-right:10px;display: block;">
+                <img src="../../../ftpfiles/dcpfiles/introduction/2205021687154906a1763079ccc40a84.jpg" style="width: 61px;height: 62px;">
+            </div>
+            <span>闵行区教育学院服务号</span>
+        </div>
+
+        <div class="bnav">
+            <a href="../mhedu/xx!oriented_2.htm">联系我们</a>
+            |
+            <a href="../mhedu/xx!oriented.htm">版权声明</a>
+            |
+            <a href="../mhedu/xx!LeavingMessare.action">我要留言</a>
+            |
+            <a target="_blank" href="http://10.107.58.146">旧网链接（内网）</a></div>
+		<div class="copyright">
+            <p>版权所有 上海市闵行区教育学院 （工信部备案号:沪ICP备05012047号）
+                <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011202005311"
+                   style="text-decoration:none;height:20px;line-height:20px;">
+                    <img src="../../../static/extranet/mhedu/index/images/pilice.png"/>
+                    <span style="height:20px;line-height:20px;color:#fff;">沪公网安备 31011202005311号</span>
+                </a>
+            </p>
+
+            <p>地址：上海市闵行区紫龙路835号 邮编：200241 电话：021-34728865</p>
+
+            <p>本站推荐使用Chrome访问</p>
+        </div>
+	</div>
+</div>
+
+<script  src="../../../static/js/qrcode.min.js"></script>
+<script src="../../../static/js/layer3/layer/layer.js"></script>
+<script>
+
+	var _qrcodeUrl=location.href.split('/extranet')[0]+'/extranet/web/index/index.action';
+
+	var qrcode = new QRCode("footerwxqrcodebtn", {
+	    text: _qrcodeUrl,
+	    width: 56,
+	    height: 56,
+	    colorDark : "#000000",
+	    colorLight : "#ffffff",
+	    correctLevel : QRCode.CorrectLevel.L
+	});
+
+    $("#wxqrcodebtn").click(function(){
+        layer.open({
+            type: 1,
+            title :'移动版扫码进入',
+            skin: 'layui-layer-demo', //样式类名
+            closeBtn: 1, //不显示关闭按钮
+            anim: 2,
+            area :['500px','500px'],
+            shadeClose: true, //开启遮罩关闭
+            content: '<div id="qrcodediv"></div>',
+            success:function(){
+                var qrcode = new QRCode("qrcodediv", {
+                    text: _qrcodeUrl,
+                    width: 360,
+                    height: 360,
+                    colorDark : "#000000",
+                    colorLight : "#ffffff",
+                    correctLevel : QRCode.CorrectLevel.H
+                });
+
+
+            }
+
+
+        });
+    });
+
+    $("#footerwxqrcodebtn").click(function(){
+        layer.open({
+            type: 1,
+            title :'移动版扫码进入',
+            skin: 'layui-layer-demo', //样式类名
+            closeBtn: 1, //不显示关闭按钮
+            anim: 2,
+            area :['500px','500px'],
+            shadeClose: true, //开启遮罩关闭
+            content: '<div id="qrcodediv"></div>',
+            success:function(){
+                var qrcode = new QRCode("qrcodediv", {
+                    text: _qrcodeUrl,
+                    width: 360,
+                    height: 360,
+                    colorDark : "#000000",
+                    colorLight : "#ffffff",
+                    correctLevel : QRCode.CorrectLevel.H
+                });
+
+
+            }
+
+
+        });
+    });
+
+	$("#qyFrcode").click(function(){
+		layer.open({
+			  type: 1,
+			  title :'服务号扫码关注',
+			  skin: 'layui-layer-demo', //样式类名
+			  closeBtn: 1, //不显示关闭按钮
+			  anim: 2,
+			  area :['500px','500px'],
+			  shadeClose: true, //开启遮罩关闭
+			  content: '<div id="qrcodediv"></div>',
+			  success:function(){
+				  $('#qrcodediv').html('<img src="https://jyxy.mhedu.sh.cn/extranet/web/index/'+$('#qyFrcode img').attr('src')+'" style="display:block;;width:360px;height:360px;" />');
+				  
+			  }
+
+		  
+		});
+	});
+
+</script>
+</body>
+<script type="text/javascript">
+
+    var type =1;
+
+    if(type==2){
+        setTimeout(function(){
+            $("#newLink").click();
+        })
+    }
+
+    function newLink(obj){
+        window.open($(obj).html(),'_self');
+    }
+
+    $(function(){
+        uParse('.artcon', {
+            rootPath: '../'
+        });
+
+        $('.pmenu').on('click','.left-menu',function(){
+            location.href='index!more.action?code='+ $(this).data().code;
+        });
+        $('#qrcode').html('').qrcode({
+            width		: 128,
+            height		: 128,
+            text: location.href
+        });
+    })
+
+</script>
+</html>

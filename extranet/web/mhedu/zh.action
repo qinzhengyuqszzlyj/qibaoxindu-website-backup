@@ -1,0 +1,1128 @@
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    
+
+
+
+
+
+
+ 
+
+
+
+
+
+<meta charset="UTF-8">
+<title>上海市闵行区教育学院</title>
+<link rel="apple-touch-icon-precomposed" sizes="32x32" href="https://jyxyfiles.mhedu.sh.cn/ftpfiles/dcpfiles/mainpicture/ico_jyxy.ico">
+<link rel="shortcut icon" href="https://jyxyfiles.mhedu.sh.cn/ftpfiles/dcpfiles/mainpicture/ico_jyxy.ico">
+<script src="/static/vue/jquery-3.6.0.min.js"></script><script type="text/javascript" src="/static/vue/jquery-migrate.min.js"></script>
+<script src="/static/js/jquery.SuperSlide.js?V1.0"></script>
+<script src="/static/js/layer/layer.js"></script>
+<script src="/static/js/idealdcp/utils/Utils.js"></script>
+<script type="text/javascript" src="/static/js/ueditor/ueditor.parse.js"></script>
+<script type="text/javascript" src="/static/js/jquery-qrcode-master/jquery.qrcode.min.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="/static/extranet/mhedu/zh/css/style.css?v1.3">
+    <link rel="stylesheet" type="text/css" href="/static/extranet/mhedu/zh/css/swiper-bundle.min.css">
+</head>
+<body>
+<div class="page">
+    <!--头部-->
+    <div class="top_module">
+        <div class="top_title flex-y-start flex-x-between">
+            <div class="logo"></div>
+            <div class="navList flex-y-center">
+                <ul class="flex-y-center">
+                    <li class="">
+                        <a href="/extranet/web/index/index.action">学院首页</a>
+                    </li>
+                    <li class="active">
+                        <a target="_blank" href="zh.action">本站首页</a>
+                    </li>
+                    
+                        <li >
+                            <a target="_blank" href="zh!more.action?code=EDXW.006.001">项目动态</a>
+                        </li>
+                    
+                        <li >
+                            <a target="_blank" href="zh!more.action?code=EDXW.006.002">成果展示</a>
+                        </li>
+                    
+                        <li >
+                            <a target="_blank" href="zh!more.action?code=EDXW.006.003">项目简报</a>
+                        </li>
+                    
+                        <li >
+                            <a target="_blank" href="zh!more.action?code=EDXW.006.004">资料汇编</a>
+                        </li>
+                    
+                        <li >
+                            <a target="_blank" href="zh!more.action?code=EDXW.006.005">辐射引领</a>
+                        </li>
+                    
+                        <li >
+                            <a target="_blank" href="zh!more.action?code=EDXW.006.006">大事记</a>
+                        </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="main_title"></div>
+    </div>
+    <!--项目动态-->
+    <div class="section_item section_item1 flex-y-center">
+        <div class="left_swiper">
+            <div class="swiper-container swiper-container1">
+                <div class="swiper-wrapper">
+                    
+                        <div class="swiper-slide">
+                            <a href="zh!info.action?id=ff8080817c16d1e3017c16f6b7f7000e&areaCode=JYXY_ZHJY_XMDT"
+                               title="“双减”背景下的智慧教育项目推进 ——2021年闵行区智慧教育项目阶段总结与推进会顺利举行" target="_blank">
+                                <img class="swiper_img" src="https://jyxyfiles.mhedu.sh.cn/ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/EDXW/allArea/edunews/2021/09/2a3d49d6ac6f4a05a6772db48d6a634f.jpg?title=mtxx06.jpg"/>
+                                <div class="maskp">
+                                    <p>“双减”背景下的智慧教育项目推进 ——2021年闵行区智慧教育项目阶段总结与推进会顺利举行</p>
+                                </div>
+                            </a>
+                        </div>
+
+                    
+                        <div class="swiper-slide">
+                            <a href="zh!info.action?id=ff8080817ba41fa2017bc8e46a7f0413&areaCode=JYXY_ZHJY_XMDT"
+                               title="教育信息化应用标杆校培育专项调研 ——闵行区教育学院赴莘城学校、爱博果果幼儿园调研" target="_blank">
+                                <img class="swiper_img" src="https://jyxyfiles.mhedu.sh.cn/ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/EDXW/allArea/edunews/2021/09/2ba1d1bbf9334e30a9407c4c32a4bf8f.jpg?title=mtxx01.jpg"/>
+                                <div class="maskp">
+                                    <p>教育信息化应用标杆校培育专项调研 ——闵行区教育学院赴莘城学校、爱博果果幼儿园调研</p>
+                                </div>
+                            </a>
+                        </div>
+
+                    
+                        <div class="swiper-slide">
+                            <a href="zh!info.action?id=ff80808179a17d5d0179c52f354102c0&areaCode=JYXY_ZHJY_XMDT"
+                               title="闵行区教师信息技术应用能力提升工程2.0项目启动会顺利举行" target="_blank">
+                                <img class="swiper_img" src="https://jyxyfiles.mhedu.sh.cn/ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/EDXW/allArea/edunews/2021/06/9e312484df6f452ab137896c9d30726d.jpg?title=001.jpg"/>
+                                <div class="maskp">
+                                    <p>闵行区教师信息技术应用能力提升工程2.0项目启动会顺利举行</p>
+                                </div>
+                            </a>
+                        </div>
+
+                    
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination" style="width: 2px;"></div>
+            </div>
+        </div>
+        <div class="item1">
+            <h1 class="title">项目动态<a href="zh!more.action?areaCode=JYXY_ZHJY_XMDT" class="see_more"
+                                     target="_blank">查看更多</a></h1>
+            <ul class="newList">
+                
+                    <li>
+                        <a href="zh!info.action?id=ff8080817c16d1e3017c16f6b7f7000e&areaCode=JYXY_ZHJY_XMDT"
+                           title="“双减”背景下的智慧教育项目推进 ——2021年闵行区智慧教育项目阶段总结与推进会顺利举行" target="_blank" class="flex-y-center">
+                            <p class="txt1">【项目动态】
+                                    “双减”背景下的智慧教育项目推进 ——2021年闵行区智慧教育项目阶段总结与推进会顺利举行</p>
+                            <p class="txt2">2021-09-24</p>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="zh!info.action?id=ff8080817ba41fa2017bc8e46a7f0413&areaCode=JYXY_ZHJY_XMDT"
+                           title="教育信息化应用标杆校培育专项调研 ——闵行区教育学院赴莘城学校、爱博果果幼儿园调研" target="_blank" class="flex-y-center">
+                            <p class="txt1">【调研交流】
+                                    教育信息化应用标杆校培育专项调研 ——闵行区教育学院赴莘城学校、爱博果果幼儿园调研</p>
+                            <p class="txt2">2021-09-09</p>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="zh!info.action?id=ff80808179a17d5d0179c52f354102c0&areaCode=JYXY_ZHJY_XMDT"
+                           title="闵行区教师信息技术应用能力提升工程2.0项目启动会顺利举行" target="_blank" class="flex-y-center">
+                            <p class="txt1">【教师培训】
+                                    闵行区教师信息技术应用能力提升工程2.0项目启动会顺利举行</p>
+                            <p class="txt2">2021-06-01</p>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="zh!info.action?id=ff80808179a17d5d0179acbc044700c7&areaCode=JYXY_ZHJY_XMDT"
+                           title="闵行区“数据驱动的大规模因材施教”教育论坛暨教学展示活动顺利举行" target="_blank" class="flex-y-center">
+                            <p class="txt1">【调研交流】
+                                    闵行区“数据驱动的大规模因材施教”教育论坛暨教学展示活动顺利举行</p>
+                            <p class="txt2">2021-05-28</p>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="zh!info.action?id=ff8080817941d80801795f23750f0565&areaCode=JYXY_ZHJY_XMDT"
+                           title="聚焦！闵行区“智慧教育示范区”创建项目迎接教育部年度评估" target="_blank" class="flex-y-center">
+                            <p class="txt1">【项目动态】
+                                    聚焦！闵行区“智慧教育示范区”创建项目迎接教育部年度评估</p>
+                            <p class="txt2">2021-05-25</p>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="zh!info.action?id=ff8080817941d80801795ad60d5b0509&areaCode=JYXY_ZHJY_XMDT"
+                           title="闵教院赴七宝幼儿园开展第三次综合调研" target="_blank" class="flex-y-center">
+                            <p class="txt1">【调研交流】
+                                    闵教院赴七宝幼儿园开展第三次综合调研</p>
+                            <p class="txt2">2021-05-12</p>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="zh!info.action?id=ff8080817873c89f0178ca453b8b0aa9&areaCode=JYXY_ZHJY_XMDT"
+                           title="聚势聚心 创优增效 ——闵行区教育学院第二次综合调研" target="_blank" class="flex-y-center">
+                            <p class="txt1">【调研交流】
+                                    聚势聚心 创优增效 ——闵行区教育学院第二次综合调研</p>
+                            <p class="txt2">2021-04-14</p>
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+    <!--成果展示-->
+    <div class="section_item">
+        <h1 class="title2">成果展示</h1>
+        <ul class="tabList flex-y-center flex-x-center" style="margin-top: 20px;">
+            
+                <li class="active">
+                    <a href="###">
+                        <p>优秀案例<span>01</span></p>
+                    </a>
+                </li>
+            
+                <li >
+                    <a href="###">
+                        <p>优秀团队<span>02</span></p>
+                    </a>
+                </li>
+            
+                <li >
+                    <a href="###">
+                        <p>智慧骨干<span>03</span></p>
+                    </a>
+                </li>
+            
+                <li >
+                    <a href="###">
+                        <p>教师专访<span>04</span></p>
+                    </a>
+                </li>
+            
+        </ul>
+        <div class="tabInfo">
+            
+                
+                    
+                        <div class="tab_info active2">
+                            <ul class="imgBox_list flex-y-start">
+                                
+                            </ul>
+                        </div>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+                
+                    
+                
+                    
+                        <div class="tab_info ">
+                            <ul class="imgBox_list flex-y-start">
+                                
+                            </ul>
+                        </div>
+                    
+                
+                    
+                
+                    
+                
+            
+                
+                    
+                
+                    
+                
+                    
+                        <div class="tab_info ">
+                            <ul class="imgBox_list flex-y-start">
+                                
+                            </ul>
+                        </div>
+                    
+                
+                    
+                
+            
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        <div class="tab_info ">
+                            <ul class="imgBox_list flex-y-start">
+                                
+                            </ul>
+                        </div>
+                    
+                
+            
+        </div>
+    </div>
+    <!--项目简报、资料汇编、辐射引领-->
+    <div class="gray_bg">
+        <div class="section_item flex-y-start flex-x-between"
+             style="padding: 30px 35px;box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;-ms-box-sizing: border-box;">
+            <div class="item2">
+                <h1>项目简报<a href="zh!more.action?areaCode=JYXY_ZHJY_XMJB" class="see_more2"
+                           target="_blank">查看更多</a></h1>
+                <ul class="newList newList2">
+                    
+                        <li>
+                            <a href="zh!info.action?id=ff80808186bb2eed018831c33ec62bed&areaCode=JYXY_ZHJY_XMJB"
+                               target="_blank" title="《数据驱动大规模因材施教——学院项目组工作推进简报》2023第23期">
+                                <p class="txt2">2023-05-19&nbsp;</p>
+                                <p class="txt1">《数据驱动大规模因材施教——学院项目组工作推进简报》2023第23期</p>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a href="zh!info.action?id=ff80808186bb2eed018831c2741f2beb&areaCode=JYXY_ZHJY_XMJB"
+                               target="_blank" title="《数据驱动大规模因材施教——学院项目组工作推进简报》2022第22期">
+                                <p class="txt2">2023-05-19&nbsp;</p>
+                                <p class="txt1">《数据驱动大规模因材施教——学院项目组工作推进简报》2022第22期</p>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a href="zh!info.action?id=ff8080818576cd28018585c631700118&areaCode=JYXY_ZHJY_XMJB"
+                               target="_blank" title="《数据驱动大规模因材施教——学院项目组工作推进简报》2022第21期">
+                                <p class="txt2">2023-01-06&nbsp;</p>
+                                <p class="txt1">《数据驱动大规模因材施教——学院项目组工作推进简报》2022第21期</p>
+                            </a>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="item2">
+                <h1>资料汇编<a href="zh!more.action?areaCode=JYXY_ZHJY_ZLHB" target="_blank"
+                           class="see_more2">查看更多</a></h1>
+                <ul class="newList newList2">
+                    
+                </ul>
+            </div>
+            <div class="item2">
+                <h1>辐射引领<a href="zh!more.action?areaCode=JYXY_ZHJY_FSYL" target="_blank"
+                           class="see_more2">查看更多</a></h1>
+                <ul class="newList newList2">
+                    
+                        <li>
+                            <a href="zh!info.action?id=ff80808179a17d5d0179acbc044700c7&areaCode=JYXY_ZHJY_FSYL"
+                               target="_blank" title="">
+                                <p class="txt2">2021-05-28&nbsp;</p>
+                                <p class="txt1">闵行区“数据驱动的大规模因材施教”教育论坛暨教学展示活动顺利举行</p>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a href="zh!info.action?id=ff8080817802a54401786d8234f00cf5&areaCode=JYXY_ZHJY_FSYL"
+                               target="_blank" title="">
+                                <p class="txt2">2021-03-26&nbsp;</p>
+                                <p class="txt1">共话智慧教育深度应用 ——重庆市两江新区教育局一行来访</p>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a href="zh!info.action?id=ff8080817802a70a01785de93a020821&areaCode=JYXY_ZHJY_FSYL"
+                               target="_blank" title="">
+                                <p class="txt2">2021-03-24&nbsp;</p>
+                                <p class="txt1">教育部专家指导《数据驱动的区域个性化作业实践研究》项目</p>
+                            </a>
+                        </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--大事记-->
+    <div class="section_item section_item2" style="margin: 25px 0 5px;">
+        <h1 class="title2">大事记</h1>
+        <div class="memorabilia_swiper">
+            <div class="swiper-container swiper-container2">
+                <div class="swiper-wrapper">
+
+                    
+                        <div class="swiper-slide">
+                            <ul class="pointList flex-y-center">
+                                
+                                    <li>
+                                        <a class="point"
+                                           href="zh!info.action?id=ff8080817c16d1e3017c16f6b7f7000e&areaCode=JYXY_ZHJY_DSJ"
+                                           target="_blank" title="“双减”背景下的智慧教育项目推进 ——2021年闵行区智慧教育项目阶段总结与推进会顺利举行">
+                                            <div class="point_info">
+                                                <p class="event">“双减”背景下的智慧教育项目推进 ——2021年闵行区智慧教育项目阶段总结与推进会顺利举行</p>
+                                                <p class="time">2021-09-23</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                
+                                    <li>
+                                        <a class="point"
+                                           href="zh!info.action?id=ff80808179a17d5d0179c52f354102c0&areaCode=JYXY_ZHJY_DSJ"
+                                           target="_blank" title="闵行区教师信息技术应用能力提升工程2.0项目启动会顺利举行">
+                                            <div class="point_info">
+                                                <p class="event">闵行区教师信息技术应用能力提升工程2.0项目启动会顺利举行</p>
+                                                <p class="time">2021-05-28</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                
+                                    <li>
+                                        <a class="point"
+                                           href="zh!info.action?id=ff8080817941d80801795f23750f0565&areaCode=JYXY_ZHJY_DSJ"
+                                           target="_blank" title="聚焦！闵行区“智慧教育示范区”创建项目迎接教育部年度评估">
+                                            <div class="point_info">
+                                                <p class="event">聚焦！闵行区“智慧教育示范区”创建项目迎接教育部年度评估</p>
+                                                <p class="time">2021-05-20</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                
+                                    <li>
+                                        <a class="point"
+                                           href="zh!info.action?id=ff80808176f113be017723d1dd2b0463&areaCode=JYXY_ZHJY_DSJ"
+                                           target="_blank" title="区校联动 激发“创智”活力 ——2020年度闵行区教育学院智慧教育工作总结会">
+                                            <div class="point_info">
+                                                <p class="event">区校联动 激发“创智”活力 ——2020年度闵行区教育学院智慧教育工作总结会</p>
+                                                <p class="time">2021-01-20</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                
+                                    <li>
+                                        <a class="point"
+                                           href="zh!info.action?id=ff8080817db379bb017db8c07117007e&areaCode=JYXY_ZHJY_DSJ"
+                                           target="_blank" title="上海市基础教育数字化赋能“双减”新闻通气会在闵行区教育学院举行">
+                                            <div class="point_info">
+                                                <p class="event">上海市基础教育数字化赋能“双减”新闻通气会在闵行区教育学院举行</p>
+                                                <p class="time"></p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                
+                                    <li>
+                                        <a class="point"
+                                           href="zh!info.action?id=ff8080817ba423ae017bb91e29b101d6&areaCode=JYXY_ZHJY_DSJ"
+                                           target="_blank" title="   夏日加油站：暑期教师科研集训营">
+                                            <div class="point_info">
+                                                <p class="event">   夏日加油站：暑期教师科研集训营</p>
+                                                <p class="time"></p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                
+                            </ul>
+                        </div>
+                    
+                        <div class="swiper-slide">
+                            <ul class="pointList flex-y-center">
+                                
+                                    <li>
+                                        <a class="point"
+                                           href="zh!info.action?id=ff8080817802a70a01785de93a020821&areaCode=JYXY_ZHJY_DSJ"
+                                           target="_blank" title="教育部专家指导《数据驱动的区域个性化作业实践研究》项目">
+                                            <div class="point_info">
+                                                <p class="event">教育部专家指导《数据驱动的区域个性化作业实践研究》项目</p>
+                                                <p class="time"></p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                
+                                    <li>
+                                        <a class="point"
+                                           href="zh!info.action?id=ff8080817481c97601750ac6d4c810f2&areaCode=JYXY_ZHJY_DSJ"
+                                           target="_blank" title="澳门教育界同仁到闵行访问交流">
+                                            <div class="point_info">
+                                                <p class="event">澳门教育界同仁到闵行访问交流</p>
+                                                <p class="time"></p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                
+                                    <li>
+                                        <a class="point"
+                                           href="zh!info.action?id=ff8080817481c9760174bdc3b6870911&areaCode=JYXY_ZHJY_DSJ"
+                                           target="_blank" title="电子书包项目总结与推进会：躬身践行 智在融合">
+                                            <div class="point_info">
+                                                <p class="event">电子书包项目总结与推进会：躬身践行 智在融合</p>
+                                                <p class="time"></p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                
+                                    <li>
+                                        <a class="point"
+                                           href="zh!info.action?id=ff8080817481c4de01750abf12a3100b&areaCode=JYXY_ZHJY_DSJ"
+                                           target="_blank" title="教育部教师司赴闵行区开展教师研修平台调研">
+                                            <div class="point_info">
+                                                <p class="event">教育部教师司赴闵行区开展教师研修平台调研</p>
+                                                <p class="time"></p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                
+                                    <li>
+                                        <a class="point"
+                                           href="zh!info.action?id=ff808081729821b0017369d4c9cb1454&areaCode=JYXY_ZHJY_DSJ"
+                                           target="_blank" title="2020年暑期校园长培训：面向教育现代化 提升改革创新行动力">
+                                            <div class="point_info">
+                                                <p class="event">2020年暑期校园长培训：面向教育现代化 提升改革创新行动力</p>
+                                                <p class="time"></p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                
+                                    <li>
+                                        <a class="point"
+                                           href="zh!info.action?id=ff808081713f60ad017161c6f7e9014a&areaCode=JYXY_ZHJY_DSJ"
+                                           target="_blank" title="校园长“智慧教育”研修班第二期开班：化危为机  助力智慧教育纵深推进">
+                                            <div class="point_info">
+                                                <p class="event">校园长“智慧教育”研修班第二期开班：化危为机  助力智慧教育纵深推进</p>
+                                                <p class="time"></p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                
+                            </ul>
+                        </div>
+                    
+                        <div class="swiper-slide">
+                            <ul class="pointList flex-y-center">
+                                
+                                    <li>
+                                        <a class="point"
+                                           href="zh!info.action?id=ff8080816fa1b68f016fb32e75db0211&areaCode=JYXY_ZHJY_DSJ"
+                                           target="_blank" title="智慧教育  引领创新  闵教院信息素养提升培训落幕">
+                                            <div class="point_info">
+                                                <p class="event">智慧教育  引领创新  闵教院信息素养提升培训落幕</p>
+                                                <p class="time"></p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                
+                                    <li>
+                                        <a class="point"
+                                           href="zh!info.action?id=ff8080816f36eb42016f37e929dd003b&areaCode=JYXY_ZHJY_DSJ"
+                                           target="_blank" title="闵教院“提升培训者信息素养培训班”日前开班">
+                                            <div class="point_info">
+                                                <p class="event">闵教院“提升培训者信息素养培训班”日前开班</p>
+                                                <p class="time"></p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                
+                                    <li>
+                                        <a class="point"
+                                           href="zh!info.action?id=ff8080816ea5bdb9016f1c879b561f20&areaCode=JYXY_ZHJY_DSJ"
+                                           target="_blank" title="闵行区教育学院举办“紫竹论道”：数据驱动与师生发展 ">
+                                            <div class="point_info">
+                                                <p class="event">闵行区教育学院举办“紫竹论道”：数据驱动与师生发展 </p>
+                                                <p class="time"></p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                
+                                    <li>
+                                        <a class="point"
+                                           href="zh!info.action?id=ff8080816ea5bdb9016eff4985501c3a&areaCode=JYXY_ZHJY_DSJ"
+                                           target="_blank" title="闵行区中小学校长“智慧教育”研修班开班">
+                                            <div class="point_info">
+                                                <p class="event">闵行区中小学校长“智慧教育”研修班开班</p>
+                                                <p class="time"></p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                
+                                    <li>
+                                        <a class="point"
+                                           href="zh!info.action?id=ff8080816e2b4cd7016e2e63d04800af&areaCode=JYXY_ZHJY_DSJ"
+                                           target="_blank" title="闵行区启动创建“智慧教育示范区”项目，探索数据驱动因材施教新路径">
+                                            <div class="point_info">
+                                                <p class="event">闵行区启动创建“智慧教育示范区”项目，探索数据驱动因材施教新路径</p>
+                                                <p class="time"></p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                
+                            </ul>
+                        </div>
+                    
+                </div>
+                <!-- Add Scrollbar -->
+                <div class="swiper-scrollbar"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </div>
+    <!--热力图-->
+    <div class="section_item mapPlace">
+        <!--地图上的白色蒙版-->
+        <div class="maskPage">
+            <h1 class="title">热力图</h1>
+            <ul class="rangkingList flex-y-center flex-x-center">
+                <li class="active"><a href="javascript:void(0)">曝光度</a></li>
+                <li><a href="javascript:void(0)">参与度</a></li>
+            </ul>
+            <div class="rangkingInfo">
+                <div class="rangking_info active2">
+                    <ul>
+                        
+                            <li>
+                                <a href="###" class="flex-y-center">
+                                    <span class="level_text">1</span>
+                                    <p class="school_text">华东理工大学附属闵行科技高级中学</p>
+                                    <p class="exposure_txt flex-y-center">曝光度<span
+                                            class="level_color1">4</span></p>
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="###" class="flex-y-center">
+                                    <span class="level_text">2</span>
+                                    <p class="school_text">上海市闵行区教育学院附属友爱实验中学</p>
+                                    <p class="exposure_txt flex-y-center">曝光度<span
+                                            class="level_color1">3</span></p>
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="###" class="flex-y-center">
+                                    <span class="level_text">3</span>
+                                    <p class="school_text">上海市莘庄中学</p>
+                                    <p class="exposure_txt flex-y-center">曝光度<span
+                                            class="level_color1">3</span></p>
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="###" class="flex-y-center">
+                                    <span class="level_text">4</span>
+                                    <p class="school_text">上海市闵行区教育学院</p>
+                                    <p class="exposure_txt flex-y-center">曝光度<span
+                                            class="level_color1">3</span></p>
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="###" class="flex-y-center">
+                                    <span class="level_text">5</span>
+                                    <p class="school_text">闵行区实验小学</p>
+                                    <p class="exposure_txt flex-y-center">曝光度<span
+                                            class="level_color1">2</span></p>
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="###" class="flex-y-center">
+                                    <span class="level_text">6</span>
+                                    <p class="school_text">上海市七宝实验中学</p>
+                                    <p class="exposure_txt flex-y-center">曝光度<span
+                                            class="level_color1">2</span></p>
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="###" class="flex-y-center">
+                                    <span class="level_text">7</span>
+                                    <p class="school_text">华东师范大学第二附属中学(紫竹校区)</p>
+                                    <p class="exposure_txt flex-y-center">曝光度<span
+                                            class="level_color1">2</span></p>
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="###" class="flex-y-center">
+                                    <span class="level_text">8</span>
+                                    <p class="school_text">北京外国语大学附属上海闵行田园高级中学</p>
+                                    <p class="exposure_txt flex-y-center">曝光度<span
+                                            class="level_color1">2</span></p>
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="###" class="flex-y-center">
+                                    <span class="level_text">9</span>
+                                    <p class="school_text">上海市闵行区闵行第四幼儿园</p>
+                                    <p class="exposure_txt flex-y-center">曝光度<span
+                                            class="level_color1">1</span></p>
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="###" class="flex-y-center">
+                                    <span class="level_text">10</span>
+                                    <p class="school_text">上海市闵行区闵行第四幼儿园金榜分园</p>
+                                    <p class="exposure_txt flex-y-center">曝光度<span
+                                            class="level_color1">1</span></p>
+                                </a>
+                            </li>
+                        
+                    </ul>
+                </div>
+                <div class="rangking_info">
+                    <ul>
+                        
+                            <li>
+                                <a href="###" class="flex-y-center">
+                                    <span class="level_text">1</span>
+                                    <p class="school_text">闵行区实验小学</p>
+                                    <p class="exposure_txt flex-y-center">参与度<span
+                                            class="level_color1">136</span></p>
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="###" class="flex-y-center">
+                                    <span class="level_text">2</span>
+                                    <p class="school_text">闵行区罗阳小学</p>
+                                    <p class="exposure_txt flex-y-center">参与度<span
+                                            class="level_color1">120.5</span></p>
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="###" class="flex-y-center">
+                                    <span class="level_text">3</span>
+                                    <p class="school_text">华东理工大学附属闵行科技高级中学</p>
+                                    <p class="exposure_txt flex-y-center">参与度<span
+                                            class="level_color1">117</span></p>
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="###" class="flex-y-center">
+                                    <span class="level_text">4</span>
+                                    <p class="school_text">上海中医药大学附属闵行蔷薇小学</p>
+                                    <p class="exposure_txt flex-y-center">参与度<span
+                                            class="level_color1">109</span></p>
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="###" class="flex-y-center">
+                                    <span class="level_text">5</span>
+                                    <p class="school_text">闵行区七宝镇明强小学</p>
+                                    <p class="exposure_txt flex-y-center">参与度<span
+                                            class="level_color1">103</span></p>
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="###" class="flex-y-center">
+                                    <span class="level_text">6</span>
+                                    <p class="school_text">闵行区梅陇中心小学</p>
+                                    <p class="exposure_txt flex-y-center">参与度<span
+                                            class="level_color1">52</span></p>
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="###" class="flex-y-center">
+                                    <span class="level_text">7</span>
+                                    <p class="school_text">上海市龙柏中学</p>
+                                    <p class="exposure_txt flex-y-center">参与度<span
+                                            class="level_color1">51</span></p>
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="###" class="flex-y-center">
+                                    <span class="level_text">8</span>
+                                    <p class="school_text">上海市闵行区田园外语实验小学</p>
+                                    <p class="exposure_txt flex-y-center">参与度<span
+                                            class="level_color1">46</span></p>
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="###" class="flex-y-center">
+                                    <span class="level_text">9</span>
+                                    <p class="school_text">华东师范大学附属紫竹小学</p>
+                                    <p class="exposure_txt flex-y-center">参与度<span
+                                            class="level_color1">41.5</span></p>
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="###" class="flex-y-center">
+                                    <span class="level_text">10</span>
+                                    <p class="school_text">上海市闵行区浦江第二中学</p>
+                                    <p class="exposure_txt flex-y-center">参与度<span
+                                            class="level_color1">40</span></p>
+                                </a>
+                            </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="container" style="height: 650px;">
+            <!--热力图热度值标识-->
+            <img src="/static/extranet/mhedu/zh/images/mark.png" alt="" class="mark">
+            <!--热力图上的点及弹窗-->
+            <div class="pointsBox">
+                <a href="###" class="point_box point_color1 point1">1</a>
+                <a href="###" class="point_box point_color1 point2">2</a>
+                <a href="###" class="point_box point_color1 point3">3</a>
+                <a href="###" class="point_box point_color2 point4">4</a>
+                <a href="###" class="point_box point_color2 point5">5</a>
+                <a href="###" class="point_box point_color3 point6">6</a>
+                <a href="###" class="point_box point_color3 point7">
+                    7
+                    <div class="popupPage flex-x-center flex-y-center">
+                        <div class="flex-col">
+                            <p class="tit">上海市闵行区文来实验学校</p>
+                            <p class="txt">曝光度：72</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="###" class="point_box point_color4 point8">8</a>
+                <a href="###" class="point_box point_color4 point9">9</a>
+                <a href="###" class="point_box point_color5 point10">10</a>
+            </div>
+        </div>
+
+    </div>
+    <!--footer-->
+    
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+<!--友情链接-->
+<div class="linkPlace flex-y-center flex-x-between">
+    <p class="sub_title">友情链接</p>
+    <div class="flex-y-center">
+        <div class="select" tabindex="1">
+            <input class="selectopt" name="test" type="radio" id="opt1" checked>
+            <label for="opt1" class="option">教育类相关网站</label>
+            
+                <input class="selectopt" name="test" type="radio" id="opt2">
+                <label for="opt2" onclick="tz(this)" data-url="http://www.setv.sh.cn/" class="option">上海教育电视台</label>
+            
+                <input class="selectopt" name="test" type="radio" id="opt3">
+                <label for="opt3" onclick="tz(this)" data-url="http://www.shmec.gov.cn/" class="option">上海市教育委员会</label>
+            
+                <input class="selectopt" name="test" type="radio" id="opt4">
+                <label for="opt4" onclick="tz(this)" data-url="http://www.mhedu.sh.cn/" class="option">闵行教育信息网</label>
+            
+        </div>
+        <div class="select" tabindex="2">
+            <input class="selectopt" name="test2" type="radio" id="opt11" checked>
+            <label for="opt11" class="option">各区教育学院</label>
+            
+                <input class="selectopt" name="test" type="radio" id="opts2">
+                <label for="opts2" onclick="tz(this)" data-url="http://jxy.jdjy.sh.cn/" class="option">嘉定区教育学院</label>
+            
+                <input class="selectopt" name="test" type="radio" id="opts3">
+                <label for="opts3" onclick="tz(this)" data-url="https://jyxy.mhedu.sh.cn" class="option">闵行区教育学院</label>
+            
+                <input class="selectopt" name="test" type="radio" id="opts4">
+                <label for="opts4" onclick="tz(this)" data-url="http://jyxy.chneic.sh.cn/" class="option">长宁区教育学院</label>
+            
+                <input class="selectopt" name="test" type="radio" id="opts5">
+                <label for="opts5" onclick="tz(this)" data-url="http://hjy.hpe.cn/" class="option">黄浦区教育学院</label>
+            
+                <input class="selectopt" name="test" type="radio" id="opts6">
+                <label for="opts6" onclick="tz(this)" data-url="https://www.bsedu.org.cn/" class="option">宝山区教育学院</label>
+            
+                <input class="selectopt" name="test" type="radio" id="opts7">
+                <label for="opts7" onclick="tz(this)" data-url="http://jxxy.qpedu.cn/" class="option">青浦区教师进修学院</label>
+            
+                <input class="selectopt" name="test" type="radio" id="opts8">
+                <label for="opts8" onclick="tz(this)" data-url="https://www.jsedu.sh.cn/jyxy/" class="option">金山区教育学院</label>
+            
+                <input class="selectopt" name="test" type="radio" id="opts9">
+                <label for="opts9" onclick="tz(this)" data-url="http://www.jxxy.shfxjy.cn/" class="option">奉贤区教师进修学院</label>
+            
+                <input class="selectopt" name="test" type="radio" id="opts10">
+                <label for="opts10" onclick="tz(this)" data-url="https://jyxy.sjedu.cn/" class="option">松江区教育学院</label>
+            
+                <input class="selectopt" name="test" type="radio" id="opts11">
+                <label for="opts11" onclick="tz(this)" data-url="http://jfy.pudong-edu.sh.cn" class="option">浦东教育发展研究院</label>
+            
+                <input class="selectopt" name="test" type="radio" id="opts12">
+                <label for="opts12" onclick="tz(this)" data-url="#" class="option">崇明区教师进修学校</label>
+            
+                <input class="selectopt" name="test" type="radio" id="opts13">
+                <label for="opts13" onclick="tz(this)" data-url="#" class="option">静安区教育学院</label>
+            
+                <input class="selectopt" name="test" type="radio" id="opts14">
+                <label for="opts14" onclick="tz(this)" data-url="http://www.xhteacher.sh.cn/cms/" class="option">徐汇区教育学院</label>
+            
+                <input class="selectopt" name="test" type="radio" id="opts15">
+                <label for="opts15" onclick="tz(this)" data-url="http://ptjy.pte.sh.cn/" class="option">普陀区教育学院</label>
+            
+                <input class="selectopt" name="test" type="radio" id="opts16">
+                <label for="opts16" onclick="tz(this)" data-url="http://www.hongkouedu.com" class="option">虹口区教育学院</label>
+            
+                <input class="selectopt" name="test" type="radio" id="opts17">
+                <label for="opts17" onclick="tz(this)" data-url="http://ypjxxy.edu.sh.cn/" class="option">杨浦区教育学院</label>
+            
+        </div>
+    </div>
+</div>
+<!--footer-->
+<div class="footer">
+    <ul class="list flex-y-center flex-x-center">
+        <li>
+            <a href="/extranet/web/mhedu/xx!oriented.action?catalogCode=JYXY_XXGK_LXWM">联系我们</a>
+        </li>
+        <li>
+            <a href="/extranet/web/mhedu/xx!oriented.action?catalogCode=JYXY_XXGK_BQSM">版权声明</a>
+        </li>
+        <li>
+            <a href="/extranet/web/mhedu/xx!LeavingMessare.action">我要留言</a>
+        </li>
+        <li>
+            <a href="http://10.107.58.146">旧网链接（内网）</a>
+        </li>
+    </ul>
+    <p>主办单位：闵行教育学院</p>
+    <ul class="list2 flex-y-center flex-x-center">
+        <li>地址：上海市闵行区紫龙路835号（近虹梅南路）   </li>
+        <li>邮编：200241</li>
+        <li>电话：021-34728865</li>
+        <li>Email:mjxxy@mhedu.sh.cn</li>
+    </ul>
+    <a href="http://bszs.conac.cn/sitename?method=show&id=2907016072AE5269E053012819ACF339"><img src="/static/extranet/mhedu/zh/images/bottom_s2.png" class="bottom_s2"/></a>
+</div>
+<script>
+
+    function tz(obj){
+        if(navigator.userAgent.indexOf("Safari")>0&&navigator.userAgent.indexOf("Chrome")==-1){
+                var url=obj.dataset.url;
+                if(url)
+                    window.open(url);
+        }else{
+                var url=obj.dataset.url;
+                if(url)
+                    window.open(url);
+        }
+    }
+
+
+</script>
+
+</div>
+<script src="/static/extranet/mhedu/zh/js/swiper-bundle.min.js"></script>
+<script src="/static/mobile/theme/bootstrap/js/core/jquery-3.6.0.min.js"></script>
+<script src="/static/mobile/theme/bootstrap/js/core/jquery-migrate.min.js"></script>
+<script type="text/javascript">
+    
+    
+    //初始化加载百度地图api
+    baiduApi();
+    setTimeout(function(){
+        reliclick();
+    },100)
+
+    var rlListValue = [{"creator":"jyxyadmin","cyfy":"136","modifier":"jyxyadmin","modifyTimeFomart":"2021-09-27 14:41","createTimeFomart":"2021-05-07 09:45","rlvalue":"138","params":{},"createTimeFomart2":"2021年05月07日","modifyTime":{"date":27,"hours":14,"seconds":46,"month":8,"nanos":0,"timezoneOffset":-480,"year":121,"minutes":41,"time":1632724906000,"day":1},"createTime":{"date":7,"hours":9,"seconds":45,"month":4,"nanos":0,"timezoneOffset":-480,"year":121,"minutes":45,"time":1620351945000,"day":5},"name":"闵行区实验小学","id":"ff8080817941d808017944808d0801ce","state":"0","bgvalue":2},{"creator":"jyxyadmin","cyfy":"120.5","modifier":"jyxyadmin","modifyTimeFomart":"2021-09-27 15:00","createTimeFomart":"2021-05-07 09:45","rlvalue":"120.5","params":{},"createTimeFomart2":"2021年05月07日","modifyTime":{"date":27,"hours":15,"seconds":4,"month":8,"nanos":0,"timezoneOffset":-480,"year":121,"minutes":0,"time":1632726004000,"day":1},"createTime":{"date":7,"hours":9,"seconds":45,"month":4,"nanos":0,"timezoneOffset":-480,"year":121,"minutes":45,"time":1620351945000,"day":5},"name":"闵行区罗阳小学","id":"ff8080817941d808017944808ce401cb","state":"0","bgvalue":0},{"creator":"jyxyadmin","cyfy":"117","modifier":"jyxyadmin","modifyTimeFomart":"2021-09-27 14:43","createTimeFomart":"2021-05-07 09:45","rlvalue":"121","params":{},"createTimeFomart2":"2021年05月07日","modifyTime":{"date":27,"hours":14,"seconds":11,"month":8,"nanos":0,"timezoneOffset":-480,"year":121,"minutes":43,"time":1632724991000,"day":1},"createTime":{"date":7,"hours":9,"seconds":47,"month":4,"nanos":0,"timezoneOffset":-480,"year":121,"minutes":45,"time":1620351947000,"day":5},"name":"华东理工大学附属闵行科技高级中学","id":"ff8080817941d808017944809268023d","state":"0","bgvalue":4},{"creator":"jyxyadmin","cyfy":"109","modifier":"jyxyadmin","modifyTimeFomart":"2021-09-27 14:42","createTimeFomart":"2021-05-07 09:45","rlvalue":"110","params":{},"createTimeFomart2":"2021年05月07日","modifyTime":{"date":27,"hours":14,"seconds":5,"month":8,"nanos":0,"timezoneOffset":-480,"year":121,"minutes":42,"time":1632724925000,"day":1},"createTime":{"date":7,"hours":9,"seconds":45,"month":4,"nanos":0,"timezoneOffset":-480,"year":121,"minutes":45,"time":1620351945000,"day":5},"name":"上海中医药大学附属闵行蔷薇小学","id":"ff8080817941d808017944808cf001cc","state":"0","bgvalue":1},{"creator":"jyxyadmin","cyfy":"103","modifier":"jyxyadmin","modifyTimeFomart":"2021-09-27 14:42","createTimeFomart":"2021-05-07 09:45","rlvalue":"104","params":{},"createTimeFomart2":"2021年05月07日","modifyTime":{"date":27,"hours":14,"seconds":1,"month":8,"nanos":0,"timezoneOffset":-480,"year":121,"minutes":42,"time":1632724921000,"day":1},"createTime":{"date":7,"hours":9,"seconds":45,"month":4,"nanos":0,"timezoneOffset":-480,"year":121,"minutes":45,"time":1620351945000,"day":5},"name":"闵行区七宝镇明强小学","id":"ff8080817941d808017944808c8c01c4","state":"0","bgvalue":1},{"creator":"jyxyadmin","cyfy":"52","modifier":"jyxyadmin","modifyTimeFomart":"2021-09-27 14:42","createTimeFomart":"2021-05-07 09:45","rlvalue":"52","params":{},"createTimeFomart2":"2021年05月07日","modifyTime":{"date":27,"hours":14,"seconds":3,"month":8,"nanos":0,"timezoneOffset":-480,"year":121,"minutes":42,"time":1632724923000,"day":1},"createTime":{"date":7,"hours":9,"seconds":45,"month":4,"nanos":0,"timezoneOffset":-480,"year":121,"minutes":45,"time":1620351945000,"day":5},"name":"闵行区梅陇中心小学","id":"ff8080817941d808017944808ccc01c9","state":"0","bgvalue":0},{"creator":"jyxyadmin","cyfy":"51","modifier":"jyxyadmin","modifyTimeFomart":"2021-12-27 13:06","createTimeFomart":"2021-05-07 09:45","rlvalue":"51","params":{},"createTimeFomart2":"2021年05月07日","modifyTime":{"date":27,"hours":13,"seconds":30,"month":11,"nanos":0,"timezoneOffset":-480,"year":121,"minutes":6,"time":1640581590000,"day":1},"createTime":{"date":7,"hours":9,"seconds":46,"month":4,"nanos":0,"timezoneOffset":-480,"year":121,"minutes":45,"time":1620351946000,"day":5},"name":"上海市龙柏中学","id":"ff8080817941d80801794480905e0212","state":"0","bgvalue":1},{"creator":"jyxyadmin","cyfy":"46","modifier":"jyxyadmin","modifyTimeFomart":"2021-09-27 14:42","createTimeFomart":"2021-05-07 09:45","rlvalue":"46","params":{},"createTimeFomart2":"2021年05月07日","modifyTime":{"date":27,"hours":14,"seconds":54,"month":8,"nanos":0,"timezoneOffset":-480,"year":121,"minutes":42,"time":1632724974000,"day":1},"createTime":{"date":7,"hours":9,"seconds":46,"month":4,"nanos":0,"timezoneOffset":-480,"year":121,"minutes":45,"time":1620351946000,"day":5},"name":"上海市闵行区田园外语实验小学","id":"ff8080817941d808017944808d7b01d7","state":"0","bgvalue":0},{"creator":"jyxyadmin","cyfy":"41.5","modifier":"jyxyadmin","modifyTimeFomart":"2021-09-27 15:00","createTimeFomart":"2021-05-07 09:45","rlvalue":"41.5","params":{},"createTimeFomart2":"2021年05月07日","modifyTime":{"date":27,"hours":15,"seconds":10,"month":8,"nanos":0,"timezoneOffset":-480,"year":121,"minutes":0,"time":1632726010000,"day":1},"createTime":{"date":7,"hours":9,"seconds":46,"month":4,"nanos":0,"timezoneOffset":-480,"year":121,"minutes":45,"time":1620351946000,"day":5},"name":"华东师范大学附属紫竹小学","id":"ff8080817941d808017944808ed701f2","state":"0","bgvalue":0},{"creator":"jyxyadmin","cyfy":"40","modifier":"jyxyadmin","modifyTimeFomart":"2021-09-27 14:42","createTimeFomart":"2021-05-07 09:45","rlvalue":"40","params":{},"createTimeFomart2":"2021年05月07日","modifyTime":{"date":27,"hours":14,"seconds":48,"month":8,"nanos":0,"timezoneOffset":-480,"year":121,"minutes":42,"time":1632724968000,"day":1},"createTime":{"date":7,"hours":9,"seconds":46,"month":4,"nanos":0,"timezoneOffset":-480,"year":121,"minutes":45,"time":1620351946000,"day":5},"name":"上海市闵行区浦江第二中学","id":"ff8080817941d8080179448090f6021e","state":"0","bgvalue":0}];
+
+    function reliclick() {
+        // 创建地图实例
+        var map = new BMap.Map("container", {enableMapClick: false});
+        // 创建点坐标
+        var point = new BMap.Point(121.236263, 31.118347);
+        //地图默认展开的大小
+        map.centerAndZoom(point, 12);
+        //是否开启滚轮设置地图尺寸
+        map.enableScrollWheelZoom(true);
+        var data = [];
+        var localSearch = new BMap.LocalSearch(map);
+
+        var dataListValue = rlListValue;
+        var title = "";
+        // if(obj==1){
+        //     dataListValue = bgListValue;
+        //     // title = "曝光度：";
+        // }else{
+        //     dataListValue = cyListValue;
+        //     // title = "参与度：";
+        // }
+        for (var i = 0; i < dataListValue.length; i++) {
+            localSearch.search(dataListValue[i].name);
+            localSearch.setSearchCompleteCallback(function (searchResult) {
+                //获取经度和纬度，将结果显示在文本框中
+                var poi = searchResult.getPoi(0);
+                var dataValue = "";
+                //循环遍历当前新闻属性信息
+                for (var k = 0; k < dataListValue.length; k++) {
+                    if (searchResult.keyword == dataListValue[k].name) {
+                        dataValue = dataListValue[k];
+                    }
+                }
+                data.push({
+                    geometry: {
+                        type: 'Point',
+                        coordinates: [poi.point.lng, poi.point.lat]
+                    },
+                    count: dataValue.rlvalue
+                });
+                var dataSet = new mapv.DataSet(data);
+                //热力图渐变变化
+                var options = {
+                    size: 20,
+                    // gradient: {
+                    // 0:"#ff09da"
+                    //     0.1: "#97d509",
+                    //     0.3: "#7bbf39",
+                    //     0.6: "#ebad06",
+                    //     0.9: "#ff830d",
+                    //     1.0: "#ff3822",
+                    // },
+                    draw: 'heatmap'
+                }
+                new mapv.baiduMapLayer(map, dataSet, options);
+
+
+                var myIcon = new BMap.Icon("/static/extranet/mhedu/zh/images/tm.png", new BMap.Size(20, 20), {
+                    anchor: new BMap.Size(10, 10), //中心点设置
+                });
+                var marker = new BMap.Marker(new BMap.Point(poi.point.lng, poi.point.lat), {icon: myIcon});  // 创建标注
+                map.addOverlay(marker); // 将标注添加到地图中
+                // 创建信息窗口
+                var opts = {
+                    width: 300,
+                    height: 100,
+                    backgroundColor: 'blue',
+                    title: searchResult.keyword
+                };
+                if (dataValue.rlvalue == 0) {
+                    title = "";
+                } else {
+                    title = "热力值：" + dataValue.rlvalue;
+                }
+                var infoWindow = new BMap.InfoWindow(title, opts);
+                // 点标记添加点击事件
+                marker.addEventListener('click', function () {
+                    map.openInfoWindow(infoWindow, new BMap.Point(poi.point.lng, poi.point.lat)); // 开启信息窗口
+                });
+            });
+        }
+    }
+
+
+    /*项目动态轮播*/
+    var swiper1 = new Swiper('.swiper-container1', {
+        autoplay: true,
+        direction: 'vertical',
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+    });
+    /*成果展示tab切换*/
+    $(function () {
+        $(".tabList li").off("click").on("click", function () {
+            var index = $(this).index();
+            $(this).addClass("active").siblings().removeClass("active");
+            $(".tabInfo .tab_info").eq(index).addClass("active2").siblings().removeClass("active2");
+        });
+    });
+    /*热力图tab切换*/
+    $(function () {
+        $(".rangkingList li").off("click").on("click", function () {
+            var index = $(this).index();
+            $(this).addClass("active").siblings().removeClass("active");
+            $(".rangkingInfo .rangking_info").eq(index).addClass("active2").siblings().removeClass("active2");
+        });
+    });
+
+
+    /*大事记*/
+    var swiper2 = new Swiper('.swiper-container2', {
+        // autoplay: false,
+        scrollbar: {
+            el: '.swiper-scrollbar',
+            hide: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+
+    function baiduApi(){
+        $.ajax({
+            url: 'https://api.map.baidu.com/api?v=3.0&ak=ukMKrEBvQlB2EdZGZWImSw6vNWBZTK4U',
+            type: 'GET',
+            async:false,
+            dataType: 'jsonp',
+            jsonp:'callback',
+            jsonpCallback:"callback",
+            timeout: 5000,
+            contentType: 'application/json; charset=utf-8',
+            success: function (result){
+            }
+        })
+        $.ajax({
+            url: 'https://mapv.baidu.com/build/mapv.js',
+            type: 'GET',
+            async:false,
+            dataType: 'jsonp',
+            jsonp:'callback',
+            jsonpCallback:"callback",
+            timeout: 5000,
+            contentType: 'application/json; charset=utf-8',
+            success: function (result){
+            }
+        })
+    }
+
+</script>
+</body>
+</html>

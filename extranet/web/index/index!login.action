@@ -1,0 +1,479 @@
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
+
+
+
+
+
+
+ 
+
+
+
+
+
+<meta charset="UTF-8">
+<title>上海市闵行区教育学院</title>
+<link rel="apple-touch-icon-precomposed" sizes="32x32" href="https://jyxyfiles.mhedu.sh.cn/ftpfiles/dcpfiles/mainpicture/ico_jyxy.ico">
+<link rel="shortcut icon" href="https://jyxyfiles.mhedu.sh.cn/ftpfiles/dcpfiles/mainpicture/ico_jyxy.ico">
+<script src="/static/vue/jquery-3.6.0.min.js"></script><script type="text/javascript" src="/static/vue/jquery-migrate.min.js"></script>
+<script src="/static/js/jquery.SuperSlide.js?V1.0"></script>
+<script src="/static/js/layer/layer.js"></script>
+<script src="/static/js/idealdcp/utils/Utils.js"></script>
+<script type="text/javascript" src="/static/js/ueditor/ueditor.parse.js"></script>
+<script type="text/javascript" src="/static/js/jquery-qrcode-master/jquery.qrcode.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/static/extranet/mhedu/index/css/style.css">
+<style type="text/css">
+#qrcodediv img{
+    margin: 30px auto;
+}
+
+#qrcodebtn, #togetpwd, #loginback {
+    color: #003DB1;
+    cursor: pointer;
+    margin-left: 10px;
+}
+</style>    
+</head>
+<body>
+<div style="display:none;">9d7f928b-bae5-44b9-ba7c-ee2749dea5ef</div>
+<div id="header">
+	<div id="topbar">
+		&nbsp;
+	</div>
+	<div id="top" class="cl">
+        <div id="logo"><img src="/static/extranet/mhedu/index/images/logo.png" height="66" width="193" alt="">
+        </div>
+		<div class="logtop"><img src="/static/extranet/mhedu/index/images/title.png" height="91" width="402" alt=""></div>
+	</div>
+</div>
+<div id="loginbox">
+    <div method="post" id="loginForm" name="loginForm" class="form-login">
+        <div class="logincon cl">
+            <input type="hidden" id="j_type" value="2">
+            <input type="hidden" id="frontUrl" value="">
+            <input type="hidden" name="loginuuid" id="loginuuid" value="8d8053a2f2e442469c2ed0b53beb71fd">
+
+            <div class="loginform">
+                <ul class="lflist">
+                    <li><input type="text" id="j_username" placeholder="请输入用户名" class="logtxt"></li>
+                    <li><input type="password" id="r_password" placeholder="请输入密码" class="logtxt"></li>
+                    <li class="remember">
+                        <label><input type="checkbox" value="1" name="" id="loginstate"> 记住登录状态</label>
+                        <label id="qrcodebtn">二维码登录</label> <label id="togetpwd">忘记密码</label>
+                    </li>
+                </ul>
+                <div class="loginop"><input type="button" id="btn-submit" value="登  录" class="logbtn"></div>
+            </div>
+        </div>
+    </div>
+    <div id="setpwd" style="display:none;">
+        <div class="logincon cl">
+            <input type="hidden" id="p_type" value="2">
+
+            <div class="loginform">
+                <ul class="lflist">
+                    <li><input type="text" id="p_username" placeholder="请输入用户名" class="logtxt"></li>
+                    <li><input type="text" id="p_email" placeholder="请输入帐号绑定的邮箱地址" class="logtxt"></li>
+                    <li class="remember"><label id="loginback">返回登录</label></li>
+                </ul>
+                <div class="loginop"><input type="button" id="btn-setpwd" value="发  送" class="logbtn"></div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+<div id="footer">
+	<div class="ft cl">
+		<div  class="blogo">
+            <span id="_ideConac" class="" style="margin-top: 5px;">
+            <a href="http://bszs.conac.cn/sitename?method=show&amp;id=2907016072AE5269E053012819ACF339" target="_blank">
+                <img id="imgConac" vspace="0" hspace="0" border="0" src="https://jyxyfiles.mhedu.sh.cn/ftpfiles/dcpfiles/image/blue.png"
+                     data-bd-imgshare-binded="1">
+            </a>
+        </span>
+        </div>
+        <div  class="blogo">
+            <div style="padding: 3px;background-color: white;width: 56px;margin: auto;">
+                <span class="" id="footerwxqrcodebtn" ></span>
+            </div>
+            <span>移动版二维码</span>
+        </div>
+        <div  class="blogo">
+            <div class="" id="qyFrcode" style="margin-right:10px;display: block;">
+                <img src="https://jyxyfiles.mhedu.sh.cn/ftpfiles/dcpfiles/introduction/2205021687154906a1763079ccc40a84.jpg" style="width: 61px;height: 62px;">
+            </div>
+            <span>闵行区教育学院服务号</span>
+        </div>
+
+        <div class="bnav">
+            <a href="/extranet/web/mhedu/xx!oriented.action?catalogCode=JYXY_XXGK_LXWM">联系我们</a>
+            |
+            <a href="/extranet/web/mhedu/xx!oriented.action?catalogCode=JYXY_XXGK_BQSM">版权声明</a>
+            |
+            <a href="/extranet/web/mhedu/xx!LeavingMessare.action">我要留言</a>
+            |
+            <a target="_blank" href="http://10.107.58.146">旧网链接（内网）</a></div>
+		<div class="copyright">
+            <p>版权所有 上海市闵行区教育学院 （工信部备案号:沪ICP备05012047号）
+                <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011202005311"
+                   style="text-decoration:none;height:20px;line-height:20px;">
+                    <img src="/static/extranet/mhedu/index/images/pilice.png"/>
+                    <span style="height:20px;line-height:20px;color:#fff;">沪公网安备 31011202005311号</span>
+                </a>
+            </p>
+
+            <p>地址：上海市闵行区紫龙路835号 邮编：200241 电话：021-34728865</p>
+
+            <p>本站推荐使用Chrome访问</p>
+        </div>
+	</div>
+</div>
+
+<script  src="/static/js/qrcode.min.js"></script>
+<script src="/static/js/layer3/layer/layer.js"></script>
+<script>
+
+	var _qrcodeUrl=location.href.split('/extranet')[0]+'/extranet/web/index/index.action';
+
+	var qrcode = new QRCode("footerwxqrcodebtn", {
+	    text: _qrcodeUrl,
+	    width: 56,
+	    height: 56,
+	    colorDark : "#000000",
+	    colorLight : "#ffffff",
+	    correctLevel : QRCode.CorrectLevel.L
+	});
+
+    $("#wxqrcodebtn").click(function(){
+        layer.open({
+            type: 1,
+            title :'移动版扫码进入',
+            skin: 'layui-layer-demo', //样式类名
+            closeBtn: 1, //不显示关闭按钮
+            anim: 2,
+            area :['500px','500px'],
+            shadeClose: true, //开启遮罩关闭
+            content: '<div id="qrcodediv"></div>',
+            success:function(){
+                var qrcode = new QRCode("qrcodediv", {
+                    text: _qrcodeUrl,
+                    width: 360,
+                    height: 360,
+                    colorDark : "#000000",
+                    colorLight : "#ffffff",
+                    correctLevel : QRCode.CorrectLevel.H
+                });
+
+
+            }
+
+
+        });
+    });
+
+    $("#footerwxqrcodebtn").click(function(){
+        layer.open({
+            type: 1,
+            title :'移动版扫码进入',
+            skin: 'layui-layer-demo', //样式类名
+            closeBtn: 1, //不显示关闭按钮
+            anim: 2,
+            area :['500px','500px'],
+            shadeClose: true, //开启遮罩关闭
+            content: '<div id="qrcodediv"></div>',
+            success:function(){
+                var qrcode = new QRCode("qrcodediv", {
+                    text: _qrcodeUrl,
+                    width: 360,
+                    height: 360,
+                    colorDark : "#000000",
+                    colorLight : "#ffffff",
+                    correctLevel : QRCode.CorrectLevel.H
+                });
+
+
+            }
+
+
+        });
+    });
+
+	$("#qyFrcode").click(function(){
+		layer.open({
+			  type: 1,
+			  title :'服务号扫码关注',
+			  skin: 'layui-layer-demo', //样式类名
+			  closeBtn: 1, //不显示关闭按钮
+			  anim: 2,
+			  area :['500px','500px'],
+			  shadeClose: true, //开启遮罩关闭
+			  content: '<div id="qrcodediv"></div>',
+			  success:function(){
+				  $('#qrcodediv').html('<img src="'+$('#qyFrcode img').attr('src')+'" style="display:block;;width:360px;height:360px;" />');
+				  
+			  }
+
+		  
+		});
+	});
+
+</script>
+<script src="/static/js/layer3/layer/layer.js"></script>
+<script  src="/static/js/ideal.utils.js"></script>
+<script src="/static/js/idealdcp/utils/md5.js"></script>
+<script  src="/static/js/qrcode.min.js"></script>
+	<script type="text/javascript">
+
+	function setUpvalue(key,value){
+		try{
+		var stor= window.localStorage;
+		
+		if(stor){
+			stor.setItem(key,value);
+		}else{
+			setCookie(key,value,24*365);
+		}
+		}catch(e){
+			
+		}	
+	}
+
+	function getUpvalue(value){
+		try{
+			var stor= window.localStorage;
+			if(stor){
+				return stor.getItem(value);
+			}else{
+				return getCookie(value);
+			}
+		}catch(e){
+			layer.alert(e.message);
+		}	
+	}
+	
+		$(function(){
+		  $('#loginForm').on('keydown', function (e) {
+              var key = e.which;
+          	  if (key == 13) {
+                  e.preventDefault();
+                  $('#btn-submit').trigger('click.login');
+               }
+    	    });
+        
+			$('#btn-submit').on('click.login',function(e){
+				var j_username = $('#j_username').val();
+                var r_password = $('#r_password').val();
+                var j_password = md5(r_password);
+				var j_type = $('#j_type').val();
+				var loginstate=$("#loginstate")[0].checked;
+				if(!j_username){
+					layer.alert('用户名不能为空!');
+					return ;
+				}
+                if (!r_password) {
+					layer.alert('密码不能为空!');
+					return ;
+				}
+                if(loginstate){
+                    // setCookie('autoLogin',j_username,7);
+                    // setCookie('autoPwd', r_password, 7);
+                    setCookie('loginstate',loginstate,7);
+                }else{
+                    // removetCookie('autoLogin');
+                    // removetCookie('autoPwd');
+                    removetCookie('loginstate');
+                }
+				setUpvalue('j_type',j_type);
+				var current_url = window.location;
+				$("#returnurl").val(current_url);
+
+				$("input[name='j_username']").val(j_type+"_"+j_username);
+
+                if ($('#frontUrl').val()) {
+                    Utils.formBuilder.submitByForm({
+                        front_type: j_type,
+                        front_username: j_username,
+                        front_password: j_password,
+                        front_returnurl: $('#frontUrl').val()
+                    }, "/extranet/web/index/index!frontLogin.action")
+                } else {
+                    Utils.formBuilder.submitByForm({
+                        j_type: j_type,
+                        j_username: window.btoa(j_type + "_" + j_username),
+                        j_password: j_password
+                    }, "/j_spring_security_check")
+                }
+
+			});
+
+
+            $('#btn-setpwd').on('click', function (e) {
+                var p_username = $('#p_username').val();
+                var p_email = $('#p_email').val();
+                var p_type = $('#p_type').val();
+                if (!p_username) {
+                    alert('用户名不能为空!');
+                    return;
+                }
+                if (!p_email) {
+                    alert('邮箱不能为空!');
+                    return;
+                }
+
+                $.ajax({
+                    url: "/dcp/datainterface/login!sendMail.action",
+                    type: 'post',
+                    data: 'mail=' + p_email + '&username=' + p_username + '&type=' + p_type,
+                    success: function (data) {
+                        if (data.stat == "ok") {
+
+                            alert(data.msg);
+                        } else {
+                            alert(data.msg);
+                        }
+                    }
+                });
+
+            });
+
+            $('#loginback').on('click', function (e) {
+                $("#setpwd").hide();
+                $("#loginForm").show();
+            });
+
+            $('#togetpwd').on('click', function (e) {
+                $("#setpwd").show();
+                $("#loginForm").hide();
+            });
+			
+			if(getCookie('loginstate')){
+				// $('#j_username').val(getCookie('autoLogin'));
+                // $('#r_password').val(getCookie('autoPwd'));
+				$('#loginstate').prop("checked",true);
+			}
+
+			
+
+			
+			
+		});
+
+		var errorMsg='';
+		if(errorMsg){
+			// layer.alert(errorMsg=='1'?'登录失败,请稍后再试':'账号或密码错误');
+            layer.alert('账号或密码错误');
+		}
+
+
+		var keyvalues={};
+		function wxlogin(keyvalue){
+			if(keyvalue&&keyvalues[keyvalue]&&keyvalues[keyvalue]<10){
+				keyvalues[keyvalue]=keyvalues[keyvalue]+1;
+
+				$.ajax({
+					url:"index!wxloginConfirm.action",
+					type:'post',
+					data:{keyvalue:keyvalue,front_returnurl: $('#frontUrl').val()},
+					success:function(data){
+						if(data.stat=='ok'){
+							if(data.msg=='1'){
+								location.href="/dcp/web/welcome/index!newindex.action";
+							}else if(data.msg=='2'){
+								location.href=data.data.returnurl;
+							}else{
+								layer.alert('对不起,二维码已过期.');
+							}
+						}else{
+							wxlogin(keyvalue);
+						}
+					},
+					error:function(){
+
+					}
+				});
+				
+			}
+		}
+		
+		$("#qrcodebtn").click(function(){
+			$.ajax({
+				url:"index!createLoginQrcode.action",
+				type:'post',
+				async:false,
+				data:{domain:location.hostname},
+				success:function(data){
+					if(data.data.url){
+						layer.open({
+							  type: 1,
+							  title :'微信扫码登录',
+							  skin: 'layui-layer-demo', //样式类名
+							  closeBtn: 1, //不显示关闭按钮
+							  anim: 2,
+							  area :['500px','500px'],
+							  shadeClose: true, //开启遮罩关闭
+							  content: '<div id="qrcodediv"></div>',
+							  success:function(){
+								  var qrcode = new QRCode("qrcodediv", {
+									    text: data.data.url,
+									    width: 360,
+									    height: 360,
+									    colorDark : "#000000",
+									    colorLight : "#ffffff",
+									    correctLevel : QRCode.CorrectLevel.L
+									});
+
+								  keyvalues[data.data.uuid]=1;
+								  wxlogin(data.data.uuid);
+							  }
+
+						  
+						});
+					}else{
+						layer.alert('创建二维码失败,请稍后再试');
+					}
+				},
+				error:function(){
+
+				}
+			});
+		});
+	</script>      
+</body>
+</html>

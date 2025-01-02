@@ -1,0 +1,202 @@
+/*2018-01-14 newssilder*/
+.newspic {
+    position: relative;
+    border: 1px solid #dcdddd;
+    padding: 4px;
+    overflow: hidden;
+    width: 640px;
+    margin: 30px auto;
+    box-sizing: content-box;
+}
+
+.superSlide .tempWrap {
+    width: 999px !important
+}
+.newspic .bigImg {
+    height: 258px;
+    position: relative;
+    text-align: center;
+}
+
+.newspic .bigImg li {
+    min-height: 445px;
+}
+.newspic .bigImg li img {
+    vertical-align: middle;
+    max-width: 100%;
+    max-height: 445px;
+}
+
+.newspic .singleImg li img {
+    vertical-align: middle;
+    width: 100%;
+}
+
+.newspic .singleImg li {
+    vertical-align: middle;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.newspic .singleImg li:last-of-type {
+    vertical-align: middle;
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.newspic .bigImg h4, .newspic .singleImg h4 {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 33px;
+    height: 33px;
+    padding-right: 30px;
+    overflow: hidden;
+    text-align: left;
+    white-space: pre-line;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    width: calc(100% - 25px);
+}
+
+.newspic .smallScroll {
+    height: 85px;
+    margin-bottom: 6px;
+}
+
+.newspic .sPrev, .newspic .sNext {
+    float: left;
+    display: block;
+    width: 14px;
+    height: 79px;
+    text-indent: -9999px;
+    background: url(../images/newspicbtn.jpg) no-repeat 0 0px;
+}
+
+.newspic .sNext {
+    background-position: -14px 0px;
+}
+
+.newspic .sPrev:hover {
+    background-position: 0 -79px;
+}
+
+.newspic .sNext:hover {
+    background-position: -14px -79px;
+}
+
+.newspic .smallImg {
+    float: left;
+    margin: 0 6px;
+    display: inline;
+    width: 600px;
+    overflow: hidden;
+}
+
+.newspic .smallImg ul {
+    height: 85px;
+    width: 9999px;
+    overflow: hidden;
+}
+
+.newspic .smallImg li {
+    float: left;
+    padding: 0 2px 0 2px;
+    width: 116px;
+    cursor: pointer;
+    display: inline;
+    box-sizing: content-box;
+}
+
+.newspic .smallImg img {
+    border: 1px solid #dcdddd;
+    width: 114px;
+    height: 79px;
+}
+
+.newspic .smallImg .on img {
+    border-color: #1e50a2;
+}
+
+.newspic .pageState {
+    top: 450px;
+    right: 5px;
+    letter-spacing: 1px;
+    text-align: right;
+}
+
+.newspic .pageState span {
+    color: #359bd7;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 640px) {
+    .newspic {
+        width: 91vw;
+        margin: 30px auto;
+    }
+
+    .newspic .bigImg {
+        height: 258px;
+    }
+
+    .newspic .bigImg li {
+        min-height: 63vw;
+    }
+    .newspic .bigImg li img {
+        max-width: 91vw;
+        max-height: 63vw !important;
+    }
+
+    .newspic .smallScroll {
+        height: 70px;
+    }
+
+    .newspic .smallImg ul {
+        height: 75px;
+    }
+    .newspic .smallImg {
+        width: calc(91vw - 40px);
+    }
+
+    .newspic .smallImg li {
+        padding: 0 2px 0 2px;
+        width: calc((91vw - 40px) / 3 - 4px);
+    }
+
+    .newspic .smallImg img {
+        border: 1px solid #dcdddd;
+        width: calc((91vw - 40px) / 3 - 6px);
+        height: calc(((91vw - 40px) / 3 - 6px) * (79 / 114)) !important;
+    }
+
+    .newspic .pageState {
+        top: 63vw;
+        right: 5px;
+        letter-spacing: 1px;
+    }
+
+    .newspic .sPrev, .newspic .sNext {
+        width: 14px;
+        height: calc(((91vw - 40px) / 3 - 6px) * (79 / 114) + 2px);
+    }
+
+    .newspic .sPrev {
+        background-position: 0px -5px;
+    }
+
+    .newspic .sNext {
+        background-position: -14px -5px;
+    }
+
+    .newspic .sPrev:hover {
+        background-position: 0 -84px;
+    }
+
+    .newspic .sNext:hover {
+        background-position: -14px -84px;
+    }
+
+    .newspic .singleImg li {
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,190 @@
+
+
+
+
+
+
+ 
+
+
+
+
+
+<!doctype html>
+
+<html>
+<head>
+    
+
+
+
+
+
+
+ 
+
+
+
+
+
+<meta charset="UTF-8">
+<title>上海市闵行区教育学院</title>
+<link rel="apple-touch-icon-precomposed" sizes="32x32" href="https://jyxyfiles.mhedu.sh.cn/ftpfiles/dcpfiles/mainpicture/ico_jyxy.ico">
+<link rel="shortcut icon" href="https://jyxyfiles.mhedu.sh.cn/ftpfiles/dcpfiles/mainpicture/ico_jyxy.ico">
+<script src="/static/vue/jquery-3.6.0.min.js"></script><script type="text/javascript" src="/static/vue/jquery-migrate.min.js"></script>
+<script src="/static/js/jquery.SuperSlide.js?V1.0"></script>
+<script src="/static/js/layer/layer.js"></script>
+<script src="/static/js/idealdcp/utils/Utils.js"></script>
+<script type="text/javascript" src="/static/js/ueditor/ueditor.parse.js"></script>
+<script type="text/javascript" src="/static/js/jquery-qrcode-master/jquery.qrcode.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/static/extranet/mhedu/hx/css/style.css">
+    <script src="/static/extranet/mhedu/hx/js/jqcode.js"></script>
+</head>
+<body id="index">
+<div id="header">
+    <div id="backhome"><a target="_blank" href="/extranet/web/index/index.action">学院首页 <em>&gt;</em></a></div>
+    <div id="hxtitle">2023-2024年度上海市文明单位创建</div>
+</div>
+<div id="main">
+	<div class="intro">
+		<h2><span>概述</span></h2>
+		<div class="introcon" >
+			<p id="overview" style="height: 145px;overflow: hidden;text-overflow: ellipsis;word-break: break-all;"></p>
+		</div>
+		<div class="vmore" id="more"><a href="#">了解更多 <em>&gt;</em></a></div>
+	</div>
+	<div class="mainbox cl">
+		<div class="mleft">
+			
+<dl class="menu indexmenu">
+
+
+    <dt><a href="/extranet/web/mhedu/hx!news.action?catalogid=8a847c4b5fc7a160015fc7c98ebd0007&secondCode=EDXW.003.001">思想教育深入师生素质提升</a></dt>
+
+    <dt><a href="/extranet/web/mhedu/hx!news.action?catalogid=8a847c4b5fc7a160015fc7c9b4750008&secondCode=EDXW.003.002">学校精神引领文化生活丰富</a></dt>
+
+    <dt><a href="/extranet/web/mhedu/hx!news.action?catalogid=8a847c4b5fc7a160015fc7c9ec510009&secondCode=EDXW.003.003">党的建设加强主体责任落实</a></dt>
+
+    <dt><a href="/extranet/web/mhedu/hx!news.action?catalogid=8a847c4b5fc7a160015fc7ca0b63000a&secondCode=EDXW.003.004">教育改革深化办学质量提高</a></dt>
+
+    <dt><a href="/extranet/web/mhedu/hx!news.action?catalogid=8a847c4b5fc7a160015fc7ca2ab8000b&secondCode=EDXW.003.005">平安健康达标校园环境优化</a></dt>
+
+    <dt><a href="/extranet/web/mhedu/hx!news.action?catalogid=8a847c4b5fc7a160015fc7ca54d6000c&secondCode=EDXW.003.006">社会责任担当学校形象良好</a></dt>
+
+    <dt><a href="/extranet/web/mhedu/hx!news.action?catalogid=8a847c4b5fc7a160015fc7ca73d0000d&secondCode=EDXW.003.007">特色指标与创建特色</a></dt>
+
+</dl> <!--导航菜单-->
+		</div>
+		<div class="mright">
+			<div class="indexnews">
+				<h2><span class="more"><a target='_blank' href="/extranet/web/mhedu/hx!news.action">+ 更多</a></span>创建动态</h2>
+				<div class="indexnewscon cl">
+					<div class="newsleft">
+						<ul class="nlist"  id="hx_news">
+							
+							
+						</ul>
+					</div>
+					<div class="nfocus">
+						<div class="bd">
+							<ul id="photo_news">
+							
+							
+							</ul>
+						</div>
+						<div class="hd">
+							<ul></ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="footer">
+	<div class="copyright">
+        <span id="_ideConac" class="rlogo" style="margin-top: -7px;float: right">
+            <a href="http://bszs.conac.cn/sitename?method=show&amp;id=2907016072AE5269E053012819ACF339" target="_blank">
+                <img style="height: 62px;width: 62px;" id="imgConac" vspace="0" hspace="0" border="0"
+                     src="https://jyxyfiles.mhedu.sh.cn/ftpfiles/dcpfiles/image/blue.png" data-bd-imgshare-binded="1">
+            </a>
+        </span>
+
+        <div style="float: right;">
+            <p style="line-height: 2">版权所有 上海市闵行区教育学院 （工信部备案号:沪ICP备05012047号）</p>
+
+            <p style="line-height: 2"><a target="_blank"
+                                         href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011202005311"
+                                         style="text-decoration:none;height:20px;line-height:20px;">
+                <img src="/static/extranet/mhedu/index/images/pilice.png"/>
+                <span style="height:20px;line-height:20px;color: #3a5e14;">沪公网安备 31011202005311号</span>
+            </a></p>
+        </div>
+</div>
+
+<script type="text/javascript">
+
+	 //加载信息
+    loadNewsInfo('',$('#hx_news'),1,6);  //信息咨询 - 最新动态
+    //异步加载
+    function loadNewsInfo(_catalogid,news,_pageno,_pagesize){
+    	$.ajax({
+    		type: "post",//使用post方法访问后台
+    		dataType: "json",//返回json格式的数据
+    		url: "hx!load.action",//要访问的后台地址
+    		data: {catalogid:_catalogid,pageNo:_pageno,rows:_pagesize},
+    		success: function(msg){
+    			var data = msg.rows;
+    			var listchild1 = "";	
+    			$.each(data, function(i, n){
+                    listchild1 += "<li><h6>" + n.publishDateFormat + "</h6><a title='" + n.title + "' target='_blank' href='/extranet/web/mhedu/hx!detail.action?id=" + n.id + "'>" + n.title + "</a></li>";
+    			});
+    			news.append(listchild1);
+    		}
+    	});
+    }     
+    
+    //加载图片新闻信息
+    loadPhotoNews($('#photo_news'),1,6);  //信息咨询 - 最新动态
+    //异步加载
+    function loadPhotoNews(news,_pageno,_pagesize){
+    	$.ajax({
+    		type: "post",//使用post方法访问后台
+    		dataType: "json",//返回json格式的数据
+    		url: "hx!loadingPhoto.action",//要访问的后台地址
+    		data: {pageNo:_pageno,rows:_pagesize},
+    		success: function(msg){
+    			var data = msg.rows;
+    			var listchild1 = "";	
+    			$.each(data, function(i, n){
+                    listchild1 += "<li><a target='_blank' title='" + n.title + "' href='/extranet/web/mhedu/hx!detail.action?id=" + n.id + "'><img src='" + n.wxThumbValue + "' height='254' width='376' alt=''><h6>" + n.title + "</h6></a></li>";
+    			});
+    			news.append(listchild1);
+    			$(".nfocus").slide({mainCell:".bd ul",titCell:".hd ul",effect:"left",autoPage:true,autoPlay:true});
+    		}
+    	});
+    }
+    //加载概述
+    loadOverview();
+     function loadOverview(){
+         var overview = $("#overview");
+         var more = $("#more");
+         var list = "";
+         $.ajax({
+             type: "post",//使用post方法访问后台
+             dataType: "json",//返回json格式的数据
+             url: "hx!overview.action",//要访问的后台地址
+             data: {pageNo: 1, rows: 1},
+             success: function (msg) {
+                 var data = msg.data.remark;
+                 overview.html(data);
+                 list += "<a target='_blank' href='/extranet/web/mhedu/hx!remark.action?secondCode=" + secondCode + "'>了解更多 <em>&gt;</em></a>";
+                 more.html(list);
+             }
+         });
+     }
+    
+</script>
+</body>
+</html>

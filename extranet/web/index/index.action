@@ -1,0 +1,743 @@
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+<!doctype html>
+<html>
+<head>
+
+    
+
+
+
+
+
+
+ 
+
+
+
+
+
+<meta charset="UTF-8">
+<title>上海市闵行区教育学院</title>
+<link rel="apple-touch-icon-precomposed" sizes="32x32" href="https://jyxyfiles.mhedu.sh.cn/ftpfiles/dcpfiles/mainpicture/ico_jyxy.ico">
+<link rel="shortcut icon" href="https://jyxyfiles.mhedu.sh.cn/ftpfiles/dcpfiles/mainpicture/ico_jyxy.ico">
+<script src="/static/vue/jquery-3.6.0.min.js"></script><script type="text/javascript" src="/static/vue/jquery-migrate.min.js"></script>
+<script src="/static/js/jquery.SuperSlide.js?V1.0"></script>
+<script src="/static/js/layer/layer.js"></script>
+<script src="/static/js/idealdcp/utils/Utils.js"></script>
+<script type="text/javascript" src="/static/js/ueditor/ueditor.parse.js"></script>
+<script type="text/javascript" src="/static/js/jquery-qrcode-master/jquery.qrcode.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/static/extranet/mhedu/index/css/style.css">
+   <style type="text/css">
+		.mlink li {
+			width: 50%;
+		}
+	</style>  
+</head>
+<body>
+
+
+
+
+
+    <a href="https://jyxy.mhedu.sh.cn/extranet/web/mhedu/xx!info.action?id=ff80808190d416b30192039d786e141a&code=EDXW.002" target="_blank"
+       style=" position: fixed; width: 125px; top: 140px;  overflow: hidden;right: 0px;">
+        <img src="https://jyxyfiles.mhedu.sh.cn/ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/XYXW/allArea/main/2024/09/e4d9e54373be4cb6ac0604bd9bf8b162.jpg" >
+        <div onclick="event.preventDefault();this.parentElement.hidden=true"
+             style=" border: 1px solid black; font-size: 17px; height: 13px; display: inline-block;position:absolute;bottom: 0px; right: 0px; ">
+            <span style="margin-top: -8px;display: table-caption;font-size: 17px;padding: 0px 2px;color:  black;">x</span>
+        </div>
+    </a>
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+<style type="text/css">
+#qrcodediv img{
+    margin: 30px auto;
+}
+</style>   
+
+<div id="header">
+	<div id="topbar">
+		<div class="topbarcon cl" style="">
+			<div class="topsearch"><input id="searchDiv" type="text" placeholder="输入关键字搜索..." class="stxt"><input type="button" value="搜索" class="sbtn"></div>
+			<div class="toprlink">
+				<span class="locat">上海市闵行区紫龙路835号</span>
+				<a href="javascript:;" class="loginlink" id="wxqrcodebtn">移动版</a>
+                <a href="/extranet/web/index/index!login.action" target="_blank" class="loginlink">用户登录</a>
+			</div>
+		</div>
+	</div>
+	<div id="top" class="cl">
+        <div id="logo" style="width:235px;"><img src="/static/extranet/mhedu/index/images/logo.png" height="66" width="193" alt="">
+        </div>
+		<ul class="menu">
+			<li class="home current"><a target="_blank" href="/extranet/web/index/index.action"  >首页</a></li>
+			<li><a target="_blank" class="morelist" code="JYXY_XXGK" href="/extranet/web/mhedu/xx.action" >信息公开</a></li>
+			<li><a target="_blank" class="morelist" code="JYXY_DWGK" href="/extranet/web/mhedu/dw.action" >党务公开</a></li>
+			<li><a target="_blank" class="morelist" code="JYXY_HXXY" href="/extranet/web/mhedu/hx.action" >文明单位</a></li>
+			<li><a target="_blank" class="morelist" code="JYXY_ZHJY" href="/extranet/web/mhedu/zh.action" >智慧教育</a></li>
+            
+			<li><a target="_blank" class="morelist" code="JYXY_SY_XYDT" >学院动态</a></li>
+			<li><a target="_blank" class="morelist" code="JYXY_SY_ZHYJ">综合研究</a></li>
+            <li><a target="_blank" class="morelist" code="JYXY_SY_YXDT">教研动态</a></li>
+            <li><a target="_blank" class="morelist" code="JYXY_SY_JSPX">教师培训</a></li>
+            <li><a target="_blank" class="morelist" code="JYXY_SY_GBPX">干部培训</a></li>
+			<li><a target="_blank" class="morelist" code="JYXY_SY_DYYJ">德育研究</a></li>
+			<li><a target="_blank" class="morelist" code="JYXY_XLJK"
+                   href="/extranet/web/mhedu/xl.action">心理健康</a></li>
+            <li><a target="_blank" class="morelist" code="JYXY_SY_ZHYJ_JYKY">教育科研</a></li>
+			<li><a target="_blank" class="morelist" code="JYXY_SY_JYJS">教育技术</a></li>
+		</ul>
+	</div>
+</div>
+
+<script>
+	var codes=[];
+	$(".morelist").each(function(){
+		codes.push($(this).attr("code"));
+	});
+	$(".morelist").click(function(){
+        if(!this.href)
+        window.open('/extranet/web/index/index!more.action?catalogCode='+$(this).attr("code"));
+	});
+	$(".sbtn").click(function(){
+        Utils.formBuilder.submitByForm({search:$('#searchDiv').val()}, '/extranet/web/index/index!search.action');
+    });
+
+	$.ajax({
+		url:"/extranet/web/index/index!codes.action",
+		type:'post',
+		data:{codes:codes.join(",")},
+		success:function(data){
+			$(".morelist").each(function(){
+				if(''.indexOf(data.data[$(this).attr("code")])>-1){
+					$("#top .current").removeClass("current");
+					$(this).parent().addClass("current");
+				}
+			});
+
+		},
+		error:function(){
+
+		}
+	});
+</script>
+
+<div class="indexbanner">
+	<div class="banner">
+		<div class="bd">
+			<ul>
+			
+			<li style="background: url(https://jyxyfiles.mhedu.sh.cn/ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/EDXW/allArea/main/2017/12/056838a614124c1fba3b1901558484ed.jpg?title=banner01+%281%29.jpg) no-repeat center top;    background-size: cover;"></li>
+			
+			<li style="background: url(https://jyxyfiles.mhedu.sh.cn/ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/EDXW/allArea/main/2017/12/3aae4a466ae34e509abd8d335abe58ce.jpg?title=banner02.jpg) no-repeat center top;    background-size: cover;"></li>
+			
+			<li style="background: url(https://jyxyfiles.mhedu.sh.cn/ftpfiles/dcpfiles/null/app/EDXW/allArea/main/2018/04/6d7531c7bfa146cb8717e403b4ca3af3.jpg?title=sihua.jpg) no-repeat center top;    background-size: cover;"></li>
+			
+			</ul>
+		</div>
+		<div class="hd">
+			<ul></ul>
+		</div>
+	</div>
+	<div class="ibcon">
+		<div class="notice">
+			<h2><span class="more"><a target="_blank" href="index!edunotice.action">查看全部</a></span>最新通知</h2>
+			<div class="noticecon bd" id="news">
+				<ul id="noticebox" class="nlist">
+					
+				</ul>
+			</div>
+            
+		</div>
+	</div>
+</div>
+
+<div>
+	<div class="maintop cl">
+		<div class="mtleft">
+			<div class="toptitle">
+				<span class="more"><a id="morebtn2">查看全部</a></span>
+				<h2>学院动态</h2>
+			</div>
+			<div class="mtlbox cl">
+				<div class="focus">
+					<div class="bd">
+						<ul id="newsbox1">	
+						</ul>
+					</div>
+					<div class="hd">
+						<ul></ul>
+					</div>
+				</div>
+				<div class="mtnews">
+					<div class="bd">
+						<ul id="newsbox2" class="newsbox" code="JYXY_SY_XYDT">
+				
+						</ul>
+					</div>
+                    
+				</div>
+			</div>
+		</div>
+		<div class="mtright">
+			<div class="toptitle">
+				<span class="more"><a  id="morebtn">查看全部</a></span>
+				<h2>部门动态</h2>
+			</div>
+			<div class="bdnews" id="newsbox3">
+				<div class="tabt">
+                    <a href="#" class="newsbox" code="JYXY_SY_YXDT">教研</a> |
+                    <a href="#" class="newsbox" code="JYXY_SY_JSPX">师训</a> |
+                    <a href="#" class="newsbox" code="JYXY_SY_GBPX">干训</a> |
+                    <a href="#" class="newsbox" code="JYXY_SY_DYYJ">德研</a> |
+                    <a href="#" class="newsbox" code="JYXY_SY_ZHYJ_JYKY">科研</a> |
+                    <a href="#" class="newsbox" code="JYXY_SY_JYJS">技术</a>
+				</div>
+				<div class="tabcon">
+					<div class="tabc">
+						<div class="nroll">
+							<div class="bd">
+                                <ul>
+                                    </ul>
+							</div>
+                            
+						</div>
+					</div>
+					<div class="tabc">
+						<div class="nroll">
+							<div class="bd">
+								<ul>
+								</ul>
+							</div>
+                            
+						</div>
+					</div>
+					<div class="tabc">
+						<div class="nroll">
+							<div class="bd">
+								<ul>
+								</ul>
+							</div>
+                            
+						</div>
+					</div>
+                    <div class="tabc">
+                        <div class="nroll">
+                            <div class="bd">
+                                <ul>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="tabc">
+                        <div class="nroll">
+                            <div class="bd">
+                                <ul>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="tabc">
+                        <div class="nroll">
+                            <div class="bd">
+                                <ul>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="tabc">
+                        <div class="nroll">
+                            <div class="bd">
+                                <ul>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </div>
+				</div>
+                
+			</div>
+		</div>
+	</div>
+	<div class="midlink">
+		<div class="midlinkcon">
+			<ul class="mlink cl">
+				<li><a target="_blank" href="http://mjyfz.mhedu.sh.cn" class="m1" target="view_window">上海市闵行区教育学院附属中学</a></li>
+			<!-- 	<li><a target="_blank" href="http://yazx.mhedu.sh.cn/" class="m2" target="view_window">上海市闵行区教育学院附属友爱实验中学</a></li>  -->
+                <li><a target="_blank" href="https://jyxy.mhedu.sh.cn/extranet/web/mhedu/xl.action" class="m3" target="view_window">上海市闵行区中小学心理健康教育发展中心</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="quicklink">
+    <div></div>
+
+    <ul class="qlink cl">
+    
+       <div class="qlink-div">
+            <a target="_blank" href="http://mzzy.mhzhjy.net" target="view_window"><img
+                    src="/static/extranet/mhedu/index/images/linkn2.png" alt="" height="115" width="260"></a>
+        </div>
+        <div class="qlink-div">
+            <a target="_blank" href="https://jiaoshi.mhedu.sh.cn" target="view_window"><img
+                    src="/static/extranet/mhedu/index/images/linkn1.png" alt="" height="115" width="260"></a>
+        </div>
+ 
+        <div class="qlink-div">
+            <a target="_blank" href="https://jsgl.shec.edu.cn/" target="view_window"><img
+                    src="/static/extranet/mhedu/index/images/linkn3.png" alt="" height="115" width="260"></a>
+        </div>
+        <div class="qlink-div">
+            <a target="_blank" href="http://mzxt.mhzhjy.net" target="view_window"><img
+                    src="/static/extranet/mhedu/index/images/linkn4.png" alt="" height="115" width="260"></a>
+        </div>
+	</ul>
+</div>
+<div class="friendlink">
+	<div class="friendlinkcon cl">
+		<span class="fr">
+		<select class="sele" style="color: #000;" name="">
+				
+		
+		<option value="">教育类相关网站</option> 
+
+		
+		<option value="http://www.setv.sh.cn/">上海教育电视台</option>
+		
+		<option value="http://www.shmec.gov.cn/">上海市教育委员会</option>
+		
+		<option value="http://www.mhedu.sh.cn/">闵行教育信息网</option>
+		
+			
+		</select> 
+		
+		<select class="sele" style="color: #000;" name="" id="" >
+				
+		
+		<option value="">各区教育学院</option>
+
+		
+		<option value="http://jxy.jdjy.sh.cn/">嘉定区教育学院</option>
+		
+		<option value="https://jyxy.mhedu.sh.cn">闵行区教育学院</option>
+		
+		<option value="http://jyxy.chneic.sh.cn/">长宁区教育学院</option>
+		
+		<option value="http://hjy.hpe.cn/">黄浦区教育学院</option>
+		
+		<option value="https://www.bsedu.org.cn/">宝山区教育学院</option>
+		
+		<option value="http://jxxy.qpedu.cn/">青浦区教师进修学院</option>
+		
+		<option value="https://www.jsedu.sh.cn/jyxy/">金山区教育学院</option>
+		
+		<option value="http://www.jxxy.shfxjy.cn/">奉贤区教师进修学院</option>
+		
+		<option value="https://jyxy.sjedu.cn/">松江区教育学院</option>
+		
+		<option value="http://jfy.pudong-edu.sh.cn">浦东教育发展研究院</option>
+		
+		<option value="#">崇明区教师进修学校</option>
+		
+		<option value="#">静安区教育学院</option>
+		
+		<option value="http://www.xhteacher.sh.cn/cms/">徐汇区教育学院</option>
+		
+		<option value="http://ptjy.pte.sh.cn/">普陀区教育学院</option>
+		
+		<option value="http://www.hongkouedu.com">虹口区教育学院</option>
+		
+		<option value="http://ypjxxy.edu.sh.cn/">杨浦区教育学院</option>
+		
+			
+		</select> 
+		
+		
+		</span>
+		<h2>友情链接</h2>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+<div id="footer">
+	<div class="ft cl">
+		<div  class="blogo">
+            <span id="_ideConac" class="" style="margin-top: 5px;">
+            <a href="http://bszs.conac.cn/sitename?method=show&amp;id=2907016072AE5269E053012819ACF339" target="_blank">
+                <img id="imgConac" vspace="0" hspace="0" border="0" src="https://jyxyfiles.mhedu.sh.cn/ftpfiles/dcpfiles/image/blue.png"
+                     data-bd-imgshare-binded="1">
+            </a>
+        </span>
+        </div>
+        <div  class="blogo">
+            <div style="padding: 3px;background-color: white;width: 56px;margin: auto;">
+                <span class="" id="footerwxqrcodebtn" ></span>
+            </div>
+            <span>移动版二维码</span>
+        </div>
+        <div  class="blogo">
+            <div class="" id="qyFrcode" style="margin-right:10px;display: block;">
+                <img src="https://jyxyfiles.mhedu.sh.cn/ftpfiles/dcpfiles/introduction/2205021687154906a1763079ccc40a84.jpg" style="width: 61px;height: 62px;">
+            </div>
+            <span>闵行区教育学院服务号</span>
+        </div>
+
+        <div class="bnav">
+            <a href="/extranet/web/mhedu/xx!oriented.action?catalogCode=JYXY_XXGK_LXWM">联系我们</a>
+            |
+            <a href="/extranet/web/mhedu/xx!oriented.action?catalogCode=JYXY_XXGK_BQSM">版权声明</a>
+            |
+            <a href="/extranet/web/mhedu/xx!LeavingMessare.action">我要留言</a>
+            |
+            <a target="_blank" href="http://10.107.58.146">旧网链接（内网）</a></div>
+		<div class="copyright">
+            <p>版权所有 上海市闵行区教育学院 （工信部备案号:沪ICP备05012047号）
+                <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011202005311"
+                   style="text-decoration:none;height:20px;line-height:20px;">
+                    <img src="/static/extranet/mhedu/index/images/pilice.png"/>
+                    <span style="height:20px;line-height:20px;color:#fff;">沪公网安备 31011202005311号</span>
+                </a>
+            </p>
+
+            <p>地址：上海市闵行区紫龙路835号 邮编：200241 电话：021-34728865</p>
+
+            <p>本站推荐使用Chrome访问</p>
+        </div>
+	</div>
+</div>
+
+<script  src="/static/js/qrcode.min.js"></script>
+<script src="/static/js/layer3/layer/layer.js"></script>
+<script>
+
+	var _qrcodeUrl=location.href.split('/extranet')[0]+'/extranet/web/index/index.action';
+
+	var qrcode = new QRCode("footerwxqrcodebtn", {
+	    text: _qrcodeUrl,
+	    width: 56,
+	    height: 56,
+	    colorDark : "#000000",
+	    colorLight : "#ffffff",
+	    correctLevel : QRCode.CorrectLevel.L
+	});
+
+    $("#wxqrcodebtn").click(function(){
+        layer.open({
+            type: 1,
+            title :'移动版扫码进入',
+            skin: 'layui-layer-demo', //样式类名
+            closeBtn: 1, //不显示关闭按钮
+            anim: 2,
+            area :['500px','500px'],
+            shadeClose: true, //开启遮罩关闭
+            content: '<div id="qrcodediv"></div>',
+            success:function(){
+                var qrcode = new QRCode("qrcodediv", {
+                    text: _qrcodeUrl,
+                    width: 360,
+                    height: 360,
+                    colorDark : "#000000",
+                    colorLight : "#ffffff",
+                    correctLevel : QRCode.CorrectLevel.H
+                });
+
+
+            }
+
+
+        });
+    });
+
+    $("#footerwxqrcodebtn").click(function(){
+        layer.open({
+            type: 1,
+            title :'移动版扫码进入',
+            skin: 'layui-layer-demo', //样式类名
+            closeBtn: 1, //不显示关闭按钮
+            anim: 2,
+            area :['500px','500px'],
+            shadeClose: true, //开启遮罩关闭
+            content: '<div id="qrcodediv"></div>',
+            success:function(){
+                var qrcode = new QRCode("qrcodediv", {
+                    text: _qrcodeUrl,
+                    width: 360,
+                    height: 360,
+                    colorDark : "#000000",
+                    colorLight : "#ffffff",
+                    correctLevel : QRCode.CorrectLevel.H
+                });
+
+
+            }
+
+
+        });
+    });
+
+	$("#qyFrcode").click(function(){
+		layer.open({
+			  type: 1,
+			  title :'服务号扫码关注',
+			  skin: 'layui-layer-demo', //样式类名
+			  closeBtn: 1, //不显示关闭按钮
+			  anim: 2,
+			  area :['500px','500px'],
+			  shadeClose: true, //开启遮罩关闭
+			  content: '<div id="qrcodediv"></div>',
+			  success:function(){
+				  $('#qrcodediv').html('<img src="'+$('#qyFrcode img').attr('src')+'" style="display:block;;width:360px;height:360px;" />');
+				  
+			  }
+
+		  
+		});
+	});
+
+</script>
+<script src="/static/js/mustache/mustache.js"></script>
+<script id="noticeTpl" type="text/x-mustache">
+    {{#.}}
+    <li>
+		<em>{{publishDate2}}</em>
+		<a target="_blank" class="ellip"  title="{{title}}" href="index!edunoticeInfo.action?id={{id}}&&weekno={{weekno}}">{{title}}</a>
+	</li>
+    {{/.}}
+</script>
+<script id="newsTpl1" type="text/x-mustache">
+{{#.}}
+<li>
+
+	<a target="_blank" onclick="newLink(this)" data-links="{{exlinks}}" data-newurl="{{linksContent}}" data-url="index!info.action?id={{id}}&code={{code}}"   title="{{title}}" ><img src="{{wxThumb}}" height="218" width="312" alt=""><h6 class="ellip">{{title}}</h6></a>
+
+</li>
+{{/.}}
+</script>
+<script id="newsTpl2" type="text/x-mustache">
+{{#.}}
+<li><em>{{publishDateFormat}}</em>
+
+	<a target="_blank" class="ellip"   title="{{title}}" onclick="newLink(this)" data-links="{{exlinks}}" data-newurl="{{linksContent}}" data-url="index!info.action?id={{id}}&code={{code}}" >{{title}}</a>
+</li>
+{{/.}}
+</script>
+
+<script id="newsTpl3" type="text/x-mustache">
+{{#.}}
+   <li><em>{{publishDateFormat}}</em><a target="_blank" class="ellip"   title="{{title}}"  href="index!info.action?id={{id}}&code={{code}}">{{title}}</a></li>
+{{/.}}
+</script>
+<script type="text/javascript">
+var noticeTpl=$("#noticeTpl").html();
+var newsTpl1=$("#newsTpl1").html();
+var newsTpl2=$("#newsTpl2").html();
+var newsTpl3=$("#newsTpl3").html();
+
+function newLink(obj){
+	var exlinks = $(obj).attr("data-links");
+	var linkContent = $(obj).attr("data-newurl");
+	if(exlinks==2){
+		window.open(linkContent);
+	}else{
+		window.open($(obj).attr("data-url"))
+	}
+
+
+}
+
+function loadNotice(){
+
+	$.ajax({
+		url:"index!loadNoticeData.action",
+		type:'post',
+        data: {"page.pageSize": 10},
+		success:function(data){
+			$("#noticebox").html(Mustache.render(noticeTpl,data.rows));
+/* 			jQuery(".notice").slide({mainCell:".bd ul",autoPlay:true,effect:"topMarquee",vis:4,interTime:50,trigger:"click"});;
+ */		},
+		error:function(){
+
+		}
+	});
+
+}
+
+function loadNews(values,tpl,$box,callback){
+
+	$.ajax({
+		url:"index!load.action",
+		type:'post',
+		data:values,
+		success:function(data){
+			if(values.search_code){
+				for(var i=0;i<data.rows.length;i++){
+					data.rows[i].code=values.search_code;
+				}
+			}
+			$box.html(Mustache.render(tpl,data.rows));
+		    if(callback){
+                callback();
+            }
+        },
+		error:function(){
+
+		}
+	});
+
+}
+
+loadNotice();
+
+
+var codes=[];
+$(".newsbox").each(function(){
+	codes.push($(this).attr("code"));
+});
+
+
+$.ajax({
+	url:"index!codes.action",
+	type:'post',
+	data:{codes:codes.join(",")},
+	success:function(data){
+		$(".newsbox").each(function(){
+			$(this).attr("codeval",data.data[$(this).attr("code")]);
+
+		});
+        loadNews({
+            search_code: $("#newsbox2").attr("codeval"),
+            search_isFocus: "1",
+            search_wxThumbPath: "1",
+            pageNo: 1,
+            pageSize: 3
+        }, newsTpl1, $("#newsbox1"), function () {
+
+            $(".focus").slide({
+                titCell: ".hd ul",
+                mainCell: ".bd ul",
+                effect: "left",
+                autoPage: true,
+                autoPlay: true,
+                interTime: 10000
+            });
+        });
+		loadNews({
+			search_code:$("#newsbox2").attr("codeval"),
+		    pageNo:1,
+            pageSize: 8
+		     },newsTpl2,$("#newsbox2"),function(){
+//            $(".mtnews").slide({mainCell:".bd ul",effect:"top",autoPage:true,autoPlay:false,vis:6,scroll:6});
+        });
+
+	     $("#newsbox3 .newsbox").each(function(i){
+	    	 loadNews({
+	    	 search_code:$(this).attr("codeval"),
+			    pageNo:1,
+                 pageSize: 7
+			     },newsTpl3,$($("#newsbox3 .tabc ul").get(i)),function(){
+//                 $(".nroll").slide({mainCell:".bd ul",effect:"top",autoPage:true,autoPlay:false,vis:5,scroll:5,prevCell:".sprev",nextCell:".snext"});
+             });
+
+		 });
+
+		$("#newsbox3 .newsbox").click(function(){
+			window.open("index!more.action?code="+$(this).attr("codeval"));
+		});
+
+		$("#morebtn").click(function(){
+			window.open("index!more.action?code="+$("#newsbox3 .on").attr("codeval"));
+		});
+
+		$("#morebtn2").click(function(){
+			window.open("index!more.action?code="+$("#newsbox2").attr("codeval"));
+		});
+
+
+		
+	     
+	},
+	error:function(){
+
+	}
+});
+
+if(navigator.userAgent.indexOf("Safari")>0&&navigator.userAgent.indexOf("Chrome")==-1){
+	$(".sele").click(function(){
+		var url=$(this).val();
+		if(url)
+			window.open(url);
+		
+	});
+}else{
+	$(".sele").change(function(){
+		var url=$(this).val();
+		if(url)
+			window.open(url);
+		
+	});
+}
+
+$(function(){
+    $(".bdnews").slide({ titCell:".tabt a", mainCell:".tabcon"});
+    $(".banner").slide({
+        titCell: ".hd ul",
+        mainCell: ".bd ul",
+        effect: "left",
+        autoPage: true,
+        autoPlay: true,
+        interTime: 10000
+    });
+
+
+})
+
+ 
+
+</script>
+</body>
+</html>

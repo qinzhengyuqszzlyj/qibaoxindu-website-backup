@@ -1,0 +1,902 @@
+
+
+
+
+
+
+ 
+
+
+
+
+
+<!doctype html>
+<html>
+<head>
+    
+
+
+
+
+
+
+ 
+
+
+
+
+
+<meta charset="UTF-8">
+<title>上海市闵行区教育学院</title>
+<link rel="apple-touch-icon-precomposed" sizes="32x32" href="https://jyxyfiles.mhedu.sh.cn/ftpfiles/dcpfiles/mainpicture/ico_jyxy.ico">
+<link rel="shortcut icon" href="https://jyxyfiles.mhedu.sh.cn/ftpfiles/dcpfiles/mainpicture/ico_jyxy.ico">
+<script src="/static/vue/jquery-3.6.0.min.js"></script><script type="text/javascript" src="/static/vue/jquery-migrate.min.js"></script>
+<script src="/static/js/jquery.SuperSlide.js?V1.0"></script>
+<script src="/static/js/layer/layer.js"></script>
+<script src="/static/js/idealdcp/utils/Utils.js"></script>
+<script type="text/javascript" src="/static/js/ueditor/ueditor.parse.js"></script>
+<script type="text/javascript" src="/static/js/jquery-qrcode-master/jquery.qrcode.min.js"></script>
+
+
+<link rel="stylesheet" type="text/css" href="/static/extranet/mhedu/xx/css/style.css">
+<script src="/static/extranet/mhedu/xx/js/jqcode.js"></script>
+</head>
+<body>
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+<style type="text/css">
+#qrcodediv img{
+    margin: 30px auto;
+}
+</style>   
+
+<div id="header">
+	<div id="topbar">
+		<div class="topbarcon cl" style="">
+			<div class="topsearch"><input id="searchDiv" type="text" placeholder="输入关键字搜索..." class="stxt"><input type="button" value="搜索" class="sbtn"></div>
+			<div class="toprlink">
+				<span class="locat">上海市闵行区紫龙路835号</span>
+				<a href="javascript:;" class="loginlink" id="wxqrcodebtn">移动版</a>
+                <a href="/extranet/web/index/index!login.action" target="_blank" class="loginlink">用户登录</a>
+			</div>
+		</div>
+	</div>
+	<div id="top" class="cl">
+        <div id="logo" style="width:235px;"><img src="/static/extranet/mhedu/index/images/logo.png" height="66" width="193" alt="">
+        </div>
+		<ul class="menu">
+			<li class="home current"><a target="_blank" href="/extranet/web/index/index.action"  >首页</a></li>
+			<li><a target="_blank" class="morelist" code="JYXY_XXGK" href="/extranet/web/mhedu/xx.action" >信息公开</a></li>
+			<li><a target="_blank" class="morelist" code="JYXY_DWGK" href="/extranet/web/mhedu/dw.action" >党务公开</a></li>
+			<li><a target="_blank" class="morelist" code="JYXY_HXXY" href="/extranet/web/mhedu/hx.action" >文明单位</a></li>
+			<li><a target="_blank" class="morelist" code="JYXY_ZHJY" href="/extranet/web/mhedu/zh.action" >智慧教育</a></li>
+            
+			<li><a target="_blank" class="morelist" code="JYXY_SY_XYDT" >学院动态</a></li>
+			<li><a target="_blank" class="morelist" code="JYXY_SY_ZHYJ">综合研究</a></li>
+            <li><a target="_blank" class="morelist" code="JYXY_SY_YXDT">教研动态</a></li>
+            <li><a target="_blank" class="morelist" code="JYXY_SY_JSPX">教师培训</a></li>
+            <li><a target="_blank" class="morelist" code="JYXY_SY_GBPX">干部培训</a></li>
+			<li><a target="_blank" class="morelist" code="JYXY_SY_DYYJ">德育研究</a></li>
+			<li><a target="_blank" class="morelist" code="JYXY_XLJK"
+                   href="/extranet/web/mhedu/xl.action">心理健康</a></li>
+            <li><a target="_blank" class="morelist" code="JYXY_SY_ZHYJ_JYKY">教育科研</a></li>
+			<li><a target="_blank" class="morelist" code="JYXY_SY_JYJS">教育技术</a></li>
+		</ul>
+	</div>
+</div>
+
+<script>
+	var codes=[];
+	$(".morelist").each(function(){
+		codes.push($(this).attr("code"));
+	});
+	$(".morelist").click(function(){
+        if(!this.href)
+        window.open('/extranet/web/index/index!more.action?catalogCode='+$(this).attr("code"));
+	});
+	$(".sbtn").click(function(){
+        Utils.formBuilder.submitByForm({search:$('#searchDiv').val()}, '/extranet/web/index/index!search.action');
+    });
+
+	$.ajax({
+		url:"/extranet/web/index/index!codes.action",
+		type:'post',
+		data:{codes:codes.join(",")},
+		success:function(data){
+			$(".morelist").each(function(){
+				if('EDXW.002'.indexOf(data.data[$(this).attr("code")])>-1){
+					$("#top .current").removeClass("current");
+					$(this).parent().addClass("current");
+				}
+			});
+
+		},
+		error:function(){
+
+		}
+	});
+</script>
+
+
+<div id="combox">
+	<div class="comcon cl">
+		
+
+<div class="pleft">
+    <div class="plbox">
+        <h2>信息公开</h2>
+        <div class="pmenu">
+            
+            
+                <h5 data-code="EDXW.002.001" class="leftmenubtn  hasdl  "
+                    ><span class="left-menu " data-code="EDXW.002.001">学院概览</span></h5>
+                
+                    <dl style=" ">
+                            
+                        
+                            <dt class="    "
+                                ><span class="left-menu " data-code="EDXW.002.001.001">学院简介</span</dt>
+                            
+                        
+                            <dt class="    "
+                                ><span class="left-menu " data-code="EDXW.002.001.002">发展历程</span</dt>
+                            
+                        
+                            <dt class="    "
+                                ><span class="left-menu " data-code="EDXW.002.001.003">名师风采</span</dt>
+                            
+                        
+                            <dt class="    "
+                                ><span class="left-menu " data-code="EDXW.002.001.004">联系我们</span</dt>
+                            
+                        
+                            <dt class="    "
+                                ><span class="left-menu " data-code="EDXW.002.001.005">网站相关</span</dt>
+                            
+                        
+
+                    </dl>
+                
+            
+                <h5 data-code="EDXW.002.002" class="leftmenubtn  hasdl  "
+                    ><span class="left-menu " data-code="EDXW.002.002">领导机构</span></h5>
+                
+                    <dl style=" ">
+                            
+                        
+                            <dt class="    "
+                                ><span class="left-menu " data-code="EDXW.002.002.001">现任领导</span</dt>
+                            
+                        
+                            <dt class="    "
+                                ><span class="left-menu " data-code="EDXW.002.002.002">历任领导</span</dt>
+                            
+                        
+                            <dt class="    "
+                                ><span class="left-menu " data-code="EDXW.002.002.003">信息公开领导机构</span</dt>
+                            
+                        
+
+                    </dl>
+                
+            
+                <h5 data-code="EDXW.002.003" class="leftmenubtn  hasdl  "
+                    ><span class="left-menu " data-code="EDXW.002.003">成果展示</span></h5>
+                
+                    <dl style=" ">
+                            
+                        
+                            <dt class="   hasdd   "
+                                ><span class="left-menu " data-code="EDXW.002.003.020">2025年度</span</dt>
+                            
+                                <dd style=" ">
+                                    <ul>
+                                            
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.002.003.020.001">区级</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.002.003.020.002">市级</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.002.003.020.003">国家级</a></li>
+                                        
+                                    </ul>
+                                </dd>
+                            
+                        
+                            <dt class="   hasdd   "
+                                ><span class="left-menu " data-code="EDXW.002.003.019">2024年度</span</dt>
+                            
+                                <dd style=" ">
+                                    <ul>
+                                            
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.002.003.019.001">区级</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.002.003.019.002">市级</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.002.003.019.003">国家级</a></li>
+                                        
+                                    </ul>
+                                </dd>
+                            
+                        
+                            <dt class="   hasdd   "
+                                ><span class="left-menu " data-code="EDXW.002.003.018">2023年度</span</dt>
+                            
+                                <dd style=" ">
+                                    <ul>
+                                            
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.002.003.018.001">区级</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.002.003.018.002">市级</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.002.003.018.003">国家级</a></li>
+                                        
+                                    </ul>
+                                </dd>
+                            
+                        
+                            <dt class="   hasdd   "
+                                ><span class="left-menu " data-code="EDXW.002.003.017">2022年度</span</dt>
+                            
+                                <dd style=" ">
+                                    <ul>
+                                            
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.002.003.017.001">区级</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.002.003.017.002">市级</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.002.003.017.003">国家级</a></li>
+                                        
+                                    </ul>
+                                </dd>
+                            
+                        
+                            <dt class="   hasdd   "
+                                ><span class="left-menu " data-code="EDXW.002.003.016">2021年度</span</dt>
+                            
+                                <dd style=" ">
+                                    <ul>
+                                            
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.002.003.016.001">区级</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.002.003.016.002">市级</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.002.003.016.003">国家级</a></li>
+                                        
+                                    </ul>
+                                </dd>
+                            
+                        
+                            <dt class="   hasdd   "
+                                ><span class="left-menu " data-code="EDXW.002.003.015">2020年度</span</dt>
+                            
+                                <dd style=" ">
+                                    <ul>
+                                            
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.002.003.015.003">区级</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.002.003.015.002">市级</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.002.003.015.001">国家级</a></li>
+                                        
+                                    </ul>
+                                </dd>
+                            
+                        
+                            <dt class="   hasdd   "
+                                ><span class="left-menu " data-code="EDXW.002.003.014">2019年度</span</dt>
+                            
+                                <dd style=" ">
+                                    <ul>
+                                            
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.002.003.014.001">区级</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.002.003.014.002">市级</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.002.003.014.003">国家级</a></li>
+                                        
+                                    </ul>
+                                </dd>
+                            
+                        
+                            <dt class="   hasdd   "
+                                ><span class="left-menu " data-code="EDXW.002.003.009">2018年度</span</dt>
+                            
+                                <dd style=" ">
+                                    <ul>
+                                            
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.002.003.009.001">区级</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.002.003.009.002">市级</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.002.003.009.003">国家级</a></li>
+                                        
+                                    </ul>
+                                </dd>
+                            
+                        
+                            <dt class="   hasdd   "
+                                ><span class="left-menu " data-code="EDXW.002.003.001">2017年度</span</dt>
+                            
+                                <dd style=" ">
+                                    <ul>
+                                            
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.002.003.001.001">区级</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.002.003.001.002">市级</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.002.003.001.003">国家级</a></li>
+                                        
+                                    </ul>
+                                </dd>
+                            
+                        
+                            <dt class="   hasdd   "
+                                ><span class="left-menu " data-code="EDXW.002.003.002">2016年度</span</dt>
+                            
+                                <dd style=" ">
+                                    <ul>
+                                            
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.002.003.002.001">区级</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.002.003.002.002">市级</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.002.003.002.003">国家级</a></li>
+                                        
+                                    </ul>
+                                </dd>
+                            
+                        
+                            <dt class="   hasdd   "
+                                ><span class="left-menu " data-code="EDXW.002.003.003">2015年度</span</dt>
+                            
+                                <dd style=" ">
+                                    <ul>
+                                            
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.002.003.003.001">区级</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.002.003.003.002">市级</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.002.003.003.003">国家级</a></li>
+                                        
+                                    </ul>
+                                </dd>
+                            
+                        
+                            <dt class="   hasdd   "
+                                ><span class="left-menu " data-code="EDXW.002.003.004">2014年度</span</dt>
+                            
+                                <dd style=" ">
+                                    <ul>
+                                            
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.002.003.004.001">区级</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.002.003.004.002">市级</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.002.003.004.003">国家级</a></li>
+                                        
+                                    </ul>
+                                </dd>
+                            
+                        
+                            <dt class="   hasdd   "
+                                ><span class="left-menu " data-code="EDXW.002.003.005">2013年度</span</dt>
+                            
+                                <dd style=" ">
+                                    <ul>
+                                            
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.002.003.005.001">区级</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.002.003.005.002">市级</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.002.003.005.003">国家级</a></li>
+                                        
+                                    </ul>
+                                </dd>
+                            
+                        
+                            <dt class="   hasdd   "
+                                ><span class="left-menu " data-code="EDXW.002.003.006">2011-2012年度</span</dt>
+                            
+                                <dd style=" ">
+                                    <ul>
+                                            
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.002.003.006.001">区级</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.002.003.006.002">市级</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.002.003.006.003">国家级</a></li>
+                                        
+                                    </ul>
+                                </dd>
+                            
+                        
+                            <dt class="   hasdd   "
+                                ><span class="left-menu " data-code="EDXW.002.003.007">2010-2011年度</span</dt>
+                            
+                                <dd style=" ">
+                                    <ul>
+                                            
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.002.003.007.001">区级</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.002.003.007.002">市级</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.002.003.007.003">国家级</a></li>
+                                        
+                                    </ul>
+                                </dd>
+                            
+                        
+                            <dt class="   hasdd   "
+                                ><span class="left-menu " data-code="EDXW.002.003.008">2009-2010年度</span</dt>
+                            
+                                <dd style=" ">
+                                    <ul>
+                                            
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.002.003.008.001">区级</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.002.003.008.002">市级</a></li>
+                                        
+                                            <li><a class=" left-menu   "
+                                                   data-code="EDXW.002.003.008.003">国家级</a></li>
+                                        
+                                    </ul>
+                                </dd>
+                            
+                        
+                            <dt class="    "
+                                ><span class="left-menu " data-code="EDXW.002.003.010">2008-2009年度</span</dt>
+                            
+                        
+                            <dt class="    "
+                                ><span class="left-menu " data-code="EDXW.002.003.011">2006-2007年度</span</dt>
+                            
+                        
+                            <dt class="    "
+                                ><span class="left-menu " data-code="EDXW.002.003.012">2005-2006年度</span</dt>
+                            
+                        
+                            <dt class="    "
+                                ><span class="left-menu " data-code="EDXW.002.003.013">2004-2005年度</span</dt>
+                            
+                        
+
+                    </dl>
+                
+            
+                <h5 data-code="EDXW.002.004" class="leftmenubtn  "
+                    ><span class="left-menu " data-code="EDXW.002.004">规章制度</span></h5>
+                
+            
+                <h5 data-code="EDXW.002.005" class="leftmenubtn  hasdl  "
+                    ><span class="left-menu " data-code="EDXW.002.005">办事指南</span></h5>
+                
+                    <dl style=" ">
+                            
+                        
+                            <dt class="    "
+                                ><span class="left-menu " data-code="EDXW.002.005.001">办公指南</span</dt>
+                            
+                        
+
+                    </dl>
+                
+            
+                <h5 data-code="EDXW.002.006" class="leftmenubtn  hasdl  "
+                    ><span class="left-menu " data-code="EDXW.002.006">院内办公</span></h5>
+                
+                    <dl style=" ">
+                            
+                        
+                            <dt class="    "
+                                ><span class="left-menu " data-code="EDXW.002.006.001">院内办公指南</span</dt>
+                            
+                        
+                            <dt class="    "
+                                ><span class="left-menu " data-code="EDXW.002.006.002">会议纪要</span</dt>
+                            
+                        
+                            <dt class="    "
+                                ><span class="left-menu " data-code="EDXW.002.006.003">教代会决议</span</dt>
+                            
+                        
+                            <dt class="    "
+                                ><span class="left-menu " data-code="EDXW.002.006.004">财务与基建</span</dt>
+                            
+                        
+                            <dt class="    "
+                                ><span class="left-menu " data-code="EDXW.002.006.005">重要公开</span</dt>
+                            
+                        
+
+                    </dl>
+                
+            
+                <h5 data-code="EDXW.002.007" class="leftmenubtn  "
+                    ><span class="left-menu " data-code="EDXW.002.007">内部文件</span></h5>
+                
+            
+                <h5 data-code="EDXW.002.008" class="leftmenubtn  "
+                    ><span class="left-menu " data-code="EDXW.002.008">教师招聘</span></h5>
+                
+            
+            <h5 class="hasdl">互动留言</h5>
+			<dl style="">
+				<dt class=""><a href="/extranet/web/mhedu/xx!LeavingMessare.action">我要留言</a></dt>
+				<dt><a href="/extranet/web/mhedu/xx!LeavingMessareList.action">历史留言</a></dt>
+			</dl>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(function(){
+
+        $('.pmenu h5').click(function() {
+            $(this).toggleClass('active');
+            $(this).next('dl').slideToggle();
+        });
+        $('.pmenu dt').click(function() {
+            $(this).toggleClass('active');
+            $(this).next('dd').slideToggle();
+        });
+        
+       
+        
+        $(".leftmenubtn").click(function(){
+        	if(location.href.indexOf('/extranet/web/mhedu/xx.action')==-1)
+				location.href='/extranet/web/mhedu/xx.action?code='+$(this).data("code");
+		});
+
+    })
+</script>
+		<div class="pright">
+			<div class="prbox">
+				<div class="location">
+				</div>
+				<div class="listcon">
+					<ul class="list" id="news-wrap">
+
+					</ul>
+				</div>
+			</div>
+			 <div class="pages cl">
+                <ul id="pagination" class="page"> </ul>
+                每页<span id="pageSize">0</span>条／共<span id="total">0</span>条
+            </div>
+            
+            
+            
+            
+			
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+<div id="footer">
+	<div class="ft cl">
+		<div  class="blogo">
+            <span id="_ideConac" class="" style="margin-top: 5px;">
+            <a href="http://bszs.conac.cn/sitename?method=show&amp;id=2907016072AE5269E053012819ACF339" target="_blank">
+                <img id="imgConac" vspace="0" hspace="0" border="0" src="https://jyxyfiles.mhedu.sh.cn/ftpfiles/dcpfiles/image/blue.png"
+                     data-bd-imgshare-binded="1">
+            </a>
+        </span>
+        </div>
+        <div  class="blogo">
+            <div style="padding: 3px;background-color: white;width: 56px;margin: auto;">
+                <span class="" id="footerwxqrcodebtn" ></span>
+            </div>
+            <span>移动版二维码</span>
+        </div>
+        <div  class="blogo">
+            <div class="" id="qyFrcode" style="margin-right:10px;display: block;">
+                <img src="https://jyxyfiles.mhedu.sh.cn/ftpfiles/dcpfiles/introduction/2205021687154906a1763079ccc40a84.jpg" style="width: 61px;height: 62px;">
+            </div>
+            <span>闵行区教育学院服务号</span>
+        </div>
+
+        <div class="bnav">
+            <a href="/extranet/web/mhedu/xx!oriented.action?catalogCode=JYXY_XXGK_LXWM">联系我们</a>
+            |
+            <a href="/extranet/web/mhedu/xx!oriented.action?catalogCode=JYXY_XXGK_BQSM">版权声明</a>
+            |
+            <a href="/extranet/web/mhedu/xx!LeavingMessare.action">我要留言</a>
+            |
+            <a target="_blank" href="http://10.107.58.146">旧网链接（内网）</a></div>
+		<div class="copyright">
+            <p>版权所有 上海市闵行区教育学院 （工信部备案号:沪ICP备05012047号）
+                <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011202005311"
+                   style="text-decoration:none;height:20px;line-height:20px;">
+                    <img src="/static/extranet/mhedu/index/images/pilice.png"/>
+                    <span style="height:20px;line-height:20px;color:#fff;">沪公网安备 31011202005311号</span>
+                </a>
+            </p>
+
+            <p>地址：上海市闵行区紫龙路835号 邮编：200241 电话：021-34728865</p>
+
+            <p>本站推荐使用Chrome访问</p>
+        </div>
+	</div>
+</div>
+
+<script  src="/static/js/qrcode.min.js"></script>
+<script src="/static/js/layer3/layer/layer.js"></script>
+<script>
+
+	var _qrcodeUrl=location.href.split('/extranet')[0]+'/extranet/web/index/index.action';
+
+	var qrcode = new QRCode("footerwxqrcodebtn", {
+	    text: _qrcodeUrl,
+	    width: 56,
+	    height: 56,
+	    colorDark : "#000000",
+	    colorLight : "#ffffff",
+	    correctLevel : QRCode.CorrectLevel.L
+	});
+
+    $("#wxqrcodebtn").click(function(){
+        layer.open({
+            type: 1,
+            title :'移动版扫码进入',
+            skin: 'layui-layer-demo', //样式类名
+            closeBtn: 1, //不显示关闭按钮
+            anim: 2,
+            area :['500px','500px'],
+            shadeClose: true, //开启遮罩关闭
+            content: '<div id="qrcodediv"></div>',
+            success:function(){
+                var qrcode = new QRCode("qrcodediv", {
+                    text: _qrcodeUrl,
+                    width: 360,
+                    height: 360,
+                    colorDark : "#000000",
+                    colorLight : "#ffffff",
+                    correctLevel : QRCode.CorrectLevel.H
+                });
+
+
+            }
+
+
+        });
+    });
+
+    $("#footerwxqrcodebtn").click(function(){
+        layer.open({
+            type: 1,
+            title :'移动版扫码进入',
+            skin: 'layui-layer-demo', //样式类名
+            closeBtn: 1, //不显示关闭按钮
+            anim: 2,
+            area :['500px','500px'],
+            shadeClose: true, //开启遮罩关闭
+            content: '<div id="qrcodediv"></div>',
+            success:function(){
+                var qrcode = new QRCode("qrcodediv", {
+                    text: _qrcodeUrl,
+                    width: 360,
+                    height: 360,
+                    colorDark : "#000000",
+                    colorLight : "#ffffff",
+                    correctLevel : QRCode.CorrectLevel.H
+                });
+
+
+            }
+
+
+        });
+    });
+
+	$("#qyFrcode").click(function(){
+		layer.open({
+			  type: 1,
+			  title :'服务号扫码关注',
+			  skin: 'layui-layer-demo', //样式类名
+			  closeBtn: 1, //不显示关闭按钮
+			  anim: 2,
+			  area :['500px','500px'],
+			  shadeClose: true, //开启遮罩关闭
+			  content: '<div id="qrcodediv"></div>',
+			  success:function(){
+				  $('#qrcodediv').html('<img src="'+$('#qyFrcode img').attr('src')+'" style="display:block;;width:360px;height:360px;" />');
+				  
+			  }
+
+		  
+		});
+	});
+
+</script>
+
+<script src="/static/js/twbs-pagination/jquery.twbsPagination.js"></script>
+<script src="/static/js/mustache/mustache.js"></script>
+<script src="/static/js/layer/layer.js"></script>
+<script id="itemsTpl" type="text/x-mustache">
+    {{#.}}
+    <li>
+        <em>{{publishDateFormat}}</em>
+        <a target="_blank" href="xx!info.action?id={{id}}&code={{code}}">{{title}}</a>
+    </li>
+    {{/.}}
+</script>
+<script id="indexTpl" type="text/x-mustache">
+    <a href="/extranet/web/index/index.action" class="home"></a>
+    {{#.}}
+        <em>&gt;</em> <a href="xx.action?code={{code}}">{{name}}</a>
+    {{/.}}
+</script>
+<script type="text/javascript">
+    var catalogCode = 'EDXW.002';
+    var pageSize=20;
+    var $itemsTpl = $('#itemsTpl').html();
+    var $indexTpl = $('#indexTpl').html();
+    function buildCatalogIndex(title){
+        var titles = title.split('>');
+        var catalogs=[];
+        for(var i=0;i<titles.length;i++){
+            var temp = titles[i].split(':');
+            catalogs.push({name:temp[0],code:temp[1]});
+        }
+        $('.location').html(Mustache.render($indexTpl, catalogs));
+    }
+    function search(code,page){
+        layer.load();
+        $.ajax({
+            url:"/extranet/web/mhedu/xx!load.action",
+            data:{
+                search_code:code,
+                pageNo:page,
+                level:0,
+                pageSize:pageSize
+            },
+            dataType:"json",
+            type:"post",
+            success:function(resp){
+                $('#news-wrap').html('');
+                layer.closeAll();
+                if(resp.state=='ok'){
+                    for(var i=0;i<resp.rows.length;i++){
+                        resp.rows.code=catalogCode;
+                    }
+                    $('#news-wrap').html(Mustache.render($itemsTpl, resp.rows));
+                    $('#pageSize').text(pageSize);
+                    $('#total').text(resp.total);
+                    buildCatalogIndex(resp.title);
+                    //重置分页组件否则保留上次查询的，一般来说很多问题出现与这三行代码有关如：虽然数据正确但是页码不对仍然为上一次查询出的一致
+                    $('#pagination').empty();
+                    $('#pagination').removeData("twbs-pagination");
+                    $('#pagination').unbind("page");
+                    //将页面的数据容器制空
+                    //翻页设置
+                    $('#pagination').twbsPagination({
+                        first: false,
+                        prev: "上一页",
+                        next: "下一页",
+                        last: false,
+                        totalPages: resp.pageCount>0?resp.pageCount:1,
+                        startPage:resp.pageIndex,
+                        visiblePages: 7,
+                        initiateStartPageClick:false,
+                        paginationClass: 'pagination',
+                        nextClass: 'next',
+                        prevClass: 'prev',
+                        lastClass: 'last',
+                        firstClass: 'first',
+                        pageClass: 'pageCell',
+                        activeClass: 'cur',
+                        disabledClass: 'disable',
+                        
+                        onPageClick: function (event, page) {
+                            search(catalogCode,page);
+                        }
+                    });
+                }else{
+                    layer.alert(resp.msg);
+                }
+            }
+        });
+    }
+    $(function(){
+        search(catalogCode,1);
+
+        $('.pmenu').on('click','.left-menu',function(){
+            catalogCode = $(this).data().code;
+            search(catalogCode,1);
+        });
+    })
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,502 @@
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+<!doctype html>
+<html>
+<head>
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+<meta charset="UTF-8">
+<title>上海市闵行区教育学院</title>
+<link rel="apple-touch-icon-precomposed" sizes="32x32" href="https://jyxyfiles.mhedu.sh.cn/ftpfiles/dcpfiles/mainpicture/ico_jyxy.ico">
+<link rel="shortcut icon" href="https://jyxyfiles.mhedu.sh.cn/ftpfiles/dcpfiles/mainpicture/ico_jyxy.ico">
+<script src="/static/vue/jquery-3.6.0.min.js"></script><script type="text/javascript" src="/static/vue/jquery-migrate.min.js"></script>
+<script src="/static/js/jquery.SuperSlide.js?V1.0"></script>
+<script src="/static/js/layer/layer.js"></script>
+<script src="/static/js/idealdcp/utils/Utils.js"></script>
+<script type="text/javascript" src="/static/js/ueditor/ueditor.parse.js"></script>
+<script type="text/javascript" src="/static/js/jquery-qrcode-master/jquery.qrcode.min.js"></script>
+
+
+<link rel="stylesheet" type="text/css" href="/static/extranet/mhedu/dw/css/style.css">
+</head>
+<body>
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+<div id="header">
+    <div id="top">
+
+    </div>
+    <div id="nav">
+        <ul class="menu">
+            <li><a target="_blank" href="/extranet/web/index/index.action">学院首页</a></li>
+            <li class="current"><a target="_blank" href="dw.action">本站首页</a></li>
+            
+                <li >
+                    <a target="_blank" href="dw!more.action?code=EDXW.001.004">支部概况</a>
+                </li>
+            
+                <li >
+                    <a target="_blank" href="dw!more.action?code=EDXW.001.005">支部动态</a>
+                </li>
+            
+                <li >
+                    <a target="_blank" href="dw!more.action?code=EDXW.001.001">学习园地</a>
+                </li>
+            
+                <li >
+                    <a target="_blank" href="dw!more.action?code=EDXW.001.006">组织建设</a>
+                </li>
+            
+                <li >
+                    <a target="_blank" href="dw!more.action?code=EDXW.001.007">思想工作</a>
+                </li>
+            
+                <li >
+                    <a target="_blank" href="dw!more.action?code=EDXW.001.008">三会一课</a>
+                </li>
+            
+                <li >
+                    <a target="_blank" href="dw!more.action?code=EDXW.001.009">群团建设</a>
+                </li>
+            
+                <li >
+                    <a target="_blank" href="dw!more.action?code=EDXW.001.010">廉政建设</a>
+                </li>
+            
+                <li >
+                    <a target="_blank" href="dw!more.action?code=EDXW.001.002">党员风采</a>
+                </li>
+            
+                <li >
+                    <a target="_blank" href="dw!more.action?code=EDXW.001.011">工会园地</a>
+                </li>
+            
+        </ul>
+    </div>
+    <div class="lflag"></div>
+    <div class="rflag"></div>
+</div>
+
+<div id="main">
+	<div class="maintop">
+		<div id="newsroll1" class="maintopcon">
+			<div class="mttile">
+				<span class="more"><a target="_blank" href="dw!more.action?areaCode=JYXY_DWGK_TPXW">+ 更多</a></span>
+				<h2>图片新闻</h2>
+				<a  class="prev"></a>
+				<a  class="next"></a>
+			</div>
+			<div class="troll">
+				<ul>
+                    
+                        <li><a target="_blank" title="字里千秋，献礼二十大——闵行区开展第25届推普周活动"
+                               href="dw!info.action?id=ff80808183204293018354da73760581&areaCode=JYXY_DWGK_TPXW"><img
+                                src="https://jyxyfiles.mhedu.sh.cn/ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/XYXW/allArea/main/2022/09/sub_7f26e2c6f5f6495fb40c5c3fbb07c613.jpg" height="243" width="368" alt=""><h6
+                                class="ellip">字里千秋，献礼二十大——闵行区开展第25届推普周活动</h6></a></li>
+                    
+                        <li><a target="_blank" title="抗战英雄——陈锡联的故事"
+                               href="dw!info.action?id=ff8080817941d80801795907a54d04b7&areaCode=JYXY_DWGK_TPXW"><img
+                                src="https://jyxyfiles.mhedu.sh.cn/ftpfiles/dcpfiles/temp/970135349f5e40d6851b4f9374c1c7b8.jpg" height="243" width="368" alt=""><h6
+                                class="ellip">抗战英雄——陈锡联的故事</h6></a></li>
+                    
+                        <li><a target="_blank" title="展示风采 喜迎新年——2021年闵行区教育学院迎新活动"
+                               href="dw!info.action?id=ff80808176523d150176d1a859350d59&areaCode=JYXY_DWGK_TPXW"><img
+                                src="https://jyxyfiles.mhedu.sh.cn/ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/XYXW/allArea/main/2021/01/ec439028c25d48d8841105b977f71da5.jpg" height="243" width="368" alt=""><h6
+                                class="ellip">展示风采 喜迎新年——2021年闵行区教育学院迎新活动</h6></a></li>
+                    
+                        <li><a target="_blank" title="【图片新闻】教育学院创建文明单位迎检"
+                               href="dw!info.action?id=ff8080817481c9760175dec04f792ea5&areaCode=JYXY_DWGK_TPXW"><img
+                                src="https://jyxyfiles.mhedu.sh.cn/ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/XYXW/allArea/main/2020/11/sub_b47fa8b462904fb7aefb48590de17406.jpg" height="243" width="368" alt=""><h6
+                                class="ellip">【图片新闻】教育学院创建文明单位迎检</h6></a></li>
+                    
+                        <li><a target="_blank" title="闵行区教育学院举行党总支换届选举大会"
+                               href="dw!info.action?id=ff8080817481c4de01759ca0cf17221a&areaCode=JYXY_DWGK_TPXW"><img
+                                src="https://jyxyfiles.mhedu.sh.cn/ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/XYXW/allArea/main/2020/11/8727ed75b27b47ec863ad63b9aa5f87b.jpg" height="243" width="368" alt=""><h6
+                                class="ellip">闵行区教育学院举行党总支换届选举大会</h6></a></li>
+                    
+                        <li><a target="_blank" title="【图片新闻】退休支部组织“方寸之间看祖国发展”学习活动"
+                               href="dw!info.action?id=ff8080816ea5bdb9016eda96d595096a&areaCode=JYXY_DWGK_TPXW"><img
+                                src="https://jyxyfiles.mhedu.sh.cn/ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/XYXW/allArea/main/2019/12/4099de61282d4d9b9adcb18ca84a1294.jpg" height="243" width="368" alt=""><h6
+                                class="ellip">【图片新闻】退休支部组织“方寸之间看祖国发展”学习活动</h6></a></li>
+                    
+                        <li><a target="_blank" title="【主题教育】闪亮的党徽 教育学院第二三支部联合学习"
+                               href="dw!info.action?id=ff8080816ea5bdb9016ed9f1e1560942&areaCode=JYXY_DWGK_TPXW"><img
+                                src="https://jyxyfiles.mhedu.sh.cn/ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/XYXW/allArea/main/2019/12/sub_f0a2e665ddb7425e98cd4208233a35a3.jpg" height="243" width="368" alt=""><h6
+                                class="ellip">【主题教育】闪亮的党徽 教育学院第二三支部联合学习</h6></a></li>
+                    
+                        <li><a target="_blank" title="协同发展  苏州小学管理者来闵行跟岗研修"
+                               href="dw!info.action?id=ff8080816ea5bf49016eaad687db00d8&areaCode=JYXY_DWGK_TPXW"><img
+                                src="https://jyxyfiles.mhedu.sh.cn/ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/XYXW/allArea/main/2019/11/69ee245360da4342bae7e790fae30832.jpg" height="243" width="368" alt=""><h6
+                                class="ellip">协同发展  苏州小学管理者来闵行跟岗研修</h6></a></li>
+                    
+                        <li><a target="_blank" title="基于循证  深化体认 ——闵教院支部举办第五次“不忘初心牢记使命”党课微讲座暨联合学习活动"
+                               href="dw!info.action?id=ff8080816e96e415016ea0ce676600cf&areaCode=JYXY_DWGK_TPXW"><img
+                                src="https://jyxyfiles.mhedu.sh.cn/ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/XYXW/allArea/main/2019/11/sub_e79438c8dab647818e448d2d0848f435.jpg" height="243" width="368" alt=""><h6
+                                class="ellip">基于循证  深化体认 ——闵教院支部举办第五次“不忘初心牢记使命”党课微讲座暨联合学习活动</h6></a></li>
+                    
+                        <li><a target="_blank" title="喜报：王瑜瑾获区青年教师演讲大赛一等奖"
+                               href="dw!info.action?id=ff8080816e2b9453016e9521fc0413d0&areaCode=JYXY_DWGK_TPXW"><img
+                                src="https://jyxyfiles.mhedu.sh.cn/ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/XYXW/allArea/main/2019/11/fcc70e0a52024db4b29a49f19ca51ee3.jpg" height="243" width="368" alt=""><h6
+                                class="ellip">喜报：王瑜瑾获区青年教师演讲大赛一等奖</h6></a></li>
+                    
+                </ul>
+			</div>
+		</div>
+	</div>
+	<div class="mainbox cl">
+		<div class="mleft">
+			<div class="mlbox">
+				<h2>支部动态</h2>
+				<div class="mlcon">
+					<ul class="nlist">
+                        
+                            <li>
+                                <h6>2024-10-09</h6>
+                                <a target="_blank" title="共探校本研修之路，推动区域教育发展"
+                                   href="dw!info.action?id=ff80808190d4138401926f18b4721d2e&areaCode=JYXY_DWGK_ZBDT">共探校本研修之路，推动区域教育发展</a>
+                            </li>
+                        
+                            <li>
+                                <h6>2024-06-28</h6>
+                                <a target="_blank" title="协力并进  精准服务区域教育高质量发展 ——闵行区教育学院举行2023学年第二学期期末教工大会"
+                                   href="dw!info.action?id=ff8080818fd38d86019072060c361208&areaCode=JYXY_DWGK_ZBDT">协力并进  精准服务区域教育高质量发展 ——闵行区教育学院举行2023学年第二学期期末教工大会</a>
+                            </li>
+                        
+                            <li>
+                                <h6>2024-05-20</h6>
+                                <a target="_blank" title="里程碑：跨越半程的进展与愿景 ——上师三附小南校举行市级一般课题中期汇报活动"
+                                   href="dw!info.action?id=ff8080818f7164f3018f94c8458b032e&areaCode=JYXY_DWGK_ZBDT">里程碑：跨越半程的进展与愿景 ——上师三附小南校举行市级一般课题中期汇报活动</a>
+                            </li>
+                        
+                            <li>
+                                <h6>2024-04-28</h6>
+                                <a target="_blank" title="红色资源传薪火  三全育人新征程 ——2022年度闵行区教学科学研究重点项目中期论证会"
+                                   href="dw!info.action?id=ff8080818f04bb64018f22829a80057d&areaCode=JYXY_DWGK_ZBDT">红色资源传薪火  三全育人新征程 ——2022年度闵行区教学科学研究重点项目中期论证会</a>
+                            </li>
+                        
+                            <li>
+                                <h6>2024-04-22</h6>
+                                <a target="_blank" title="立足育人岗  清风显正气——第一支部主题党日专题学习活动"
+                                   href="dw!info.action?id=ff8080818e555676018f045ac2db1472&areaCode=JYXY_DWGK_ZBDT">立足育人岗  清风显正气——第一支部主题党日专题学习活动</a>
+                            </li>
+                        
+					</ul>
+					<div class="nmore"><a target="_blank" href="dw!more.action?areaCode=JYXY_DWGK_ZBDT">+ 更多</a></div>
+				</div>
+			</div>
+		</div>
+		<div class="mright">
+            <dl class="mnews cl">
+                
+                    <dt class=" on ">组织建设</dt>
+                    <dd style=" display:block ">
+                        <div class="mlcon">
+                            <ul class="nlist " data-code="EDXW.001.006">
+                                
+                                    
+                                        <li>
+                                            <h6>2024-07-06</h6>
+                                            <a target="_blank" title="领悟两会新声 凝聚奋进力量 共谱教育强区新篇章——2024年闵行区教育系统领导干部暑期专题培训"
+                                               href="dw!info.action?id=ff8080818fd38bda01909686066912bf&code=EDXW.001.006">领悟两会新声 凝聚奋进力量 共谱教育强区新篇章——2024年闵行区教育系统领导干部暑期专题培训</a>
+                                        </li>
+                                    
+                                        <li>
+                                            <h6>2024-04-13</h6>
+                                            <a target="_blank" title="敢担当 善作为 能成事——2024年闵行教育系统优秀年轻干部培训班开班仪式"
+                                               href="dw!info.action?id=ff8080818e5554f7018edbf0c15f110a&code=EDXW.001.006">敢担当 善作为 能成事——2024年闵行教育系统优秀年轻干部培训班开班仪式</a>
+                                        </li>
+                                    
+                                        <li>
+                                            <h6>2023-08-28</h6>
+                                            <a target="_blank" title="加强师德师风建设  筑牢教育强国根基——2023年闵行区中小幼书记、校（园）长暑期专题培训顺利召开"
+                                               href="dw!info.action?id=ff8080818a424fd8018a4e1240360092&code=EDXW.001.006">加强师德师风建设  筑牢教育强国根基——2023年闵行区中小幼书记、校（园）长暑期专题培训顺利召开</a>
+                                        </li>
+                                    
+                                        <li>
+                                            <h6>2023-06-02</h6>
+                                            <a target="_blank" title="【喜报】| 3位一等奖，5位二等奖！闵行区在第五届上海基础教育青年教师教学竞赛中喜获佳绩"
+                                               href="dw!info.action?id=ff80808186bb2d5c01887a6f95ae33dd&code=EDXW.001.006">【喜报】| 3位一等奖，5位二等奖！闵行区在第五届上海基础教育青年教师教学竞赛中喜获佳绩</a>
+                                        </li>
+                                    
+                                        <li>
+                                            <h6>2023-06-01</h6>
+                                            <a target="_blank" title="研行规教育之道 筑学生成长之基——闵行区举行行为规范教育交流研讨暨上海市中小学德育研究协会三十周年会庆之闵行专场活动"
+                                               href="dw!info.action?id=ff80808186bb2eed018875b75b69318a&code=EDXW.001.006">研行规教育之道 筑学生成长之基——闵行区举行行为规范教育交流研讨暨上海市中小学德育研究协会三十周年会庆之闵行专场活动</a>
+                                        </li>
+                                    
+                                
+                            </ul>
+                            <div class="nmore"><a target="_blank" href="dw!more.action?code=EDXW.001.006">+ 更多</a></div>
+                        </div>
+                    </dd>
+                
+                    <dt class="">思想工作</dt>
+                    <dd style="">
+                        <div class="mlcon">
+                            <ul class="nlist  middleMenu " data-code="EDXW.001.007">
+                                
+                            </ul>
+                            <div class="nmore"><a target="_blank" href="dw!more.action?code=EDXW.001.007">+ 更多</a></div>
+                        </div>
+                    </dd>
+                
+                    <dt class="">廉政建设</dt>
+                    <dd style="">
+                        <div class="mlcon">
+                            <ul class="nlist  middleMenu " data-code="EDXW.001.010">
+                                
+                            </ul>
+                            <div class="nmore"><a target="_blank" href="dw!more.action?code=EDXW.001.010">+ 更多</a></div>
+                        </div>
+                    </dd>
+                
+                    <dt class="">三会一课</dt>
+                    <dd style="">
+                        <div class="mlcon">
+                            <ul class="nlist  middleMenu " data-code="EDXW.001.008">
+                                
+                            </ul>
+                            <div class="nmore"><a target="_blank" href="dw!more.action?code=EDXW.001.008">+ 更多</a></div>
+                        </div>
+                    </dd>
+                
+			</dl>
+		</div>
+	</div>
+	<div class="mainbot">
+		<div id="broll" class="mainbotcon">
+			<div class="mttile">
+				<span class="more"><a target="_blank" href="dw!more.action?areaCode=JYXY_DWGK_DYFC">+ 更多</a></span>
+				<h2>党员风采</h2>
+				<a class="prev"></a>
+				<a class="next"></a>
+			</div>
+			<div class="bd">
+				<ul>
+                    
+                        <li>
+                            <a target="_blank" title="素养导向下课内外歌唱教学质量提升的实践研究"
+                               href="dw!info.action?id=ff8080818fd38d860190a5d415d5139b&areaCode=JYXY_DWGK_DYFC">
+                                <img src="https://jyxyfiles.mhedu.sh.cn/ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/XYXW/allArea/main/2024/07/sub_630380eaf4e4445ea7cd6e6ef932501f.jpg" height="221" width="212" alt="">
+                                <h6>素养导向下课内外歌唱教学质量提升的实践研究</h6>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a target="_blank" title="闵行区中考、高考考前义务咨询指导活动顺利举行"
+                               href="dw!info.action?id=ff80808186bb2d5c0187e5d6007e254f&areaCode=JYXY_DWGK_DYFC">
+                                <img src="https://jyxyfiles.mhedu.sh.cn/ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/XYXW/allArea/main/2023/05/bd714e74e7c64d9f818be3f22ae6bd1e.jpg" height="221" width="212" alt="">
+                                <h6>闵行区中考、高考考前义务咨询指导活动顺利举行</h6>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a target="_blank" title="携手博物馆，共研跨学科——教师跨学科课程开发和教学能力提升培训启动"
+                               href="dw!info.action?id=ff80808186bb2eed0187abe6eba71c56&areaCode=JYXY_DWGK_DYFC">
+                                <img src="https://jyxyfiles.mhedu.sh.cn/ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/XYXW/allArea/main/2023/04/056ea3bcc3664d6989e236e1bcc02cf3.jpg" height="221" width="212" alt="">
+                                <h6>携手博物馆，共研跨学科——教师跨学科课程开发和教学能力提升培训启动</h6>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a target="_blank" title="【喜报】 3个一等奖 4个二等奖 闵行区在第十一届长三角中小学班主任基本功大赛中喜获佳绩"
+                               href="dw!info.action?id=ff80808186bb2d5c01873bfdc4ad0bcb&areaCode=JYXY_DWGK_DYFC">
+                                <img src="https://jyxyfiles.mhedu.sh.cn/ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/XYXW/allArea/main/2023/04/sub_2e03db63de9e42e1910ac4b31c6c5946.jpg" height="221" width="212" alt="">
+                                <h6>【喜报】 3个一等奖 4个二等奖 闵行区在第十一届长三角中小学班主任基本功大赛中喜获佳绩</h6>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a target="_blank" title="闵行区8位老师获得2022年上海市大中小学教师学科研修基地教师专业发展实践研究项目立项"
+                               href="dw!info.action?id=ff808081832042930183d519dcd6101a&areaCode=JYXY_DWGK_DYFC">
+                                <img src="https://jyxyfiles.mhedu.sh.cn/ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/XYXW/allArea/main/2022/10/071f9597c96d4239a40c0227de90ffab.jpg" height="221" width="212" alt="">
+                                <h6>闵行区8位老师获得2022年上海市大中小学教师学科研修基地教师专业发展实践研究项目立项</h6>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a target="_blank" title="闵行区18项成果获上海市教学成果奖"
+                               href="dw!info.action?id=ff8080818320461c01839c51636c0b1b&areaCode=JYXY_DWGK_DYFC">
+                                <img src="https://jyxyfiles.mhedu.sh.cn/ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/XYXW/allArea/main/2022/10/sub_e5ac98b919634f1395735833d754a10f.png" height="221" width="212" alt="">
+                                <h6>闵行区18项成果获上海市教学成果奖</h6>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a target="_blank" title="【六】| 我们是门卫，但我们不是外人！——致敬勇做逆行者的学院人"
+                               href="dw!info.action?id=ff8080817fe32d6601808adadc0f08d0&areaCode=JYXY_DWGK_DYFC">
+                                <img src="https://jyxyfiles.mhedu.sh.cn/ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/XYXW/allArea/main/2022/05/sub_1764357dfd99450aac09440d981a8b90.jpg" height="221" width="212" alt="">
+                                <h6>【六】| 我们是门卫，但我们不是外人！——致敬勇做逆行者的学院人</h6>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a target="_blank" title="【五】| 两位化学教研员的化合反应：热爱+责任=奉献——致敬勇做逆行者的学院人"
+                               href="dw!info.action?id=ff8080817fe32d66018072fbb42607e1&areaCode=JYXY_DWGK_DYFC">
+                                <img src="https://jyxyfiles.mhedu.sh.cn/ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/XYXW/allArea/main/2022/04/aa77d5af2621464897840d467fb4bc70.png" height="221" width="212" alt="">
+                                <h6>【五】| 两位化学教研员的化合反应：热爱+责任=奉献——致敬勇做逆行者的学院人</h6>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a target="_blank" title="【四】| “不能饿着！”“不能耽误！”——致敬勇做逆行者的学院人"
+                               href="dw!info.action?id=ff8080817f0a47b1018063f89f201a03&areaCode=JYXY_DWGK_DYFC">
+                                <img src="https://jyxyfiles.mhedu.sh.cn/ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/XYXW/allArea/main/2022/04/sub_754565b28faa49c48ab03a304f649999.jpg" height="221" width="212" alt="">
+                                <h6>【四】| “不能饿着！”“不能耽误！”——致敬勇做逆行者的学院人</h6>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a target="_blank" title="【三】| 赪霞映水岸 名隽赫高丘 ——致敬勇做逆行者的学院人"
+                               href="dw!info.action?id=ff8080817fe32d660180399864d1050a&areaCode=JYXY_DWGK_DYFC">
+                                <img src="https://jyxyfiles.mhedu.sh.cn/ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/XYXW/allArea/main/2022/04/sub_91e9dad27dca46398c459118d06c500a.jpg" height="221" width="212" alt="">
+                                <h6>【三】| 赪霞映水岸 名隽赫高丘 ——致敬勇做逆行者的学院人</h6>
+                            </a>
+                        </li>
+                    
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="friendlink">
+	<div class="friendlinkcon cl">
+		<h2>友情链接</h2>
+		<ul class="flist cl">
+		
+			<li><a target="_blank" href="http://dwgk.mhedu.sh.cn/" target="view_window">区局党务公开</a></li>
+		
+			<li><a target="_blank" href="http://www.mhdw.gov.cn/" target="view_window">区委党务公开</a></li>
+		
+			<li><a target="_blank" href="http://www.shjcdj.cn/djWeb/djweb/web/djweb/home.action" target="view_window">上海基层党建</a></li>
+		
+			<li><a target="_blank" href="http://cpc.people.com.cn/" target="view_window">中国共产党新闻</a></li>
+		
+			<li><a target="_blank" href="http://www.zgdsw.org.cn/" target="view_window">中国共产党历史网</a></li>
+		
+			<li><a target="_blank" href="http://www.xinhuanet.com/politics/" target="view_window">新华网时政频道</a></li>
+		
+			
+			
+		</ul>
+	</div>
+</div>
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+<div id="footer">
+    <div class="copyright cl">
+        <span id="_ideConac" class="rlogo" style="margin-top: -5px;">
+            <a href="http://bszs.conac.cn/sitename?method=show&amp;id=2907016072AE5269E053012819ACF339" target="_blank">
+                <img style="height: 62px;width: 62px;" id="imgConac" vspace="0" hspace="0" border="0"
+                     src="https://jyxyfiles.mhedu.sh.cn/ftpfiles/dcpfiles/image/blue.png" data-bd-imgshare-binded="1">
+            </a>
+        </span>
+
+        <p>版权所有 上海市闵行区教育学院 （工信部备案号:沪ICP备05012047号）
+            <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011202005311"
+               style="text-decoration:none;height:20px;line-height:20px;">
+                <img src="/static/extranet/mhedu/index/images/pilice.png"/>
+                <span style="height:20px;line-height:20px;color:#fff;">沪公网安备 31011202005311号</span>
+            </a>
+        </p>
+
+        <p>地址：上海市闵行区紫龙路835号 邮编：200241 电话：021-34728865</p>
+    </div>
+</div>
+
+</body>
+<script src="/static/js/mustache/mustache.js"></script>
+<script id="itemsTpl" type="text/x-mustache">
+    {{#.}}
+    <li>
+        <h6>{{publishDateFormat}}</h6>
+        <a target="_blank" href="dw!info.action?id={{id}}&code={{code}}">{{title}}</a>
+    </li>
+    {{/.}}
+</script>
+<script type="text/javascript">
+    var $itemsTpl = $('#itemsTpl').html();
+    function search($div){
+        var code = $div.data().code;
+        $.ajax({
+            url:"/extranet/web/mhedu/dw!load.action",
+            data:{
+                search_code:code,
+                pageNo:1,
+                level:1,
+                pageSize:5
+            },
+            dataType:"json",
+            type:"post",
+            success:function(resp){
+                if(resp.state=='ok'){
+                    for(var i=0;i<resp.rows.length;i++){
+                        resp.rows.code=code;
+                    }
+                    $div.html(Mustache.render($itemsTpl, resp.rows));
+
+                }else{
+                    layer.alert(resp.msg);
+                }
+            }
+        });
+    }
+    $(function () {
+        $('.mnews dt').click(function () {
+            $('.mnews dt').removeClass('on')
+            $(this).addClass('on').next('dd').show().siblings('dd').hide();
+        });
+        $("#newsroll1").slide({mainCell:".troll ul",effect:"left",autoPage:true,autoPlay:true,vis:3,pnLoop:false});
+        $("#broll").slide({mainCell:".bd ul",effect:"left",autoPage:true,autoPlay:true,vis:5,pnLoop:false});
+
+        var middleMenus = $('.middleMenu');
+        for(var i=0;i<middleMenus.length;i++){
+            search( $(middleMenus[i]))
+        }
+    })
+</script>
+</html>

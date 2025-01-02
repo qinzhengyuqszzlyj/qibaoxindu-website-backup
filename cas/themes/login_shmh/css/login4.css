@@ -1,0 +1,155 @@
+
+html,body{
+    margin:0px;
+    padding:0px;
+}
+body{
+    background: url('../images/login/logo_bg.png') left center no-repeat;
+    background-size: cover;
+    height:100vh;
+}
+.header{
+    margin:0 auto;
+    background: #fff;
+    border-bottom:5px solid #7f7f7f;
+}
+.header_box{
+    width:962px;
+    margin:0 auto;
+    height:50px;
+    font-size: 20px;
+    line-height: 50px;
+    color:#7f7f7f;
+}
+.header_box span,img{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main ,.context{margin:0 auto}
+.main{
+    height:500px;
+
+
+}
+
+.context{
+    width: 960px;
+    display: flex;
+    overflow: hidden;
+
+}
+.ban_left{
+    width:500px;
+    margin-top:100px;
+    background: rgba(233,234,234,0.7);
+    background-size: 100%;
+    padding:25px 10px 15px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right:60px;
+    box-sizing: content-box;
+}
+.ban_left div{
+    background-color: #ECF8FF;
+    width: 135px;
+    height: 135px;
+    margin:15px;
+    color:#84878A;
+    text-align: center;
+    padding-top:22px;
+    box-sizing: border-box;
+
+}
+.ban_left div>p{margin-top:15px}
+/* log-wrap */
+.log-wrap{
+    margin-top: 100px;
+    background: rgba(233,234,234,0.7);
+    width: 375px;
+    height: 330px;
+    padding-bottom: 35px;
+    padding-top: 5px;
+    box-sizing: content-box;
+}
+.log-wrap .log-tit{
+    font-size: 24px;
+    margin:0px 20px 0;
+    width:300px;
+    text-align: center;
+    color:#419DD5;
+}
+.login-submit{
+    width: 300px;
+    margin :0 auto;
+}
+p.p-row{
+    font-size: 0px;
+    height: 48px;
+    line-height: 48px;
+    margin-bottom: 30px;
+}
+p.p-row:first-child{margin-top:30px;}
+p.p-row:nth-child(2){margin-bottom:10px;}
+p .input-row,img{
+    vertical-align: middle;
+}
+.input-row{
+    border: none;
+    width: 243px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 18px;
+    padding:0px;
+    padding-left:10px;
+    box-sizing: border-box;
+}
+.div-checkbox{
+    color:#84878A;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+.div-checkbox div span,input{
+    vertical-align: middle;
+}
+.login{
+    font-size:18px;
+    font-weight: bold;
+    height:54px;
+    color:#fff;
+    line-height: 54px;
+    margin-top: 10px;
+    text-align: center;
+    background: url('../images/login//btn_bg1.png');
+    text-indent: 30px;
+    letter-spacing:30px;
+}
+.div-footer{
+    font-size: 12px;
+    color:#84878A;
+    width: 500px;
+    margin:10px auto;
+}
+.div-footer span,img,a{
+    vertical-align: middle;
+}
+.div-footer span{
+    margin-left:5px;
+}
+.div-footer a,a:hover{
+    color:#84878A;
+    text-decoration: none;
+}
+.log-wxin{
+    text-align: center;
+    width:300px;
+    height: 300px;
+    margin:0 auto;
+    margin-top:-83px;
+}
+#login_container{
+    scale: 0.9;
+}

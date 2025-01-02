@@ -1,0 +1,106 @@
+/**
+ * 2016.3.4
+ * 微信分享js
+ * @param options
+ * title: options.title,(标题)
+ * link: options.oauthUrl,(分享链接)
+ * imgUrl: options.imgUrl,(分享图片地址)
+ * desc: options.desc,(描述)
+ * ctx: options.desc,(项目名称)
+ * @return
+ */
+function _wxshare(options){
+	
+	$.ajax({
+		url:options.ctx+(options.schoolId?"/wxcore/web/wxactivity/activity-share!loadSessionShareParam.action":"/wxcore/web/wxactivity/activity-share!loadShareParam.action"),
+		type:'post',
+		data:{shareUrl:location.href.split('#')[0],schoolId:options.schoolId},
+		async:false,
+		success:function(shareData){
+			if(shareData){
+
+				// 微信配置
+				wx.config({
+					debug: false, 
+					appId: shareData.appid, 
+					timestamp: shareData.timestamp, 
+					nonceStr: shareData.noncestr, 
+					signature: shareData.signature,
+					jsApiList: ['onMenuShareTimeline',
+								'onMenuShareAppMessage',
+								'hideAllNonBaseMenuItem',
+								'hideMenuItems'] // 接口列表
+				});
+				wx.ready(function () {
+					    
+					   
+					   		 
+					  	/*wx.hideMenuItems({
+						    menuList: ["menuItem:share:qq","menuItem:favorite","menuItem:copyUrl"] // 要隐藏的菜单项，所有menu项见附录3
+						}); 	*/
+
+					   wx.onMenuShareTimeline({
+					      title: options.title,
+					      link: options.oauthUrl,
+					      imgUrl: options.imgUrl,
+					      trigger: function (res) {
+					        //alert('用户点击分享到朋友圈');
+					      },
+					      success: function (res) {
+					    	
+					        
+					      },
+					      cancel: function (res) {
+					    	
+					        
+					      },
+					      fail: function (res) {
+					    	
+					        
+					      }
+					    });
+
+
+					   wx.onMenuShareAppMessage({
+						   title: options.title,
+						      link: options.oauthUrl,
+						      imgUrl: options.imgUrl,
+				    	      desc: options.desc,
+				    	      trigger: function (res) {
+				    	        //alert('用户点击发送给朋友');
+				    	      },
+				    	      success: function (res) {
+				    	    	
+				    	        
+				    	      },
+				    	      cancel: function (res) {
+				    	    	
+				    	        
+				    	      },
+				    	      fail: function (res) {
+				    	    	
+				    	      }
+				    	    });
+					   
+					
+				});
+				
+			}else{
+				 // 本页面禁用微信右上角转发功能
+			    if (typeof WeixinJSBridge == "undefined"){
+			        if( document.addEventListener ){
+			            document.addEventListener('WeixinJSBridgeReady', onBridgeReady, false);
+			        }else if (document.attachEvent){
+			            document.attachEvent('WeixinJSBridgeReady', onBridgeReady);
+			            document.attachEvent('onWeixinJSBridgeReady', onBridgeReady);
+			        }
+			    }else{
+			        onBridgeReady();
+			    }
+			    function onBridgeReady(){
+			        WeixinJSBridge.call('hideOptionMenu');
+			    }
+			}	
+		}
+	});
+}

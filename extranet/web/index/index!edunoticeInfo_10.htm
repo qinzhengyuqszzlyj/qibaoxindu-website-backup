@@ -1,0 +1,336 @@
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+<!doctype html>
+<html>
+<head>
+	
+
+
+
+
+
+
+ 
+
+
+
+
+
+<meta charset="UTF-8">
+<title>上海市闵行区教育学院</title>
+<link rel="apple-touch-icon-precomposed" sizes="32x32" href="../../../ftpfiles/dcpfiles/mainpicture/ico_jyxy.ico">
+<link rel="shortcut icon" href="../../../ftpfiles/dcpfiles/mainpicture/ico_jyxy.ico">
+<script src="../../../static/vue/jquery-3.6.0.min.js"></script><script type="text/javascript" src="../../../static/vue/jquery-migrate.min.js"></script>
+<script src="../../../static/js/V1.0"></script>
+<script src="../../../static/js/layer/layer.js"></script>
+<script src="../../../static/js/idealdcp/utils/Utils.js"></script>
+<script type="text/javascript" src="../../../static/js/ueditor/ueditor.parse.js"></script>
+<script type="text/javascript" src="../../../static/js/jquery-qrcode-master/jquery.qrcode.min.js"></script>
+
+
+	<link rel="stylesheet" type="text/css" href="../../../static/extranet/mhedu/index/css/style_2.css">
+	<style type="text/css">
+		table td p{
+			text-indent: 0em !important;
+		}
+		table td{
+			border: 1px solid;
+		}
+	</style>
+</head>
+<body>
+	
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+<style type="text/css">
+#qrcodediv img{
+    margin: 30px auto;
+}
+</style>   
+
+<div id="header">
+	<div id="topbar">
+		<div class="topbarcon cl" style="">
+			<div class="topsearch"><input id="searchDiv" type="text" placeholder="输入关键字搜索..." class="stxt"><input type="button" value="搜索" class="sbtn"></div>
+			<div class="toprlink">
+				<span class="locat">上海市闵行区紫龙路835号</span>
+				<a href="javascript:;" class="loginlink" id="wxqrcodebtn">移动版</a>
+                <a href="index!login.action" target="_blank" class="loginlink">用户登录</a>
+			</div>
+		</div>
+	</div>
+	<div id="top" class="cl">
+        <div id="logo" style="width:235px;"><img src="../../../static/extranet/mhedu/index/images/logo.png" height="66" width="193" alt="">
+        </div>
+		<ul class="menu">
+			<li class="home current"><a target="_blank" href="../../../index.action"  >首页</a></li>
+			<li><a target="_blank" class="morelist" code="JYXY_XXGK" href="../mhedu/xx.action" >信息公开</a></li>
+			<li><a target="_blank" class="morelist" code="JYXY_DWGK" href="../mhedu/dw.action" >党务公开</a></li>
+			<li><a target="_blank" class="morelist" code="JYXY_HXXY" href="../mhedu/hx.action" >文明单位</a></li>
+			<li><a target="_blank" class="morelist" code="JYXY_ZHJY" href="../mhedu/zh.action" >智慧教育</a></li>
+            
+			<li><a target="_blank" class="morelist" code="JYXY_SY_XYDT" >学院动态</a></li>
+			<li><a target="_blank" class="morelist" code="JYXY_SY_ZHYJ">综合研究</a></li>
+            <li><a target="_blank" class="morelist" code="JYXY_SY_YXDT">教研动态</a></li>
+            <li><a target="_blank" class="morelist" code="JYXY_SY_JSPX">教师培训</a></li>
+            <li><a target="_blank" class="morelist" code="JYXY_SY_GBPX">干部培训</a></li>
+			<li><a target="_blank" class="morelist" code="JYXY_SY_DYYJ">德育研究</a></li>
+			<li><a target="_blank" class="morelist" code="JYXY_XLJK"
+                   href="../mhedu/xl.action">心理健康</a></li>
+            <li><a target="_blank" class="morelist" code="JYXY_SY_ZHYJ_JYKY">教育科研</a></li>
+			<li><a target="_blank" class="morelist" code="JYXY_SY_JYJS">教育技术</a></li>
+		</ul>
+	</div>
+</div>
+
+<script>
+	var codes=[];
+	$(".morelist").each(function(){
+		codes.push($(this).attr("code"));
+	});
+	$(".morelist").click(function(){
+        if(!this.href)
+        window.open('/extranet/web/index/index!more.action?catalogCode='+$(this).attr("code"));
+	});
+	$(".sbtn").click(function(){
+        Utils.formBuilder.submitByForm({search:$('#searchDiv').val()}, '/extranet/web/index/index!search.action');
+    });
+
+	$.ajax({
+		url:"/extranet/web/index/index!codes.action",
+		type:'post',
+		data:{codes:codes.join(",")},
+		success:function(data){
+			$(".morelist").each(function(){
+				if(''.indexOf(data.data[$(this).attr("code")])>-1){
+					$("#top .current").removeClass("current");
+					$(this).parent().addClass("current");
+				}
+			});
+
+		},
+		error:function(){
+
+		}
+	});
+</script>
+
+	<div id="combox">
+		<div class="comcon cl">
+			<div class="noticebox">
+				<div class="location">
+                    <a href="index!list.action" class="home"></a> <em>&gt;</em> <a href="index!edunotice.action">通知</a>
+				</div>
+				<div class="article">
+					<h1>闵行区初中学校生涯教育研讨与培训会通知 </h1>
+					<div class="artinfo">
+						发布时间: 2024-09-20
+					</div>
+					<div class="artcon">
+						<p>为进一步贯彻《上海市教育委员会关于加强中小学生涯教育的指导意见》，探索区域中小学生涯教育的新方向，推进学校生涯教育工作有效开展，促进学生终身发展和幸福成长，于2024年9月25日下午，在上海市七宝实验中学召开闵行区生涯教育项目初中学校生涯教育研讨与培训会。<br></p><p>一、活动时间：</p><p style="line-height: normal; text-indent: 2em;">2024年9月25日（周三）下午13:00-16:00</p><p>二、活动地点：</p><p style="text-indent: 2em;">上海市七宝实验中学（闵行区龙茗路2760号）</p><p>三、活动议程：</p><p>（一）12:50-13:00&nbsp;签到</p><p>（二）13:00-14:00 研讨</p><p>&nbsp; &nbsp;&nbsp;地点：明德楼101会议室</p><p style="text-indent: 2em;"><span style="text-indent: 2em;">对象：闵</span><span style="text-indent: 2em;">行区生涯教育项目校（初中学段）项目负责人、闵行区中小学心理（生涯教育）种子教师培养基地学员</span></p><p style="text-indent: 2em;">1.&nbsp;初中生涯项目校经验交流</p><p style="text-indent: 2em;">①　上海市七宝实验中学：</p><p style="text-indent: 2em;">主题：探索 传承 发展——积极心理取向的初中生涯教育探索与实践研究</p><p style="text-indent: 2em;">发言人：党总支书记、校长&nbsp;郭劲松</p><p style="text-indent: 2em;">②　上海市闵行区莘松中学春申校区：</p><p style="text-indent: 2em;">主题：扎根实践探索 &nbsp;拓宽心育路径——初中校本生涯课程初探</p><p style="text-indent: 2em;">发言人：副校长 吴润娇</p><p style="text-indent: 2em;">③　上海市七宝中学附属闵行金都实验中学：</p><p style="text-indent: 2em;">主题：打开眼界 发现志趣——基于项目化学习的初中生涯教育探索与实践</p><p style="text-indent: 2em;">发言人：党支部书记、常务副校长 束涌</p><p style="text-indent: 2em;">2.&nbsp;专家点评与领导讲话</p><p>（二）14:00-16:00 培训</p><p style="text-indent: 2em;">主题：区域生涯导师培训会</p><p style="text-indent: 2em;">地点：明志楼405远程教室</p><p style="text-indent: 2em;">对象：闵行区生涯教育导师团全体成员</p><p>四、参会回执</p><p style="text-indent: 2em;">请参会的每位老师需填报回执，回执于9月24日周二16:30前，通过网址https://f.wps.cn/g/byfblKga/填报。</p><p>六、友情提示</p><p style="text-indent: 2em;">1.学校提供热水，自带水杯。</p><p style="text-indent: 2em;">2.其他未尽事宜，联系上海市七宝实验中学张老师 15216709408。</p><p><br></p><p style="text-align: right;">上海市闵行区教育学院德育研究中心</p><p style="text-align: right;">2024年9月20日</p><p><br></p>
+					</div>
+					
+						<div class="filebox">
+							<h6>附件：（点击下载）</h6>
+							
+								<p><a href="../../../ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/XYTZ/allArea/main/2024/09/8a9c1a006116662901611c6f1702071c/20240925֪ͨ�ö�.pdf" download="20240925通知敲定.pdf">1、<span style="color: #359bd7;">20240925通知敲定.pdf</span></a></p>
+							
+							
+						</div>
+					
+					<div class="artpre">
+                        <span class="goback"><a href="index!edunotice.htm">返回列表</a></span>
+						<p>上一篇： <a href="index!edunoticeInfo_11.htm">闵行区新任科研室主任培训通知</a> </p>
+						<p>下一篇： <a href="index!edunoticeInfo_9.htm">关于举办初中科学新教材单元教学设计评比的通知</a> </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+<div id="footer">
+	<div class="ft cl">
+		<div  class="blogo">
+            <span id="_ideConac" class="" style="margin-top: 5px;">
+            <a href="http://bszs.conac.cn/sitename?method=show&amp;id=2907016072AE5269E053012819ACF339" target="_blank">
+                <img id="imgConac" vspace="0" hspace="0" border="0" src="../../../ftpfiles/dcpfiles/image/blue.png"
+                     data-bd-imgshare-binded="1">
+            </a>
+        </span>
+        </div>
+        <div  class="blogo">
+            <div style="padding: 3px;background-color: white;width: 56px;margin: auto;">
+                <span class="" id="footerwxqrcodebtn" ></span>
+            </div>
+            <span>移动版二维码</span>
+        </div>
+        <div  class="blogo">
+            <div class="" id="qyFrcode" style="margin-right:10px;display: block;">
+                <img src="../../../ftpfiles/dcpfiles/introduction/2205021687154906a1763079ccc40a84.jpg" style="width: 61px;height: 62px;">
+            </div>
+            <span>闵行区教育学院服务号</span>
+        </div>
+
+        <div class="bnav">
+            <a href="../mhedu/xx!oriented_2.htm">联系我们</a>
+            |
+            <a href="../mhedu/xx!oriented.htm">版权声明</a>
+            |
+            <a href="../mhedu/xx!LeavingMessare.action">我要留言</a>
+            |
+            <a target="_blank" href="http://10.107.58.146">旧网链接（内网）</a></div>
+		<div class="copyright">
+            <p>版权所有 上海市闵行区教育学院 （工信部备案号:沪ICP备05012047号）
+                <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011202005311"
+                   style="text-decoration:none;height:20px;line-height:20px;">
+                    <img src="../../../static/extranet/mhedu/index/images/pilice.png"/>
+                    <span style="height:20px;line-height:20px;color:#fff;">沪公网安备 31011202005311号</span>
+                </a>
+            </p>
+
+            <p>地址：上海市闵行区紫龙路835号 邮编：200241 电话：021-34728865</p>
+
+            <p>本站推荐使用Chrome访问</p>
+        </div>
+	</div>
+</div>
+
+<script  src="../../../static/js/qrcode.min.js"></script>
+<script src="../../../static/js/layer3/layer/layer.js"></script>
+<script>
+
+	var _qrcodeUrl=location.href.split('/extranet')[0]+'/extranet/web/index/index.action';
+
+	var qrcode = new QRCode("footerwxqrcodebtn", {
+	    text: _qrcodeUrl,
+	    width: 56,
+	    height: 56,
+	    colorDark : "#000000",
+	    colorLight : "#ffffff",
+	    correctLevel : QRCode.CorrectLevel.L
+	});
+
+    $("#wxqrcodebtn").click(function(){
+        layer.open({
+            type: 1,
+            title :'移动版扫码进入',
+            skin: 'layui-layer-demo', //样式类名
+            closeBtn: 1, //不显示关闭按钮
+            anim: 2,
+            area :['500px','500px'],
+            shadeClose: true, //开启遮罩关闭
+            content: '<div id="qrcodediv"></div>',
+            success:function(){
+                var qrcode = new QRCode("qrcodediv", {
+                    text: _qrcodeUrl,
+                    width: 360,
+                    height: 360,
+                    colorDark : "#000000",
+                    colorLight : "#ffffff",
+                    correctLevel : QRCode.CorrectLevel.H
+                });
+
+
+            }
+
+
+        });
+    });
+
+    $("#footerwxqrcodebtn").click(function(){
+        layer.open({
+            type: 1,
+            title :'移动版扫码进入',
+            skin: 'layui-layer-demo', //样式类名
+            closeBtn: 1, //不显示关闭按钮
+            anim: 2,
+            area :['500px','500px'],
+            shadeClose: true, //开启遮罩关闭
+            content: '<div id="qrcodediv"></div>',
+            success:function(){
+                var qrcode = new QRCode("qrcodediv", {
+                    text: _qrcodeUrl,
+                    width: 360,
+                    height: 360,
+                    colorDark : "#000000",
+                    colorLight : "#ffffff",
+                    correctLevel : QRCode.CorrectLevel.H
+                });
+
+
+            }
+
+
+        });
+    });
+
+	$("#qyFrcode").click(function(){
+		layer.open({
+			  type: 1,
+			  title :'服务号扫码关注',
+			  skin: 'layui-layer-demo', //样式类名
+			  closeBtn: 1, //不显示关闭按钮
+			  anim: 2,
+			  area :['500px','500px'],
+			  shadeClose: true, //开启遮罩关闭
+			  content: '<div id="qrcodediv"></div>',
+			  success:function(){
+				  $('#qrcodediv').html('<img src="https://jyxy.mhedu.sh.cn/extranet/web/index/'+$('#qyFrcode img').attr('src')+'" style="display:block;;width:360px;height:360px;" />');
+				  
+			  }
+
+		  
+		});
+	});
+
+</script>
+</body>
+
+<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+  	<script src="../../../static/themes/cameo1.0/js/v1.1"></script>
+<script type="text/javascript">
+    function goBack(){
+    	history.back(-1);
+    }
+    uParse('.artcon', {
+        rootPath: '../'
+    });
+    _wxshare({title:'闵行区初中学校生涯教育研讨与培训会通知 ',link:location.href,imgUrl:'http://'+location.host+'/static/school/images/jyxylogo.png',desc:'',ctx:''});
+</script>
+</html>
