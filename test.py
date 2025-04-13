@@ -25,9 +25,9 @@ def replace_text_in_files(url_to_replace, new_url, extensions):
                     print(f"处理文件 {file_path} 时出现错误: {e}")
 
 if __name__ == "__main__":
-    old_url_https = "https://qbxd.mhedu.sh.cn/"
-    old_url_http = "http://qbxd.mhedu.sh.cn/"
-    new_url = "https://qbxd.qinzhengyuqszzlyj.us.kg/"
+    old_url_https = "https://qbxd.qinzhengyuqszzlyj.us.kg/"
+    old_url_http = "https://qbxd.qinzhengyuqszzlyj.us.kg/"
+    new_url = "https://qbxd.19870310.xyz/"
     extensions = ['.html', '.htm']
     replace_text_in_files(old_url_https, new_url, extensions)
     replace_text_in_files(old_url_http, new_url, extensions)
